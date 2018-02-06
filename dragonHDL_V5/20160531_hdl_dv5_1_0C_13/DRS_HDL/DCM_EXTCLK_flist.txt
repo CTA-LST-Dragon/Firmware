@@ -1,0 +1,3 @@
+# Output products list for <DCM_EXTCLK>
+DCM_EXTCLK.xco
+DCM_EXTCLK_flist.txt
