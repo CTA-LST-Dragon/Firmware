@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.30 secs
+Total CPU time to Xst completion: 0.38 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.30 secs
+Total CPU time to Xst completion: 0.38 secs
  
 --> Reading design: dragonv5_main.prj
 
@@ -1368,7 +1368,7 @@ Unit <COUNTER_READ> synthesized.
 
 Synthesizing Unit <DATA_FORMATTER>.
     Related source file is "C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_00\Source\DATA_FORMATTER.v".
-INFO:Xst:3210 - "C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_00\Source\DATA_FORMATTER.v" line 268: Output port <full> of the instance <format_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_00\Source\DATA_FORMATTER.v" line 270: Output port <full> of the instance <format_fifo> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <sfifo_wren>.
     Found 1-bit register for signal <cfifo_rden>.
     Found 16-bit register for signal <fmt_c>.
@@ -1389,16 +1389,15 @@ INFO:Xst:3210 - "C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
+    Found 15-bit adder for signal <n0224[14:0]> created at line 148.
     Found 16-bit adder for signal <fmt_c2[15]_GND_82_o_add_75_OUT> created at line 153.
-    Found 15-bit adder for signal <n0240[14:0]> created at line 176.
-    Found 16-bit adder for signal <fmt_c[15]_GND_82_o_add_117_OUT> created at line 179.
+    Found 16-bit adder for signal <fmt_c[15]_GND_82_o_add_104_OUT> created at line 173.
     Found 16-bit comparator equal for signal <fmt_c2[15]_GND_82_o_equal_74_o> created at line 148
-    Found 16-bit comparator equal for signal <fmt_c[15]_GND_82_o_equal_111_o> created at line 176
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  50 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-	inferred  23 Multiplexer(s).
+	inferred   1 Comparator(s).
+	inferred  21 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <DATA_FORMATTER> synthesized.
 
@@ -1915,21 +1914,21 @@ Macro Statistics
  8-bit register                                        : 188
  9-bit register                                        : 1
  96-bit register                                       : 8
-# Comparators                                          : 86
+# Comparators                                          : 85
  10-bit comparator lessequal                           : 8
  11-bit comparator equal                               : 1
  11-bit comparator greater                             : 3
  13-bit comparator equal                               : 25
  13-bit comparator greater                             : 16
  14-bit comparator greater                             : 8
- 16-bit comparator equal                               : 8
+ 16-bit comparator equal                               : 7
  30-bit comparator equal                               : 4
  6-bit comparator greater                              : 1
  6-bit comparator lessequal                            : 4
  8-bit comparator equal                                : 3
  8-bit comparator greater                              : 4
  8-bit comparator lessequal                            : 1
-# Multiplexers                                         : 1210
+# Multiplexers                                         : 1208
  1-bit 12-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 820
  1-bit 4-to-1 multiplexer                              : 2
@@ -1939,7 +1938,7 @@ Macro Statistics
  13-bit 2-to-1 multiplexer                             : 20
  14-bit 2-to-1 multiplexer                             : 24
  16-bit 13-to-1 multiplexer                            : 1
- 16-bit 2-to-1 multiplexer                             : 43
+ 16-bit 2-to-1 multiplexer                             : 41
  2-bit 2-to-1 multiplexer                              : 8
  2-bit 4-to-1 multiplexer                              : 8
  24-bit 2-to-1 multiplexer                             : 24
@@ -2170,6 +2169,10 @@ Synthesizing (advanced) Unit <DAC_DRS>.
 The following registers are absorbed into counter <dac_out_c>: 1 register on signal <dac_out_c>.
 Unit <DAC_DRS> synthesized (advanced).
 
+Synthesizing (advanced) Unit <DATA_FORMATTER>.
+The following registers are absorbed into counter <fmt_c>: 1 register on signal <fmt_c>.
+Unit <DATA_FORMATTER> synthesized (advanced).
+
 Synthesizing (advanced) Unit <MYTIMER>.
 The following registers are absorbed into counter <msec_c>: 1 register on signal <msec_c>.
 The following registers are absorbed into counter <usec_c>: 1 register on signal <usec_c>.
@@ -2275,7 +2278,7 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  2048x8-bit dual-port block RAM                        : 1
-# Adders/Subtractors                                   : 130
+# Adders/Subtractors                                   : 129
  1-bit adder                                           : 8
  11-bit adder                                          : 1
  11-bit subtractor                                     : 8
@@ -2284,7 +2287,7 @@ Macro Statistics
  13-bit subtractor                                     : 24
  14-bit adder                                          : 8
  15-bit adder                                          : 1
- 16-bit adder                                          : 3
+ 16-bit adder                                          : 2
  2-bit adder                                           : 8
  2-bit subtractor                                      : 8
  30-bit adder                                          : 2
@@ -2293,11 +2296,11 @@ Macro Statistics
  7-bit adder                                           : 1
  8-bit adder                                           : 9
  9-bit subtractor                                      : 1
-# Counters                                             : 39
+# Counters                                             : 40
  10-bit up counter                                     : 3
  11-bit down counter                                   : 2
  11-bit up counter                                     : 2
- 16-bit up counter                                     : 15
+ 16-bit up counter                                     : 16
  24-bit down counter                                   : 1
  3-bit up counter                                      : 1
  30-bit up counter                                     : 2
@@ -2310,23 +2313,23 @@ Macro Statistics
  9-bit up counter                                      : 1
 # Accumulators                                         : 1
  5-bit up accumulator                                  : 1
-# Registers                                            : 6227
- Flip-Flops                                            : 6227
-# Comparators                                          : 86
+# Registers                                            : 6211
+ Flip-Flops                                            : 6211
+# Comparators                                          : 85
  10-bit comparator lessequal                           : 8
  11-bit comparator equal                               : 1
  11-bit comparator greater                             : 3
  13-bit comparator equal                               : 25
  13-bit comparator greater                             : 16
  14-bit comparator greater                             : 8
- 16-bit comparator equal                               : 8
+ 16-bit comparator equal                               : 7
  30-bit comparator equal                               : 4
  6-bit comparator greater                              : 1
  6-bit comparator lessequal                            : 4
  8-bit comparator equal                                : 3
  8-bit comparator greater                              : 4
  8-bit comparator lessequal                            : 1
-# Multiplexers                                         : 1385
+# Multiplexers                                         : 1382
  1-bit 12-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 1028
  1-bit 210-to-1 multiplexer                            : 8
@@ -2337,7 +2340,7 @@ Macro Statistics
  13-bit 2-to-1 multiplexer                             : 20
  14-bit 2-to-1 multiplexer                             : 24
  16-bit 13-to-1 multiplexer                            : 1
- 16-bit 2-to-1 multiplexer                             : 29
+ 16-bit 2-to-1 multiplexer                             : 26
  2-bit 2-to-1 multiplexer                              : 8
  2-bit 4-to-1 multiplexer                              : 8
  24-bit 2-to-1 multiplexer                             : 21
@@ -2633,12 +2636,23 @@ WARNING:Xst:2677 - Node <mytimer/usec_66m_check_1> of sequential type is unconne
 WARNING:Xst:2677 - Node <mytimer/usec_66m_check_0> of sequential type is unconnected in block <dragonv5_main>.
 WARNING:Xst:2677 - Node <mytimer/sec_66m_check_1> of sequential type is unconnected in block <dragonv5_main>.
 WARNING:Xst:2677 - Node <mytimer/sec_66m_check_0> of sequential type is unconnected in block <dragonv5_main>.
-WARNING:Xst:1710 - FF/Latch <scb/scb_c2_5> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <scb/scb_c2_4> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <scb/scb_c2_3> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <scb/scb_c2_2> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <analog_backplane/bp_subclk_c_5> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_formatter/fmt_c_5> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_formatter/fmt_c_6> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_formatter/fmt_c_7> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_formatter/fmt_c_8> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_formatter/fmt_c_9> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_formatter/fmt_c_10> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_formatter/fmt_c_11> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_formatter/fmt_c_12> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_formatter/fmt_c_13> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_formatter/fmt_c_14> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_formatter/fmt_c_15> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <analog_backplane/bp_subclk_c_4> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <analog_backplane/bp_subclk_c_5> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <scb/scb_c2_2> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <scb/scb_c2_3> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <scb/scb_c2_4> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <scb/scb_c2_5> (without init value) has a constant value of 0 in block <dragonv5_main>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <DRS_READ_GEN[7].drs_read_i/adc_valid_ir2> in Unit <dragonv5_main> is equivalent to the following 7 FFs/Latches, which will be removed : <DRS_READ_GEN[6].drs_read_i/adc_valid_ir2> <DRS_READ_GEN[5].drs_read_i/adc_valid_ir2> <DRS_READ_GEN[4].drs_read_i/adc_valid_ir2> <DRS_READ_GEN[3].drs_read_i/adc_valid_ir2> <DRS_READ_GEN[2].drs_read_i/adc_valid_ir2> <DRS_READ_GEN[1].drs_read_i/adc_valid_ir2> <DRS_READ_GEN[0].drs_read_i/adc_valid_ir2> 
 INFO:Xst:2261 - The FF/Latch <DRS_READ_GEN[7].drs_read_i/adc_valid_ir3> in Unit <dragonv5_main> is equivalent to the following 7 FFs/Latches, which will be removed : <DRS_READ_GEN[6].drs_read_i/adc_valid_ir3> <DRS_READ_GEN[5].drs_read_i/adc_valid_ir3> <DRS_READ_GEN[4].drs_read_i/adc_valid_ir3> <DRS_READ_GEN[3].drs_read_i/adc_valid_ir3> <DRS_READ_GEN[2].drs_read_i/adc_valid_ir3> <DRS_READ_GEN[1].drs_read_i/adc_valid_ir3> <DRS_READ_GEN[0].drs_read_i/adc_valid_ir3> 
 INFO:Xst:2261 - The FF/Latch <DRS_READ_GEN[7].drs_read_i/adc_valid_ir> in Unit <dragonv5_main> is equivalent to the following 7 FFs/Latches, which will be removed : <DRS_READ_GEN[6].drs_read_i/adc_valid_ir> <DRS_READ_GEN[5].drs_read_i/adc_valid_ir> <DRS_READ_GEN[4].drs_read_i/adc_valid_ir> <DRS_READ_GEN[3].drs_read_i/adc_valid_ir> <DRS_READ_GEN[2].drs_read_i/adc_valid_ir> <DRS_READ_GEN[1].drs_read_i/adc_valid_ir> <DRS_READ_GEN[0].drs_read_i/adc_valid_ir> 
@@ -3026,8 +3040,8 @@ Unit <dragonv5_main> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 5223
- Flip-Flops                                            : 5223
+# Registers                                            : 5212
+ Flip-Flops                                            : 5212
 # Shift Registers                                      : 258
  10-bit shift register                                 : 8
  13-bit shift register                                 : 8
@@ -3058,24 +3072,24 @@ Top Level Output File Name         : dragonv5_main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 17091
+# BELS                             : 17029
 #      GND                         : 23
 #      INV                         : 428
-#      LUT1                        : 964
-#      LUT2                        : 2357
-#      LUT3                        : 2258
-#      LUT4                        : 1651
-#      LUT5                        : 868
-#      LUT6                        : 2776
-#      MUXCY                       : 2978
-#      MUXF7                       : 352
+#      LUT1                        : 953
+#      LUT2                        : 2341
+#      LUT3                        : 2255
+#      LUT4                        : 1655
+#      LUT5                        : 869
+#      LUT6                        : 2765
+#      MUXCY                       : 2962
+#      MUXF7                       : 353
 #      MUXF8                       : 103
 #      VCC                         : 12
-#      XORCY                       : 2321
-# FlipFlops/Latches                : 12189
+#      XORCY                       : 2310
+# FlipFlops/Latches                : 12178
 #      FD                          : 1744
 #      FDC                         : 2686
-#      FDCE                        : 4967
+#      FDCE                        : 4956
 #      FDE                         : 1482
 #      FDP                         : 276
 #      FDPE                        : 239
@@ -3118,18 +3132,18 @@ Selected Device : 6slx100fgg676-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:           12188  out of  126576     9%  
- Number of Slice LUTs:                11727  out of  63288    18%  
-    Number used as Logic:             11302  out of  63288    17%  
+ Number of Slice Registers:           12177  out of  126576     9%  
+ Number of Slice LUTs:                11691  out of  63288    18%  
+    Number used as Logic:             11266  out of  63288    17%  
     Number used as Memory:              425  out of  15616     2%  
        Number used as RAM:               72
        Number used as SRL:              353
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  16800
-   Number with an unused Flip Flop:    4612  out of  16800    27%  
-   Number with an unused LUT:          5073  out of  16800    30%  
-   Number of fully used LUT-FF pairs:  7115  out of  16800    42%  
+ Number of LUT Flip Flop pairs used:  16763
+   Number with an unused Flip Flop:    4586  out of  16763    27%  
+   Number with an unused LUT:          5072  out of  16763    30%  
+   Number of fully used LUT-FF pairs:  7105  out of  16763    42%  
    Number of unique control sets:       883
 
 IO Utilization: 
@@ -3170,7 +3184,7 @@ dcm_v5/pll_base_inst/CLKOUT1                                                    
 BP_EXTCLK_P                                                                              | DCM_SP:CLK180                       | 152   |
 dcm_v5/pll_base_inst/CLKOUT2                                                             | BUFG                                | 3     |
 AD9222_DCO_P                                                                             | IBUFGDS+BUFIO2+BUFG                 | 807   |
-dcm_v5/pll_base_inst/CLKOUT0                                                             | BUFG                                | 7302  |
+dcm_v5/pll_base_inst/CLKOUT0                                                             | BUFG                                | 7291  |
 ETH_RX_CLK                                                                               | IBUFG+BUFG                          | 342   |
 OSC                                                                                      | DCM_SP:CLK0                         | 2     |
 BP_EXTCLK_P                                                                              | DCM_SP:CLKFX                        | 4     |
@@ -3185,48 +3199,48 @@ L1_OUT2_P                                                                       
 DIGITAL_TRIG_OUT_P<0>                                                                    | IBUFDS                              | 1     |
 L1_OUT_P                                                                                 | IBUFDS                              | 1     |
 ETH_TX_CLK                                                                               | IBUFG+BUFGMUX                       | 278   |
-rst_read_DRS_DTAP[0]_AND_851_o(rst_read_DRS_DTAP[0]_AND_851_o1:O)                        | NONE(*)(drs_dtapbuf_0_LDC)          | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[15]_AND_819_o(rst_read_TRIGGER_FREQ_OFFSET[15]_AND_819_o1:O)| NONE(*)(trig_offset_reg_15_LDC)     | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[14]_AND_821_o(rst_read_TRIGGER_FREQ_OFFSET[14]_AND_821_o1:O)| NONE(*)(trig_offset_reg_14_LDC)     | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[11]_AND_827_o(rst_read_TRIGGER_FREQ_OFFSET[11]_AND_827_o1:O)| NONE(*)(trig_offset_reg_11_LDC)     | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[13]_AND_823_o(rst_read_TRIGGER_FREQ_OFFSET[13]_AND_823_o1:O)| NONE(*)(trig_offset_reg_13_LDC)     | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[12]_AND_825_o(rst_read_TRIGGER_FREQ_OFFSET[12]_AND_825_o1:O)| NONE(*)(trig_offset_reg_12_LDC)     | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[8]_AND_833_o(rst_read_TRIGGER_FREQ_OFFSET[8]_AND_833_o1:O)  | NONE(*)(trig_offset_reg_8_LDC)      | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[10]_AND_829_o(rst_read_TRIGGER_FREQ_OFFSET[10]_AND_829_o1:O)| NONE(*)(trig_offset_reg_10_LDC)     | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[9]_AND_831_o(rst_read_TRIGGER_FREQ_OFFSET[9]_AND_831_o1:O)  | NONE(*)(trig_offset_reg_9_LDC)      | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[5]_AND_839_o(rst_read_TRIGGER_FREQ_OFFSET[5]_AND_839_o1:O)  | NONE(*)(trig_offset_reg_5_LDC)      | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[7]_AND_835_o(rst_read_TRIGGER_FREQ_OFFSET[7]_AND_835_o1:O)  | NONE(*)(trig_offset_reg_7_LDC)      | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[6]_AND_837_o(rst_read_TRIGGER_FREQ_OFFSET[6]_AND_837_o1:O)  | NONE(*)(trig_offset_reg_6_LDC)      | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[4]_AND_841_o(rst_read_TRIGGER_FREQ_OFFSET[4]_AND_841_o1:O)  | NONE(*)(trig_offset_reg_4_LDC)      | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[3]_AND_843_o(rst_read_TRIGGER_FREQ_OFFSET[3]_AND_843_o1:O)  | NONE(*)(trig_offset_reg_3_LDC)      | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[2]_AND_845_o(rst_read_TRIGGER_FREQ_OFFSET[2]_AND_845_o1:O)  | NONE(*)(trig_offset_reg_2_LDC)      | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[1]_AND_847_o(rst_read_TRIGGER_FREQ_OFFSET[1]_AND_847_o1:O)  | NONE(*)(trig_offset_reg_1_LDC)      | 1     |
-rst_DRS_SAMP_FREQ[7]_AND_787_o(rst_DRS_SAMP_FREQ[7]_AND_787_o1:O)                        | NONE(*)(drs_sampfreq_reg_7_LDC)     | 1     |
-rst_DRS_SAMP_FREQ[6]_AND_789_o(rst_DRS_SAMP_FREQ[6]_AND_789_o1:O)                        | NONE(*)(drs_sampfreq_reg_6_LDC)     | 1     |
-rst_DRS_SAMP_FREQ[3]_AND_795_o(rst_DRS_SAMP_FREQ[3]_AND_795_o1:O)                        | NONE(*)(drs_sampfreq_reg_3_LDC)     | 1     |
-rst_DRS_SAMP_FREQ[5]_AND_791_o(rst_DRS_SAMP_FREQ[5]_AND_791_o1:O)                        | NONE(*)(drs_sampfreq_reg_5_LDC)     | 1     |
-rst_DRS_SAMP_FREQ[4]_AND_793_o(rst_DRS_SAMP_FREQ[4]_AND_793_o1:O)                        | NONE(*)(drs_sampfreq_reg_4_LDC)     | 1     |
-rst_DRS_SAMP_FREQ[0]_AND_801_o(rst_DRS_SAMP_FREQ[0]_AND_801_o1:O)                        | NONE(*)(drs_sampfreq_reg_0_LDC)     | 1     |
-rst_DRS_SAMP_FREQ[2]_AND_797_o(rst_DRS_SAMP_FREQ[2]_AND_797_o1:O)                        | NONE(*)(drs_sampfreq_reg_2_LDC)     | 1     |
-rst_DRS_SAMP_FREQ[1]_AND_799_o(rst_DRS_SAMP_FREQ[1]_AND_799_o1:O)                        | NONE(*)(drs_sampfreq_reg_1_LDC)     | 1     |
-rst_refclk_DRS_SAMP_FREQ[7]_AND_803_o(rst_refclk_DRS_SAMP_FREQ[7]_AND_803_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_7_LDC) | 1     |
-rst_refclk_DRS_SAMP_FREQ[4]_AND_809_o(rst_refclk_DRS_SAMP_FREQ[4]_AND_809_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_4_LDC) | 1     |
-rst_refclk_DRS_SAMP_FREQ[6]_AND_805_o(rst_refclk_DRS_SAMP_FREQ[6]_AND_805_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_6_LDC) | 1     |
-rst_refclk_DRS_SAMP_FREQ[5]_AND_807_o(rst_refclk_DRS_SAMP_FREQ[5]_AND_807_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_5_LDC) | 1     |
-rst_refclk_DRS_SAMP_FREQ[3]_AND_811_o(rst_refclk_DRS_SAMP_FREQ[3]_AND_811_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_3_LDC) | 1     |
-rst_refclk_DRS_SAMP_FREQ[2]_AND_813_o(rst_refclk_DRS_SAMP_FREQ[2]_AND_813_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_2_LDC) | 1     |
-rst_refclk_DRS_SAMP_FREQ[1]_AND_815_o(rst_refclk_DRS_SAMP_FREQ[1]_AND_815_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_1_LDC) | 1     |
-rst_refclk_DRS_SAMP_FREQ[0]_AND_817_o(rst_refclk_DRS_SAMP_FREQ[0]_AND_817_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_0_LDC) | 1     |
-rst_read_TRIGGER_FREQ_OFFSET[0]_AND_849_o(rst_read_TRIGGER_FREQ_OFFSET[0]_AND_849_o1:O)  | NONE(*)(trig_offset_reg_0_LDC)      | 1     |
-rst_read_drs_cfifo_progfull_AND_855_o(rst_read_drs_cfifo_progfull_AND_855_o1:O)          | NONE(*)(drs_cfifo_progfull_ir_LDC)  | 1     |
-rst_read_drs_dfifo_progfull[0]_AND_871_o(rst_read_drs_dfifo_progfull[0]_AND_871_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_0_LDC)| 1     |
-rst_read_drs_dfifo_progfull[3]_AND_865_o(rst_read_drs_dfifo_progfull[3]_AND_865_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_3_LDC)| 1     |
-rst_read_drs_dfifo_progfull[1]_AND_869_o(rst_read_drs_dfifo_progfull[1]_AND_869_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_1_LDC)| 1     |
-rst_read_drs_dfifo_progfull[2]_AND_867_o(rst_read_drs_dfifo_progfull[2]_AND_867_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_2_LDC)| 1     |
-rst_read_drs_dfifo_progfull[6]_AND_859_o(rst_read_drs_dfifo_progfull[6]_AND_859_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_6_LDC)| 1     |
-rst_read_drs_dfifo_progfull[4]_AND_863_o(rst_read_drs_dfifo_progfull[4]_AND_863_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_4_LDC)| 1     |
-rst_read_drs_dfifo_progfull[5]_AND_861_o(rst_read_drs_dfifo_progfull[5]_AND_861_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_5_LDC)| 1     |
-rst_read_drs_dfifo_progfull[7]_AND_857_o(rst_read_drs_dfifo_progfull[7]_AND_857_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_7_LDC)| 1     |
+rst_read_DRS_DTAP[0]_AND_846_o(rst_read_DRS_DTAP[0]_AND_846_o1:O)                        | NONE(*)(drs_dtapbuf_0_LDC)          | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[15]_AND_814_o(rst_read_TRIGGER_FREQ_OFFSET[15]_AND_814_o1:O)| NONE(*)(trig_offset_reg_15_LDC)     | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[14]_AND_816_o(rst_read_TRIGGER_FREQ_OFFSET[14]_AND_816_o1:O)| NONE(*)(trig_offset_reg_14_LDC)     | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[11]_AND_822_o(rst_read_TRIGGER_FREQ_OFFSET[11]_AND_822_o1:O)| NONE(*)(trig_offset_reg_11_LDC)     | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[13]_AND_818_o(rst_read_TRIGGER_FREQ_OFFSET[13]_AND_818_o1:O)| NONE(*)(trig_offset_reg_13_LDC)     | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[12]_AND_820_o(rst_read_TRIGGER_FREQ_OFFSET[12]_AND_820_o1:O)| NONE(*)(trig_offset_reg_12_LDC)     | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[8]_AND_828_o(rst_read_TRIGGER_FREQ_OFFSET[8]_AND_828_o1:O)  | NONE(*)(trig_offset_reg_8_LDC)      | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[10]_AND_824_o(rst_read_TRIGGER_FREQ_OFFSET[10]_AND_824_o1:O)| NONE(*)(trig_offset_reg_10_LDC)     | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[9]_AND_826_o(rst_read_TRIGGER_FREQ_OFFSET[9]_AND_826_o1:O)  | NONE(*)(trig_offset_reg_9_LDC)      | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[5]_AND_834_o(rst_read_TRIGGER_FREQ_OFFSET[5]_AND_834_o1:O)  | NONE(*)(trig_offset_reg_5_LDC)      | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[7]_AND_830_o(rst_read_TRIGGER_FREQ_OFFSET[7]_AND_830_o1:O)  | NONE(*)(trig_offset_reg_7_LDC)      | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[6]_AND_832_o(rst_read_TRIGGER_FREQ_OFFSET[6]_AND_832_o1:O)  | NONE(*)(trig_offset_reg_6_LDC)      | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[4]_AND_836_o(rst_read_TRIGGER_FREQ_OFFSET[4]_AND_836_o1:O)  | NONE(*)(trig_offset_reg_4_LDC)      | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[3]_AND_838_o(rst_read_TRIGGER_FREQ_OFFSET[3]_AND_838_o1:O)  | NONE(*)(trig_offset_reg_3_LDC)      | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[2]_AND_840_o(rst_read_TRIGGER_FREQ_OFFSET[2]_AND_840_o1:O)  | NONE(*)(trig_offset_reg_2_LDC)      | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[1]_AND_842_o(rst_read_TRIGGER_FREQ_OFFSET[1]_AND_842_o1:O)  | NONE(*)(trig_offset_reg_1_LDC)      | 1     |
+rst_DRS_SAMP_FREQ[7]_AND_782_o(rst_DRS_SAMP_FREQ[7]_AND_782_o1:O)                        | NONE(*)(drs_sampfreq_reg_7_LDC)     | 1     |
+rst_DRS_SAMP_FREQ[6]_AND_784_o(rst_DRS_SAMP_FREQ[6]_AND_784_o1:O)                        | NONE(*)(drs_sampfreq_reg_6_LDC)     | 1     |
+rst_DRS_SAMP_FREQ[3]_AND_790_o(rst_DRS_SAMP_FREQ[3]_AND_790_o1:O)                        | NONE(*)(drs_sampfreq_reg_3_LDC)     | 1     |
+rst_DRS_SAMP_FREQ[5]_AND_786_o(rst_DRS_SAMP_FREQ[5]_AND_786_o1:O)                        | NONE(*)(drs_sampfreq_reg_5_LDC)     | 1     |
+rst_DRS_SAMP_FREQ[4]_AND_788_o(rst_DRS_SAMP_FREQ[4]_AND_788_o1:O)                        | NONE(*)(drs_sampfreq_reg_4_LDC)     | 1     |
+rst_DRS_SAMP_FREQ[0]_AND_796_o(rst_DRS_SAMP_FREQ[0]_AND_796_o1:O)                        | NONE(*)(drs_sampfreq_reg_0_LDC)     | 1     |
+rst_DRS_SAMP_FREQ[2]_AND_792_o(rst_DRS_SAMP_FREQ[2]_AND_792_o1:O)                        | NONE(*)(drs_sampfreq_reg_2_LDC)     | 1     |
+rst_DRS_SAMP_FREQ[1]_AND_794_o(rst_DRS_SAMP_FREQ[1]_AND_794_o1:O)                        | NONE(*)(drs_sampfreq_reg_1_LDC)     | 1     |
+rst_refclk_DRS_SAMP_FREQ[7]_AND_798_o(rst_refclk_DRS_SAMP_FREQ[7]_AND_798_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_7_LDC) | 1     |
+rst_refclk_DRS_SAMP_FREQ[4]_AND_804_o(rst_refclk_DRS_SAMP_FREQ[4]_AND_804_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_4_LDC) | 1     |
+rst_refclk_DRS_SAMP_FREQ[6]_AND_800_o(rst_refclk_DRS_SAMP_FREQ[6]_AND_800_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_6_LDC) | 1     |
+rst_refclk_DRS_SAMP_FREQ[5]_AND_802_o(rst_refclk_DRS_SAMP_FREQ[5]_AND_802_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_5_LDC) | 1     |
+rst_refclk_DRS_SAMP_FREQ[3]_AND_806_o(rst_refclk_DRS_SAMP_FREQ[3]_AND_806_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_3_LDC) | 1     |
+rst_refclk_DRS_SAMP_FREQ[2]_AND_808_o(rst_refclk_DRS_SAMP_FREQ[2]_AND_808_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_2_LDC) | 1     |
+rst_refclk_DRS_SAMP_FREQ[1]_AND_810_o(rst_refclk_DRS_SAMP_FREQ[1]_AND_810_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_1_LDC) | 1     |
+rst_refclk_DRS_SAMP_FREQ[0]_AND_812_o(rst_refclk_DRS_SAMP_FREQ[0]_AND_812_o1:O)          | NONE(*)(drs_sampfreq_TenMreg_0_LDC) | 1     |
+rst_read_TRIGGER_FREQ_OFFSET[0]_AND_844_o(rst_read_TRIGGER_FREQ_OFFSET[0]_AND_844_o1:O)  | NONE(*)(trig_offset_reg_0_LDC)      | 1     |
+rst_read_drs_cfifo_progfull_AND_850_o(rst_read_drs_cfifo_progfull_AND_850_o1:O)          | NONE(*)(drs_cfifo_progfull_ir_LDC)  | 1     |
+rst_read_drs_dfifo_progfull[0]_AND_866_o(rst_read_drs_dfifo_progfull[0]_AND_866_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_0_LDC)| 1     |
+rst_read_drs_dfifo_progfull[3]_AND_860_o(rst_read_drs_dfifo_progfull[3]_AND_860_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_3_LDC)| 1     |
+rst_read_drs_dfifo_progfull[1]_AND_864_o(rst_read_drs_dfifo_progfull[1]_AND_864_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_1_LDC)| 1     |
+rst_read_drs_dfifo_progfull[2]_AND_862_o(rst_read_drs_dfifo_progfull[2]_AND_862_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_2_LDC)| 1     |
+rst_read_drs_dfifo_progfull[6]_AND_854_o(rst_read_drs_dfifo_progfull[6]_AND_854_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_6_LDC)| 1     |
+rst_read_drs_dfifo_progfull[4]_AND_858_o(rst_read_drs_dfifo_progfull[4]_AND_858_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_4_LDC)| 1     |
+rst_read_drs_dfifo_progfull[5]_AND_856_o(rst_read_drs_dfifo_progfull[5]_AND_856_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_5_LDC)| 1     |
+rst_read_drs_dfifo_progfull[7]_AND_852_o(rst_read_drs_dfifo_progfull[7]_AND_852_o1:O)    | NONE(*)(drs_dfifo_progfull_ir_7_LDC)| 1     |
 -----------------------------------------------------------------------------------------+-------------------------------------+-------+
 (*) These 43 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -3360,7 +3374,7 @@ Delay:               2.885ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'dcm_v5/pll_base_inst/CLKOUT0'
   Clock period: 5.769ns (frequency: 173.342MHz)
-  Total number of paths / destination ports: 142952 / 15347
+  Total number of paths / destination ports: 141321 / 15325
 -------------------------------------------------------------------------
 Delay:               5.769ns (Levels of Logic = 5)
   Source:            analog_trigger/dtrig_ir_2 (FF)
@@ -3539,7 +3553,7 @@ Offset:              6.220ns (Levels of Logic = 4)
      IBUF:I->O             1   1.222   0.944  DRS_PLLLCK_1_IBUF (DRS_PLLLCK_1_IBUF)
      LUT6:I0->O            1   0.203   0.944  DRS_PLLLCK[7]_PWR_1_o_equal_121_o<7>1 (DRS_PLLLCK[7]_PWR_1_o_equal_121_o<7>)
      LUT6:I0->O           13   0.203   1.297  DRS_PLLLCK[7]_PWR_1_o_equal_121_o<7>3 (DRS_PLLLCK[7]_PWR_1_o_equal_121_o)
-     LUT6:I0->O           11   0.203   0.882  drs_state__n2143_inv4 (_n2143_inv)
+     LUT6:I0->O           11   0.203   0.882  drs_state__n2136_inv4 (_n2136_inv)
      FDCE:CE                   0.322          drs_c_0
     ----------------------------------------
     Total                      6.220ns (2.153ns logic, 4.067ns route)
@@ -3633,20 +3647,20 @@ Offset:              1.903ns (Levels of Logic = 2)
                                        (69.6% logic, 30.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_read_DRS_DTAP[0]_AND_851_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_read_DRS_DTAP[0]_AND_846_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              3.222ns (Levels of Logic = 2)
   Source:            DRS_DTAP<0> (PAD)
   Destination:       drs_dtapbuf_0_LDC (LATCH)
-  Destination Clock: rst_read_DRS_DTAP[0]_AND_851_o falling
+  Destination Clock: rst_read_DRS_DTAP[0]_AND_846_o falling
 
   Data Path: DRS_DTAP<0> to drs_dtapbuf_0_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             5   1.222   0.715  DRS_DTAP_0_IBUF (DRS_DTAP_0_IBUF)
-     LUT2:I1->O            3   0.205   0.650  rst_read_DRS_DTAP[0]_AND_852_o1 (rst_read_DRS_DTAP[0]_AND_852_o)
+     LUT2:I1->O            3   0.205   0.650  rst_read_DRS_DTAP[0]_AND_847_o1 (rst_read_DRS_DTAP[0]_AND_847_o)
      LDC:CLR                   0.430          drs_dtapbuf_0_LDC
     ----------------------------------------
     Total                      3.222ns (1.857ns logic, 1.365ns route)
@@ -3798,15 +3812,15 @@ Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 BP_EXTCLK_P                          |    5.383|         |         |         |
 BP_TIMEPPS_P                         |    4.222|         |         |         |
 dcm_v5/pll_base_inst/CLKOUT0         |    3.564|         |         |         |
-dcm_v5/pll_base_inst/CLKOUT1         |    3.245|         |         |         |
-rst_refclk_DRS_SAMP_FREQ[0]_AND_817_o|         |    4.418|         |         |
-rst_refclk_DRS_SAMP_FREQ[1]_AND_815_o|         |    4.958|         |         |
-rst_refclk_DRS_SAMP_FREQ[2]_AND_813_o|         |    4.401|         |         |
-rst_refclk_DRS_SAMP_FREQ[3]_AND_811_o|         |    5.060|         |         |
-rst_refclk_DRS_SAMP_FREQ[4]_AND_809_o|         |    5.288|         |         |
-rst_refclk_DRS_SAMP_FREQ[5]_AND_807_o|         |    5.402|         |         |
-rst_refclk_DRS_SAMP_FREQ[6]_AND_805_o|         |    5.186|         |         |
-rst_refclk_DRS_SAMP_FREQ[7]_AND_803_o|         |    5.060|         |         |
+dcm_v5/pll_base_inst/CLKOUT1         |    3.243|         |         |         |
+rst_refclk_DRS_SAMP_FREQ[0]_AND_812_o|         |    4.418|         |         |
+rst_refclk_DRS_SAMP_FREQ[1]_AND_810_o|         |    4.958|         |         |
+rst_refclk_DRS_SAMP_FREQ[2]_AND_808_o|         |    4.401|         |         |
+rst_refclk_DRS_SAMP_FREQ[3]_AND_806_o|         |    5.060|         |         |
+rst_refclk_DRS_SAMP_FREQ[4]_AND_804_o|         |    5.288|         |         |
+rst_refclk_DRS_SAMP_FREQ[5]_AND_802_o|         |    5.402|         |         |
+rst_refclk_DRS_SAMP_FREQ[6]_AND_800_o|         |    5.186|         |         |
+rst_refclk_DRS_SAMP_FREQ[7]_AND_798_o|         |    5.060|         |         |
 -------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock BP_TIMEPPS_P
@@ -3939,23 +3953,23 @@ TRGL1_P                                   |    1.128|         |         |       
 dcm_v5/pll_base_inst/CLKOUT0              |    5.769|         |         |         |
 dcm_v5/pll_base_inst/CLKOUT1              |    5.588|         |         |         |
 drs_trig                                  |    1.334|         |         |         |
-rst_read_DRS_DTAP[0]_AND_851_o            |         |    4.001|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[0]_AND_849_o |         |    5.412|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[10]_AND_829_o|         |    5.457|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[11]_AND_827_o|         |    5.583|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[12]_AND_825_o|         |    5.336|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[13]_AND_823_o|         |    5.438|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[14]_AND_821_o|         |    5.564|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[15]_AND_819_o|         |    4.529|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[1]_AND_847_o |         |    5.514|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[2]_AND_845_o |         |    5.640|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[3]_AND_843_o |         |    5.393|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[4]_AND_841_o |         |    5.495|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[5]_AND_839_o |         |    5.621|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[6]_AND_837_o |         |    5.374|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[7]_AND_835_o |         |    5.476|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[8]_AND_833_o |         |    5.602|         |         |
-rst_read_TRIGGER_FREQ_OFFSET[9]_AND_831_o |         |    5.355|         |         |
+rst_read_DRS_DTAP[0]_AND_846_o            |         |    4.001|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[0]_AND_844_o |         |    5.412|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[10]_AND_824_o|         |    5.457|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[11]_AND_822_o|         |    5.583|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[12]_AND_820_o|         |    5.336|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[13]_AND_818_o|         |    5.438|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[14]_AND_816_o|         |    5.564|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[15]_AND_814_o|         |    4.529|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[1]_AND_842_o |         |    5.514|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[2]_AND_840_o |         |    5.640|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[3]_AND_838_o |         |    5.393|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[4]_AND_836_o |         |    5.495|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[5]_AND_834_o |         |    5.621|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[6]_AND_832_o |         |    5.374|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[7]_AND_830_o |         |    5.476|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[8]_AND_828_o |         |    5.602|         |         |
+rst_read_TRIGGER_FREQ_OFFSET[9]_AND_826_o |         |    5.355|         |         |
 ------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock dcm_v5/pll_base_inst/CLKOUT1
@@ -3966,27 +3980,27 @@ Source Clock                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall
 AD9222_DCO_P                            |    1.807|         |         |         |
 BP_EXTCLK_P                             |    1.165|         |         |         |
 BP_TIMEPPS_P                            |    1.165|         |         |         |
-dcm_v5/pll_base_inst/CLKOUT0            |    6.863|         |         |         |
+dcm_v5/pll_base_inst/CLKOUT0            |    6.849|         |         |         |
 dcm_v5/pll_base_inst/CLKOUT1            |    6.849|         |         |         |
 dcm_v5/pll_base_inst/CLKOUT2            |    1.165|         |         |         |
 drs_trig                                |    1.165|         |         |         |
-rst_DRS_SAMP_FREQ[0]_AND_801_o          |         |    4.418|         |         |
-rst_DRS_SAMP_FREQ[1]_AND_799_o          |         |    4.958|         |         |
-rst_DRS_SAMP_FREQ[2]_AND_797_o          |         |    4.401|         |         |
-rst_DRS_SAMP_FREQ[3]_AND_795_o          |         |    5.060|         |         |
-rst_DRS_SAMP_FREQ[4]_AND_793_o          |         |    5.288|         |         |
-rst_DRS_SAMP_FREQ[5]_AND_791_o          |         |    5.402|         |         |
-rst_DRS_SAMP_FREQ[6]_AND_789_o          |         |    5.186|         |         |
-rst_DRS_SAMP_FREQ[7]_AND_787_o          |         |    5.060|         |         |
-rst_read_drs_cfifo_progfull_AND_855_o   |         |    5.828|         |         |
-rst_read_drs_dfifo_progfull[0]_AND_871_o|         |    4.804|         |         |
-rst_read_drs_dfifo_progfull[1]_AND_869_o|         |    4.930|         |         |
-rst_read_drs_dfifo_progfull[2]_AND_867_o|         |    5.044|         |         |
-rst_read_drs_dfifo_progfull[3]_AND_865_o|         |    4.947|         |         |
-rst_read_drs_dfifo_progfull[4]_AND_863_o|         |    5.486|         |         |
-rst_read_drs_dfifo_progfull[5]_AND_861_o|         |    5.589|         |         |
-rst_read_drs_dfifo_progfull[6]_AND_859_o|         |    5.714|         |         |
-rst_read_drs_dfifo_progfull[7]_AND_857_o|         |    5.732|         |         |
+rst_DRS_SAMP_FREQ[0]_AND_796_o          |         |    4.418|         |         |
+rst_DRS_SAMP_FREQ[1]_AND_794_o          |         |    4.958|         |         |
+rst_DRS_SAMP_FREQ[2]_AND_792_o          |         |    4.401|         |         |
+rst_DRS_SAMP_FREQ[3]_AND_790_o          |         |    5.060|         |         |
+rst_DRS_SAMP_FREQ[4]_AND_788_o          |         |    5.288|         |         |
+rst_DRS_SAMP_FREQ[5]_AND_786_o          |         |    5.402|         |         |
+rst_DRS_SAMP_FREQ[6]_AND_784_o          |         |    5.186|         |         |
+rst_DRS_SAMP_FREQ[7]_AND_782_o          |         |    5.060|         |         |
+rst_read_drs_cfifo_progfull_AND_850_o   |         |    5.828|         |         |
+rst_read_drs_dfifo_progfull[0]_AND_866_o|         |    4.804|         |         |
+rst_read_drs_dfifo_progfull[1]_AND_864_o|         |    4.930|         |         |
+rst_read_drs_dfifo_progfull[2]_AND_862_o|         |    5.044|         |         |
+rst_read_drs_dfifo_progfull[3]_AND_860_o|         |    4.947|         |         |
+rst_read_drs_dfifo_progfull[4]_AND_858_o|         |    5.486|         |         |
+rst_read_drs_dfifo_progfull[5]_AND_856_o|         |    5.589|         |         |
+rst_read_drs_dfifo_progfull[6]_AND_854_o|         |    5.714|         |         |
+rst_read_drs_dfifo_progfull[7]_AND_852_o|         |    5.732|         |         |
 ----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock dcm_v5/pll_base_inst/CLKOUT2
@@ -4007,7 +4021,7 @@ dcm_v5/pll_base_inst/CLKOUT1|    3.437|         |         |         |
 drs_trig                    |    2.293|         |         |         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_DRS_SAMP_FREQ[0]_AND_801_o
+Clock to Setup on destination clock rst_DRS_SAMP_FREQ[0]_AND_796_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4016,7 +4030,7 @@ dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.506|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_DRS_SAMP_FREQ[1]_AND_799_o
+Clock to Setup on destination clock rst_DRS_SAMP_FREQ[1]_AND_794_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4025,7 +4039,7 @@ dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.506|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_DRS_SAMP_FREQ[2]_AND_797_o
+Clock to Setup on destination clock rst_DRS_SAMP_FREQ[2]_AND_792_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4034,7 +4048,7 @@ dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.506|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_DRS_SAMP_FREQ[3]_AND_795_o
+Clock to Setup on destination clock rst_DRS_SAMP_FREQ[3]_AND_790_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4043,7 +4057,7 @@ dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.506|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_DRS_SAMP_FREQ[4]_AND_793_o
+Clock to Setup on destination clock rst_DRS_SAMP_FREQ[4]_AND_788_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4052,7 +4066,7 @@ dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.506|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_DRS_SAMP_FREQ[5]_AND_791_o
+Clock to Setup on destination clock rst_DRS_SAMP_FREQ[5]_AND_786_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4061,7 +4075,7 @@ dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.506|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_DRS_SAMP_FREQ[6]_AND_789_o
+Clock to Setup on destination clock rst_DRS_SAMP_FREQ[6]_AND_784_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4070,7 +4084,7 @@ dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.506|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_DRS_SAMP_FREQ[7]_AND_787_o
+Clock to Setup on destination clock rst_DRS_SAMP_FREQ[7]_AND_782_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4079,231 +4093,231 @@ dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.506|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_DRS_DTAP[0]_AND_851_o
+Clock to Setup on destination clock rst_read_DRS_DTAP[0]_AND_846_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.203|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.201|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[0]_AND_849_o
-----------------------------+---------+---------+---------+---------+
-                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------+---------+---------+---------+---------+
-dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
-----------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[10]_AND_829_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[0]_AND_844_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[11]_AND_827_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[10]_AND_824_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[12]_AND_825_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[11]_AND_822_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[13]_AND_823_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[12]_AND_820_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[14]_AND_821_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[13]_AND_818_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[15]_AND_819_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[14]_AND_816_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[1]_AND_847_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[15]_AND_814_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[2]_AND_845_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[1]_AND_842_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[3]_AND_843_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[2]_AND_840_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[4]_AND_841_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[3]_AND_838_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[5]_AND_839_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[4]_AND_836_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[6]_AND_837_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[5]_AND_834_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[7]_AND_835_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[6]_AND_832_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[8]_AND_833_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[7]_AND_830_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[9]_AND_831_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[8]_AND_828_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_drs_cfifo_progfull_AND_855_o
+Clock to Setup on destination clock rst_read_TRIGGER_FREQ_OFFSET[9]_AND_826_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.413|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_drs_dfifo_progfull[0]_AND_871_o
+Clock to Setup on destination clock rst_read_drs_cfifo_progfull_AND_850_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_drs_dfifo_progfull[1]_AND_869_o
+Clock to Setup on destination clock rst_read_drs_dfifo_progfull[0]_AND_866_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_drs_dfifo_progfull[2]_AND_867_o
+Clock to Setup on destination clock rst_read_drs_dfifo_progfull[1]_AND_864_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_drs_dfifo_progfull[3]_AND_865_o
+Clock to Setup on destination clock rst_read_drs_dfifo_progfull[2]_AND_862_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_drs_dfifo_progfull[4]_AND_863_o
+Clock to Setup on destination clock rst_read_drs_dfifo_progfull[3]_AND_860_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_drs_dfifo_progfull[5]_AND_861_o
+Clock to Setup on destination clock rst_read_drs_dfifo_progfull[4]_AND_858_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_drs_dfifo_progfull[6]_AND_859_o
+Clock to Setup on destination clock rst_read_drs_dfifo_progfull[5]_AND_856_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_read_drs_dfifo_progfull[7]_AND_857_o
+Clock to Setup on destination clock rst_read_drs_dfifo_progfull[6]_AND_854_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.169|         |
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[0]_AND_817_o
+Clock to Setup on destination clock rst_read_drs_dfifo_progfull[7]_AND_852_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+dcm_v5/pll_base_inst/CLKOUT1|         |         |    4.167|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[0]_AND_812_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4312,7 +4326,7 @@ BP_TIMEPPS_P                |         |         |    3.007|         |
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[1]_AND_815_o
+Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[1]_AND_810_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4321,7 +4335,7 @@ BP_TIMEPPS_P                |         |         |    3.007|         |
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[2]_AND_813_o
+Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[2]_AND_808_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4330,7 +4344,7 @@ BP_TIMEPPS_P                |         |         |    3.007|         |
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[3]_AND_811_o
+Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[3]_AND_806_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4339,7 +4353,7 @@ BP_TIMEPPS_P                |         |         |    3.007|         |
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[4]_AND_809_o
+Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[4]_AND_804_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4348,7 +4362,7 @@ BP_TIMEPPS_P                |         |         |    3.007|         |
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[5]_AND_807_o
+Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[5]_AND_802_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4357,7 +4371,7 @@ BP_TIMEPPS_P                |         |         |    3.007|         |
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[6]_AND_805_o
+Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[6]_AND_800_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4366,7 +4380,7 @@ BP_TIMEPPS_P                |         |         |    3.007|         |
 dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 ----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[7]_AND_803_o
+Clock to Setup on destination clock rst_refclk_DRS_SAMP_FREQ[7]_AND_798_o
 ----------------------------+---------+---------+---------+---------+
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -4378,14 +4392,14 @@ dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 110.00 secs
-Total CPU time to Xst completion: 109.42 secs
+Total REAL time to Xst completion: 103.00 secs
+Total CPU time to Xst completion: 102.92 secs
  
 --> 
 
-Total memory usage is 420676 kilobytes
+Total memory usage is 420616 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  325 (   0 filtered)
+Number of warnings :  336 (   0 filtered)
 Number of infos    :  180 (   0 filtered)
 
