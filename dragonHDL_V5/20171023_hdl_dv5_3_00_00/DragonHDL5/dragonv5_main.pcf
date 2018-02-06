@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Nov 17 12:37:42 2017
+// Written by: Map P.20131013 on Tue Feb 06 17:05:12 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -7375,26 +7375,34 @@ TIMEGRP dcm_v5_clkout0 = BEL "drs_dwrite_c_0" BEL "drs_dwrite_c_1" BEL
         "spi_if_drs/irAddr_5" BEL "spi_if_drs/irAddr_4" BEL
         "spi_if_drs/irAddr_3" BEL "spi_if_drs/irAddr_2" BEL
         "spi_if_drs/irAddr_1" BEL "spi_if_drs/irAddr_0" BEL
+        "data_formatter/fmt_fifoc_FSM_FFd1" BEL
         "data_formatter/fmt_fifoc_FSM_FFd2" BEL
         "data_formatter/fmt_fifoc_FSM_FFd3" BEL
-        "data_formatter/fmt_fifoc_FSM_FFd1" BEL
-        "data_formatter/fmt_fifoc_FSM_FFd4" BEL "data_formatter/dfifo_rden_7"
-        BEL "data_formatter/dfifo_rden_6" BEL "data_formatter/dfifo_rden_5"
-        BEL "data_formatter/dfifo_rden_4" BEL "data_formatter/dfifo_rden_3"
-        BEL "data_formatter/dfifo_rden_2" BEL "data_formatter/dfifo_rden_1"
-        BEL "data_formatter/dfifo_rden_0" BEL "data_formatter/cfifo_rden" BEL
+        "data_formatter/fmt_fifoc_FSM_FFd4" BEL "data_formatter/fmt_c_15" BEL
+        "data_formatter/fmt_c_14" BEL "data_formatter/fmt_c_13" BEL
+        "data_formatter/fmt_c_12" BEL "data_formatter/fmt_c_11" BEL
+        "data_formatter/fmt_c_10" BEL "data_formatter/fmt_c_9" BEL
+        "data_formatter/fmt_c_8" BEL "data_formatter/fmt_c_7" BEL
+        "data_formatter/fmt_c_6" BEL "data_formatter/fmt_c_5" BEL
+        "data_formatter/fmt_c_4" BEL "data_formatter/fmt_c_3" BEL
+        "data_formatter/fmt_c_2" BEL "data_formatter/fmt_c_1" BEL
+        "data_formatter/fmt_c_0" BEL "data_formatter/cfifo_rden" BEL
+        "data_formatter/dfifo_rden_7" BEL "data_formatter/dfifo_rden_6" BEL
+        "data_formatter/dfifo_rden_5" BEL "data_formatter/dfifo_rden_4" BEL
+        "data_formatter/dfifo_rden_3" BEL "data_formatter/dfifo_rden_2" BEL
+        "data_formatter/dfifo_rden_1" BEL "data_formatter/dfifo_rden_0" BEL
         "data_formatter/sfifo_din_7" BEL "data_formatter/sfifo_din_6" BEL
         "data_formatter/sfifo_din_5" BEL "data_formatter/sfifo_din_4" BEL
         "data_formatter/sfifo_din_3" BEL "data_formatter/sfifo_din_2" BEL
         "data_formatter/sfifo_din_1" BEL "data_formatter/sfifo_din_0" BEL
-        "data_formatter/fmt_c_15" BEL "data_formatter/fmt_c_14" BEL
-        "data_formatter/fmt_c_13" BEL "data_formatter/fmt_c_12" BEL
-        "data_formatter/fmt_c_11" BEL "data_formatter/fmt_c_10" BEL
-        "data_formatter/fmt_c_9" BEL "data_formatter/fmt_c_8" BEL
-        "data_formatter/fmt_c_7" BEL "data_formatter/fmt_c_6" BEL
-        "data_formatter/fmt_c_5" BEL "data_formatter/fmt_c_4" BEL
-        "data_formatter/fmt_c_3" BEL "data_formatter/fmt_c_2" BEL
-        "data_formatter/fmt_c_1" BEL "data_formatter/fmt_c_0" BEL
+        "data_formatter/fmt_c2_15" BEL "data_formatter/fmt_c2_14" BEL
+        "data_formatter/fmt_c2_13" BEL "data_formatter/fmt_c2_12" BEL
+        "data_formatter/fmt_c2_11" BEL "data_formatter/fmt_c2_10" BEL
+        "data_formatter/fmt_c2_9" BEL "data_formatter/fmt_c2_8" BEL
+        "data_formatter/fmt_c2_7" BEL "data_formatter/fmt_c2_6" BEL
+        "data_formatter/fmt_c2_5" BEL "data_formatter/fmt_c2_4" BEL
+        "data_formatter/fmt_c2_3" BEL "data_formatter/fmt_c2_2" BEL
+        "data_formatter/fmt_c2_1" BEL "data_formatter/fmt_c2_0" BEL
         "data_formatter/sfifo_wren" BEL "mytimer/msec_66m_check_1" BEL
         "mytimer/msec_66m_check_0" BEL "trig_rst" BEL "drs_trig_self" BEL
         "rbcp_reg/regBe_8" BEL "rbcp_reg/regBe_9" BEL "rbcp_reg/regBe_10" BEL
@@ -7455,29 +7463,28 @@ TIMEGRP dcm_v5_clkout0 = BEL "drs_dwrite_c_0" BEL "drs_dwrite_c_1" BEL
         "rbcp_reg/regBe_199" BEL "rbcp_reg/regBe_201" BEL "rbcp_reg/regBe_202"
         BEL "rbcp_reg/regBe_200" BEL "rbcp_reg/regBe_203" BEL
         "rbcp_reg/regBe_204" BEL "rbcp_reg/regBe_206" BEL "rbcp_reg/regBe_207"
-        BEL "rbcp_reg/regBe_205" BEL "scb/scb_tp_trig" BEL
-        "data_formatter/fmt_c2_0" BEL "RX_SELECT" BEL "rbcp_reg/muxRegAck" BEL
-        "SiTCP/TIMER/pulse1ms" BEL "SiTCP/TIMER/pulse1s" BEL
-        "spi_if_drs/reg_prog_start" BEL "spi_if_drs/bufWe" BEL
-        "spi_if_drs/regCs" BEL "spi_if_drs/sftCs" BEL "drs_dtapbuf_0_C_0" BEL
-        "drs_dtapbuf_0_P_0" BEL "drs_dtapbuf_1_C_1" BEL "drs_dtapbuf_1_P_1"
-        BEL "trig_offset_reg_15_C_15" BEL "trig_offset_reg_15_P_15" BEL
-        "trig_offset_reg_14_C_14" BEL "trig_offset_reg_14_P_14" BEL
-        "trig_offset_reg_11_C_11" BEL "trig_offset_reg_11_P_11" BEL
-        "trig_offset_reg_13_C_13" BEL "trig_offset_reg_13_P_13" BEL
-        "trig_offset_reg_12_C_12" BEL "trig_offset_reg_12_P_12" BEL
-        "trig_offset_reg_8_C_8" BEL "trig_offset_reg_8_P_8" BEL
-        "trig_offset_reg_10_C_10" BEL "trig_offset_reg_10_P_10" BEL
-        "trig_offset_reg_9_C_9" BEL "trig_offset_reg_9_P_9" BEL
-        "trig_offset_reg_5_C_5" BEL "trig_offset_reg_5_P_5" BEL
-        "trig_offset_reg_7_C_7" BEL "trig_offset_reg_7_P_7" BEL
-        "trig_offset_reg_6_C_6" BEL "trig_offset_reg_6_P_6" BEL
-        "trig_offset_reg_4_C_4" BEL "trig_offset_reg_4_P_4" BEL
-        "trig_offset_reg_3_C_3" BEL "trig_offset_reg_3_P_3" BEL
-        "trig_offset_reg_2_C_2" BEL "trig_offset_reg_2_P_2" BEL
-        "trig_offset_reg_1_C_1" BEL "trig_offset_reg_1_P_1" BEL
-        "trig_offset_reg_0_C_0" BEL "trig_offset_reg_0_P_0" PIN
-        "spi_if_drs/RD_BUF/Mram_RAM_pins<22>" PIN
+        BEL "rbcp_reg/regBe_205" BEL "scb/scb_tp_trig" BEL "RX_SELECT" BEL
+        "rbcp_reg/muxRegAck" BEL "SiTCP/TIMER/pulse1ms" BEL
+        "SiTCP/TIMER/pulse1s" BEL "spi_if_drs/reg_prog_start" BEL
+        "spi_if_drs/bufWe" BEL "spi_if_drs/regCs" BEL "spi_if_drs/sftCs" BEL
+        "drs_dtapbuf_0_C_0" BEL "drs_dtapbuf_0_P_0" BEL "drs_dtapbuf_1_C_1"
+        BEL "drs_dtapbuf_1_P_1" BEL "trig_offset_reg_15_C_15" BEL
+        "trig_offset_reg_15_P_15" BEL "trig_offset_reg_14_C_14" BEL
+        "trig_offset_reg_14_P_14" BEL "trig_offset_reg_11_C_11" BEL
+        "trig_offset_reg_11_P_11" BEL "trig_offset_reg_13_C_13" BEL
+        "trig_offset_reg_13_P_13" BEL "trig_offset_reg_12_C_12" BEL
+        "trig_offset_reg_12_P_12" BEL "trig_offset_reg_8_C_8" BEL
+        "trig_offset_reg_8_P_8" BEL "trig_offset_reg_10_C_10" BEL
+        "trig_offset_reg_10_P_10" BEL "trig_offset_reg_9_C_9" BEL
+        "trig_offset_reg_9_P_9" BEL "trig_offset_reg_5_C_5" BEL
+        "trig_offset_reg_5_P_5" BEL "trig_offset_reg_7_C_7" BEL
+        "trig_offset_reg_7_P_7" BEL "trig_offset_reg_6_C_6" BEL
+        "trig_offset_reg_6_P_6" BEL "trig_offset_reg_4_C_4" BEL
+        "trig_offset_reg_4_P_4" BEL "trig_offset_reg_3_C_3" BEL
+        "trig_offset_reg_3_P_3" BEL "trig_offset_reg_2_C_2" BEL
+        "trig_offset_reg_2_P_2" BEL "trig_offset_reg_1_C_1" BEL
+        "trig_offset_reg_1_P_1" BEL "trig_offset_reg_0_C_0" BEL
+        "trig_offset_reg_0_P_0" PIN "spi_if_drs/RD_BUF/Mram_RAM_pins<22>" PIN
         "spi_if_drs/RD_BUF/Mram_RAM_pins<23>" BEL "spi_if_drs/Mshreg_spiWd_7"
         BEL "spi_if_drs/spiWd_7" BEL "spi_if_drs/Mshreg_spiWd_6" BEL
         "spi_if_drs/spiWd_6" BEL "spi_if_drs/Mshreg_spiWd_5" BEL
@@ -13871,15 +13878,15 @@ TS_BP_EXTCLK = PERIOD TIMEGRP "BP_EXTCLK" 100 ns HIGH 50%;
 TS_dcm_gmii_clk0 = PERIOD TIMEGRP "dcm_gmii_clk0" TS_OSC HIGH 50%;
 TS_dcm_v5_clkout1 = PERIOD TIMEGRP "dcm_v5_clkout1" TS_OSC / 0.533333333 HIGH
         50%;
-TS_dcm_v5_clkout0 = PERIOD TIMEGRP "dcm_v5_clkout0" TS_OSC / 1.06666667 HIGH
-        50%;
 TS_dcm_v5_clkout2 = PERIOD TIMEGRP "dcm_v5_clkout2" TS_OSC / 0.266666667 PHASE
         7.5 ns HIGH 50%;
-TS_adc_divclk = PERIOD TIMEGRP "adc_divclk" TS_AD9222_DCO HIGH 50%;
+TS_dcm_v5_clkout0 = PERIOD TIMEGRP "dcm_v5_clkout0" TS_OSC / 1.06666667 HIGH
+        50%;
+TS_adc_ioclk2 = PERIOD TIMEGRP "adc_ioclk2" TS_AD9222_DCO HIGH 50%;
 TS_adc_ioclk = PERIOD TIMEGRP "adc_ioclk" TS_AD9222_DCO HIGH 50%;
+TS_adc_divclk = PERIOD TIMEGRP "adc_divclk" TS_AD9222_DCO HIGH 50%;
 TS_adc_ioclk_inv = PERIOD TIMEGRP "adc_ioclk_inv" TS_AD9222_DCO PHASE 2.5 ns
         HIGH 50%;
-TS_adc_ioclk2 = PERIOD TIMEGRP "adc_ioclk2" TS_AD9222_DCO HIGH 50%;
 TS_adc_ioclk_inv2 = PERIOD TIMEGRP "adc_ioclk_inv2" TS_AD9222_DCO PHASE 2.5 ns
         HIGH 50%;
 TS_dcm_extclk_clk180 = PERIOD TIMEGRP "dcm_extclk_clk180" TS_BP_EXTCLK PHASE

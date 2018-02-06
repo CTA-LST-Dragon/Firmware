@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-11-27T15:29:45</DateModified>
+  <DateModified>2018-02-06T14:14:42</DateModified>
   <ModuleName>dragonv5_main</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/DragonHDL5/iseconfig/dragonv5_main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/DragonHDL5\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/iseconfig/dragonv5_main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5\</ImplementationReportsDirectory>
   <DateInitialized>2017-10-23T18:31:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
