@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Feb 06 22:17:03 2018
+// Written by: Map P.20131013 on Tue Feb 06 23:23:31 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -7377,19 +7377,7 @@ TIMEGRP dcm_v5_clkout0 = BEL "drs_dwrite_c_0" BEL "drs_dwrite_c_1" BEL
         "spi_if_drs/irAddr_1" BEL "spi_if_drs/irAddr_0" BEL
         "data_formatter/fmt_fifoc_FSM_FFd2" BEL
         "data_formatter/fmt_fifoc_FSM_FFd3" BEL
-        "data_formatter/fmt_fifoc_FSM_FFd1" BEL
-        "data_formatter/fmt_fifoc_FSM_FFd4" BEL "data_formatter/fmt_c_4" BEL
-        "data_formatter/fmt_c_3" BEL "data_formatter/fmt_c_2" BEL
-        "data_formatter/fmt_c_1" BEL "data_formatter/fmt_c_0" BEL
-        "data_formatter/dfifo_rden_7" BEL "data_formatter/dfifo_rden_6" BEL
-        "data_formatter/dfifo_rden_5" BEL "data_formatter/dfifo_rden_4" BEL
-        "data_formatter/dfifo_rden_3" BEL "data_formatter/dfifo_rden_2" BEL
-        "data_formatter/dfifo_rden_1" BEL "data_formatter/dfifo_rden_0" BEL
-        "data_formatter/cfifo_rden" BEL "data_formatter/sfifo_din_7" BEL
-        "data_formatter/sfifo_din_6" BEL "data_formatter/sfifo_din_5" BEL
-        "data_formatter/sfifo_din_4" BEL "data_formatter/sfifo_din_3" BEL
-        "data_formatter/sfifo_din_2" BEL "data_formatter/sfifo_din_1" BEL
-        "data_formatter/sfifo_din_0" BEL "data_formatter/fmt_c2_15" BEL
+        "data_formatter/fmt_fifoc_FSM_FFd1" BEL "data_formatter/fmt_c2_15" BEL
         "data_formatter/fmt_c2_14" BEL "data_formatter/fmt_c2_13" BEL
         "data_formatter/fmt_c2_12" BEL "data_formatter/fmt_c2_11" BEL
         "data_formatter/fmt_c2_10" BEL "data_formatter/fmt_c2_9" BEL
@@ -7397,89 +7385,100 @@ TIMEGRP dcm_v5_clkout0 = BEL "drs_dwrite_c_0" BEL "drs_dwrite_c_1" BEL
         "data_formatter/fmt_c2_6" BEL "data_formatter/fmt_c2_5" BEL
         "data_formatter/fmt_c2_4" BEL "data_formatter/fmt_c2_3" BEL
         "data_formatter/fmt_c2_2" BEL "data_formatter/fmt_c2_1" BEL
-        "data_formatter/fmt_c2_0" BEL "data_formatter/sfifo_wren" BEL
-        "mytimer/msec_66m_check_1" BEL "mytimer/msec_66m_check_0" BEL
-        "trig_rst" BEL "drs_trig_self" BEL "rbcp_reg/regBe_8" BEL
-        "rbcp_reg/regBe_9" BEL "rbcp_reg/regBe_10" BEL "rbcp_reg/regBe_12" BEL
-        "rbcp_reg/regBe_13" BEL "rbcp_reg/regBe_11" BEL "rbcp_reg/regBe_14"
-        BEL "rbcp_reg/regBe_15" BEL "rbcp_reg/regBe_17" BEL
-        "rbcp_reg/regBe_18" BEL "rbcp_reg/regBe_16" BEL "rbcp_reg/regBe_19"
-        BEL "rbcp_reg/regBe_20" BEL "rbcp_reg/regBe_22" BEL
-        "rbcp_reg/regBe_23" BEL "rbcp_reg/regBe_21" BEL "rbcp_reg/regBe_24"
-        BEL "rbcp_reg/regBe_25" BEL "rbcp_reg/regBe_27" BEL
-        "rbcp_reg/regBe_28" BEL "rbcp_reg/regBe_26" BEL "rbcp_reg/regBe_29"
-        BEL "rbcp_reg/regBe_30" BEL "rbcp_reg/regBe_33" BEL
-        "rbcp_reg/regBe_34" BEL "rbcp_reg/regBe_32" BEL "rbcp_reg/regBe_35"
-        BEL "rbcp_reg/regBe_36" BEL "rbcp_reg/regBe_38" BEL
-        "rbcp_reg/regBe_39" BEL "rbcp_reg/regBe_37" BEL "rbcp_reg/regBe_54"
-        BEL "rbcp_reg/regBe_55" BEL "rbcp_reg/regBe_57" BEL
-        "rbcp_reg/regBe_58" BEL "rbcp_reg/regBe_56" BEL "rbcp_reg/regBe_59"
-        BEL "rbcp_reg/regBe_60" BEL "rbcp_reg/regBe_62" BEL
-        "rbcp_reg/regBe_63" BEL "rbcp_reg/regBe_61" BEL "rbcp_reg/regBe_64"
-        BEL "rbcp_reg/regBe_65" BEL "rbcp_reg/regBe_67" BEL
-        "rbcp_reg/regBe_68" BEL "rbcp_reg/regBe_66" BEL "rbcp_reg/regBe_69"
-        BEL "rbcp_reg/regBe_70" BEL "rbcp_reg/regBe_72" BEL
-        "rbcp_reg/regBe_73" BEL "rbcp_reg/regBe_71" BEL "rbcp_reg/regBe_80"
-        BEL "rbcp_reg/regBe_81" BEL "rbcp_reg/regBe_86" BEL
-        "rbcp_reg/regBe_87" BEL "rbcp_reg/regBe_82" BEL "rbcp_reg/regBe_88"
-        BEL "rbcp_reg/regBe_92" BEL "rbcp_reg/regBe_94" BEL
-        "rbcp_reg/regBe_95" BEL "rbcp_reg/regBe_93" BEL "rbcp_reg/regBe_96"
-        BEL "rbcp_reg/regBe_97" BEL "rbcp_reg/regBe_99" BEL
-        "rbcp_reg/regBe_100" BEL "rbcp_reg/regBe_98" BEL "rbcp_reg/regBe_105"
-        BEL "rbcp_reg/regBe_106" BEL "rbcp_reg/regBe_108" BEL
-        "rbcp_reg/regBe_109" BEL "rbcp_reg/regBe_107" BEL "rbcp_reg/regBe_111"
-        BEL "rbcp_reg/regBe_112" BEL "rbcp_reg/regBe_110" BEL
-        "rbcp_reg/regBe_114" BEL "rbcp_reg/regBe_115" BEL "rbcp_reg/regBe_113"
-        BEL "rbcp_reg/regBe_116" BEL "rbcp_reg/regBe_117" BEL
-        "rbcp_reg/regBe_119" BEL "rbcp_reg/regBe_120" BEL "rbcp_reg/regBe_118"
-        BEL "rbcp_reg/regBe_121" BEL "rbcp_reg/regBe_122" BEL
-        "rbcp_reg/regBe_129" BEL "rbcp_reg/regBe_130" BEL "rbcp_reg/regBe_128"
-        BEL "rbcp_reg/regBe_131" BEL "rbcp_reg/regBe_132" BEL
-        "rbcp_reg/regBe_134" BEL "rbcp_reg/regBe_135" BEL "rbcp_reg/regBe_133"
-        BEL "rbcp_reg/regBe_136" BEL "rbcp_reg/regBe_137" BEL
-        "rbcp_reg/regBe_139" BEL "rbcp_reg/regBe_140" BEL "rbcp_reg/regBe_138"
-        BEL "rbcp_reg/regBe_141" BEL "rbcp_reg/regBe_142" BEL
-        "rbcp_reg/regBe_144" BEL "rbcp_reg/regBe_145" BEL "rbcp_reg/regBe_143"
-        BEL "rbcp_reg/regBe_146" BEL "rbcp_reg/regBe_147" BEL
-        "rbcp_reg/regBe_149" BEL "rbcp_reg/regBe_150" BEL "rbcp_reg/regBe_148"
-        BEL "rbcp_reg/regBe_151" BEL "rbcp_reg/regBe_152" BEL
-        "rbcp_reg/regBe_154" BEL "rbcp_reg/regBe_155" BEL "rbcp_reg/regBe_153"
-        BEL "rbcp_reg/regBe_156" BEL "rbcp_reg/regBe_157" BEL
-        "rbcp_reg/regBe_160" BEL "rbcp_reg/regBe_161" BEL "rbcp_reg/regBe_158"
-        BEL "rbcp_reg/regBe_162" BEL "rbcp_reg/regBe_163" BEL
-        "rbcp_reg/regBe_165" BEL "rbcp_reg/regBe_166" BEL "rbcp_reg/regBe_164"
-        BEL "rbcp_reg/regBe_167" BEL "rbcp_reg/regBe_168" BEL
-        "rbcp_reg/regBe_170" BEL "rbcp_reg/regBe_171" BEL "rbcp_reg/regBe_169"
-        BEL "rbcp_reg/regBe_172" BEL "rbcp_reg/regBe_173" BEL
-        "rbcp_reg/regBe_175" BEL "rbcp_reg/regBe_176" BEL "rbcp_reg/regBe_174"
-        BEL "rbcp_reg/regBe_177" BEL "rbcp_reg/regBe_178" BEL
-        "rbcp_reg/regBe_180" BEL "rbcp_reg/regBe_181" BEL "rbcp_reg/regBe_179"
-        BEL "rbcp_reg/regBe_182" BEL "rbcp_reg/regBe_199" BEL
-        "rbcp_reg/regBe_201" BEL "rbcp_reg/regBe_202" BEL "rbcp_reg/regBe_200"
-        BEL "rbcp_reg/regBe_203" BEL "rbcp_reg/regBe_204" BEL
-        "rbcp_reg/regBe_206" BEL "rbcp_reg/regBe_207" BEL "rbcp_reg/regBe_205"
-        BEL "scb/scb_tp_trig" BEL "RX_SELECT" BEL "rbcp_reg/muxRegAck" BEL
-        "SiTCP/TIMER/pulse1ms" BEL "SiTCP/TIMER/pulse1s" BEL
-        "spi_if_drs/reg_prog_start" BEL "spi_if_drs/bufWe" BEL
-        "spi_if_drs/regCs" BEL "spi_if_drs/sftCs" BEL "drs_dtapbuf_0_C_0" BEL
-        "drs_dtapbuf_0_P_0" BEL "drs_dtapbuf_1_C_1" BEL "drs_dtapbuf_1_P_1"
-        BEL "trig_offset_reg_15_C_15" BEL "trig_offset_reg_15_P_15" BEL
-        "trig_offset_reg_14_C_14" BEL "trig_offset_reg_14_P_14" BEL
-        "trig_offset_reg_11_C_11" BEL "trig_offset_reg_11_P_11" BEL
-        "trig_offset_reg_13_C_13" BEL "trig_offset_reg_13_P_13" BEL
-        "trig_offset_reg_12_C_12" BEL "trig_offset_reg_12_P_12" BEL
-        "trig_offset_reg_8_C_8" BEL "trig_offset_reg_8_P_8" BEL
-        "trig_offset_reg_10_C_10" BEL "trig_offset_reg_10_P_10" BEL
-        "trig_offset_reg_9_C_9" BEL "trig_offset_reg_9_P_9" BEL
-        "trig_offset_reg_5_C_5" BEL "trig_offset_reg_5_P_5" BEL
-        "trig_offset_reg_7_C_7" BEL "trig_offset_reg_7_P_7" BEL
-        "trig_offset_reg_6_C_6" BEL "trig_offset_reg_6_P_6" BEL
-        "trig_offset_reg_4_C_4" BEL "trig_offset_reg_4_P_4" BEL
-        "trig_offset_reg_3_C_3" BEL "trig_offset_reg_3_P_3" BEL
-        "trig_offset_reg_2_C_2" BEL "trig_offset_reg_2_P_2" BEL
-        "trig_offset_reg_1_C_1" BEL "trig_offset_reg_1_P_1" BEL
-        "trig_offset_reg_0_C_0" BEL "trig_offset_reg_0_P_0" PIN
-        "spi_if_drs/RD_BUF/Mram_RAM_pins<22>" PIN
+        "data_formatter/fmt_c2_0" BEL "data_formatter/fmt_c_4" BEL
+        "data_formatter/fmt_c_3" BEL "data_formatter/fmt_c_2" BEL
+        "data_formatter/fmt_c_1" BEL "data_formatter/fmt_c_0" BEL
+        "data_formatter/fmt_fifoc_FSM_FFd4" BEL "data_formatter/dfifo_rden_7"
+        BEL "data_formatter/dfifo_rden_6" BEL "data_formatter/dfifo_rden_5"
+        BEL "data_formatter/dfifo_rden_4" BEL "data_formatter/dfifo_rden_3"
+        BEL "data_formatter/dfifo_rden_2" BEL "data_formatter/dfifo_rden_1"
+        BEL "data_formatter/dfifo_rden_0" BEL "data_formatter/cfifo_rden" BEL
+        "data_formatter/sfifo_din_7" BEL "data_formatter/sfifo_din_6" BEL
+        "data_formatter/sfifo_din_5" BEL "data_formatter/sfifo_din_4" BEL
+        "data_formatter/sfifo_din_3" BEL "data_formatter/sfifo_din_2" BEL
+        "data_formatter/sfifo_din_1" BEL "data_formatter/sfifo_din_0" BEL
+        "data_formatter/sfifo_wren" BEL "mytimer/msec_66m_check_1" BEL
+        "mytimer/msec_66m_check_0" BEL "trig_rst" BEL "drs_trig_self" BEL
+        "rbcp_reg/regBe_8" BEL "rbcp_reg/regBe_9" BEL "rbcp_reg/regBe_10" BEL
+        "rbcp_reg/regBe_12" BEL "rbcp_reg/regBe_13" BEL "rbcp_reg/regBe_11"
+        BEL "rbcp_reg/regBe_14" BEL "rbcp_reg/regBe_15" BEL
+        "rbcp_reg/regBe_17" BEL "rbcp_reg/regBe_18" BEL "rbcp_reg/regBe_16"
+        BEL "rbcp_reg/regBe_19" BEL "rbcp_reg/regBe_20" BEL
+        "rbcp_reg/regBe_22" BEL "rbcp_reg/regBe_23" BEL "rbcp_reg/regBe_21"
+        BEL "rbcp_reg/regBe_24" BEL "rbcp_reg/regBe_25" BEL
+        "rbcp_reg/regBe_27" BEL "rbcp_reg/regBe_28" BEL "rbcp_reg/regBe_26"
+        BEL "rbcp_reg/regBe_29" BEL "rbcp_reg/regBe_30" BEL
+        "rbcp_reg/regBe_33" BEL "rbcp_reg/regBe_34" BEL "rbcp_reg/regBe_32"
+        BEL "rbcp_reg/regBe_35" BEL "rbcp_reg/regBe_36" BEL
+        "rbcp_reg/regBe_38" BEL "rbcp_reg/regBe_39" BEL "rbcp_reg/regBe_37"
+        BEL "rbcp_reg/regBe_54" BEL "rbcp_reg/regBe_55" BEL
+        "rbcp_reg/regBe_57" BEL "rbcp_reg/regBe_58" BEL "rbcp_reg/regBe_56"
+        BEL "rbcp_reg/regBe_59" BEL "rbcp_reg/regBe_60" BEL
+        "rbcp_reg/regBe_62" BEL "rbcp_reg/regBe_63" BEL "rbcp_reg/regBe_61"
+        BEL "rbcp_reg/regBe_64" BEL "rbcp_reg/regBe_65" BEL
+        "rbcp_reg/regBe_67" BEL "rbcp_reg/regBe_68" BEL "rbcp_reg/regBe_66"
+        BEL "rbcp_reg/regBe_69" BEL "rbcp_reg/regBe_70" BEL
+        "rbcp_reg/regBe_72" BEL "rbcp_reg/regBe_73" BEL "rbcp_reg/regBe_71"
+        BEL "rbcp_reg/regBe_80" BEL "rbcp_reg/regBe_81" BEL
+        "rbcp_reg/regBe_86" BEL "rbcp_reg/regBe_87" BEL "rbcp_reg/regBe_82"
+        BEL "rbcp_reg/regBe_88" BEL "rbcp_reg/regBe_92" BEL
+        "rbcp_reg/regBe_94" BEL "rbcp_reg/regBe_95" BEL "rbcp_reg/regBe_93"
+        BEL "rbcp_reg/regBe_96" BEL "rbcp_reg/regBe_97" BEL
+        "rbcp_reg/regBe_99" BEL "rbcp_reg/regBe_100" BEL "rbcp_reg/regBe_98"
+        BEL "rbcp_reg/regBe_105" BEL "rbcp_reg/regBe_106" BEL
+        "rbcp_reg/regBe_108" BEL "rbcp_reg/regBe_109" BEL "rbcp_reg/regBe_107"
+        BEL "rbcp_reg/regBe_111" BEL "rbcp_reg/regBe_112" BEL
+        "rbcp_reg/regBe_110" BEL "rbcp_reg/regBe_114" BEL "rbcp_reg/regBe_115"
+        BEL "rbcp_reg/regBe_113" BEL "rbcp_reg/regBe_116" BEL
+        "rbcp_reg/regBe_117" BEL "rbcp_reg/regBe_119" BEL "rbcp_reg/regBe_120"
+        BEL "rbcp_reg/regBe_118" BEL "rbcp_reg/regBe_121" BEL
+        "rbcp_reg/regBe_122" BEL "rbcp_reg/regBe_129" BEL "rbcp_reg/regBe_130"
+        BEL "rbcp_reg/regBe_128" BEL "rbcp_reg/regBe_131" BEL
+        "rbcp_reg/regBe_132" BEL "rbcp_reg/regBe_134" BEL "rbcp_reg/regBe_135"
+        BEL "rbcp_reg/regBe_133" BEL "rbcp_reg/regBe_136" BEL
+        "rbcp_reg/regBe_137" BEL "rbcp_reg/regBe_139" BEL "rbcp_reg/regBe_140"
+        BEL "rbcp_reg/regBe_138" BEL "rbcp_reg/regBe_141" BEL
+        "rbcp_reg/regBe_142" BEL "rbcp_reg/regBe_144" BEL "rbcp_reg/regBe_145"
+        BEL "rbcp_reg/regBe_143" BEL "rbcp_reg/regBe_146" BEL
+        "rbcp_reg/regBe_147" BEL "rbcp_reg/regBe_149" BEL "rbcp_reg/regBe_150"
+        BEL "rbcp_reg/regBe_148" BEL "rbcp_reg/regBe_151" BEL
+        "rbcp_reg/regBe_152" BEL "rbcp_reg/regBe_154" BEL "rbcp_reg/regBe_155"
+        BEL "rbcp_reg/regBe_153" BEL "rbcp_reg/regBe_156" BEL
+        "rbcp_reg/regBe_157" BEL "rbcp_reg/regBe_160" BEL "rbcp_reg/regBe_161"
+        BEL "rbcp_reg/regBe_158" BEL "rbcp_reg/regBe_162" BEL
+        "rbcp_reg/regBe_163" BEL "rbcp_reg/regBe_165" BEL "rbcp_reg/regBe_166"
+        BEL "rbcp_reg/regBe_164" BEL "rbcp_reg/regBe_167" BEL
+        "rbcp_reg/regBe_168" BEL "rbcp_reg/regBe_170" BEL "rbcp_reg/regBe_171"
+        BEL "rbcp_reg/regBe_169" BEL "rbcp_reg/regBe_172" BEL
+        "rbcp_reg/regBe_173" BEL "rbcp_reg/regBe_175" BEL "rbcp_reg/regBe_176"
+        BEL "rbcp_reg/regBe_174" BEL "rbcp_reg/regBe_177" BEL
+        "rbcp_reg/regBe_178" BEL "rbcp_reg/regBe_180" BEL "rbcp_reg/regBe_181"
+        BEL "rbcp_reg/regBe_179" BEL "rbcp_reg/regBe_182" BEL
+        "rbcp_reg/regBe_199" BEL "rbcp_reg/regBe_201" BEL "rbcp_reg/regBe_202"
+        BEL "rbcp_reg/regBe_200" BEL "rbcp_reg/regBe_203" BEL
+        "rbcp_reg/regBe_204" BEL "rbcp_reg/regBe_206" BEL "rbcp_reg/regBe_207"
+        BEL "rbcp_reg/regBe_205" BEL "scb/scb_tp_trig" BEL "RX_SELECT" BEL
+        "rbcp_reg/muxRegAck" BEL "SiTCP/TIMER/pulse1ms" BEL
+        "SiTCP/TIMER/pulse1s" BEL "spi_if_drs/reg_prog_start" BEL
+        "spi_if_drs/bufWe" BEL "spi_if_drs/regCs" BEL "spi_if_drs/sftCs" BEL
+        "drs_dtapbuf_0_C_0" BEL "drs_dtapbuf_0_P_0" BEL "drs_dtapbuf_1_C_1"
+        BEL "drs_dtapbuf_1_P_1" BEL "trig_offset_reg_15_C_15" BEL
+        "trig_offset_reg_15_P_15" BEL "trig_offset_reg_14_C_14" BEL
+        "trig_offset_reg_14_P_14" BEL "trig_offset_reg_11_C_11" BEL
+        "trig_offset_reg_11_P_11" BEL "trig_offset_reg_13_C_13" BEL
+        "trig_offset_reg_13_P_13" BEL "trig_offset_reg_12_C_12" BEL
+        "trig_offset_reg_12_P_12" BEL "trig_offset_reg_8_C_8" BEL
+        "trig_offset_reg_8_P_8" BEL "trig_offset_reg_10_C_10" BEL
+        "trig_offset_reg_10_P_10" BEL "trig_offset_reg_9_C_9" BEL
+        "trig_offset_reg_9_P_9" BEL "trig_offset_reg_5_C_5" BEL
+        "trig_offset_reg_5_P_5" BEL "trig_offset_reg_7_C_7" BEL
+        "trig_offset_reg_7_P_7" BEL "trig_offset_reg_6_C_6" BEL
+        "trig_offset_reg_6_P_6" BEL "trig_offset_reg_4_C_4" BEL
+        "trig_offset_reg_4_P_4" BEL "trig_offset_reg_3_C_3" BEL
+        "trig_offset_reg_3_P_3" BEL "trig_offset_reg_2_C_2" BEL
+        "trig_offset_reg_2_P_2" BEL "trig_offset_reg_1_C_1" BEL
+        "trig_offset_reg_1_P_1" BEL "trig_offset_reg_0_C_0" BEL
+        "trig_offset_reg_0_P_0" PIN "spi_if_drs/RD_BUF/Mram_RAM_pins<22>" PIN
         "spi_if_drs/RD_BUF/Mram_RAM_pins<23>" BEL "spi_if_drs/Mshreg_spiWd_7"
         BEL "spi_if_drs/spiWd_7" BEL "spi_if_drs/Mshreg_spiWd_6" BEL
         "spi_if_drs/spiWd_6" BEL "spi_if_drs/Mshreg_spiWd_5" BEL
@@ -13877,10 +13876,10 @@ TS_dcm_v5_clkout0 = PERIOD TIMEGRP "dcm_v5_clkout0" TS_OSC / 1.06666667 HIGH
         50%;
 TS_dcm_v5_clkout1 = PERIOD TIMEGRP "dcm_v5_clkout1" TS_OSC / 0.533333333 HIGH
         50%;
-TS_adc_divclk = PERIOD TIMEGRP "adc_divclk" TS_AD9222_DCO HIGH 50%;
-TS_adc_ioclk = PERIOD TIMEGRP "adc_ioclk" TS_AD9222_DCO HIGH 50%;
 TS_adc_ioclk_inv = PERIOD TIMEGRP "adc_ioclk_inv" TS_AD9222_DCO PHASE 2.5 ns
         HIGH 50%;
+TS_adc_ioclk = PERIOD TIMEGRP "adc_ioclk" TS_AD9222_DCO HIGH 50%;
+TS_adc_divclk = PERIOD TIMEGRP "adc_divclk" TS_AD9222_DCO HIGH 50%;
 TS_adc_ioclk2 = PERIOD TIMEGRP "adc_ioclk2" TS_AD9222_DCO HIGH 50%;
 TS_adc_ioclk_inv2 = PERIOD TIMEGRP "adc_ioclk_inv2" TS_AD9222_DCO PHASE 2.5 ns
         HIGH 50%;

@@ -196,10 +196,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  15
 
-Total memory usage is 312332 kilobytes
+Total memory usage is 312368 kilobytes
 
 Writing NGD file "dragonv5_main.ngd" ...
 Total REAL time to NGDBUILD completion:  17 sec
-Total CPU time to NGDBUILD completion:   17 sec
+Total CPU time to NGDBUILD completion:   16 sec
 
 Writing NGDBUILD log file "dragonv5_main.bld"...

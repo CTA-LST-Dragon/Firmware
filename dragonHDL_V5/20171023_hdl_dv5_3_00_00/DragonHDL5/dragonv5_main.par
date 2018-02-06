@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CTA::  Tue Feb 06 22:17:32 2018
+CTA::  Tue Feb 06 23:23:45 2018
 
 par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd
 dragonv5_main.pcf 
@@ -33,11 +33,11 @@ Slice Logic Utilization:
     Number used as Latches:                     42
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                2
-  Number of Slice LUTs:                     10,906 out of  63,288   17%
-    Number used as logic:                    9,810 out of  63,288   15%
-      Number using O6 output only:           6,388
-      Number using O5 output only:             890
-      Number using O5 and O6:                2,532
+  Number of Slice LUTs:                     10,936 out of  63,288   17%
+    Number used as logic:                    9,803 out of  63,288   15%
+      Number using O6 output only:           6,389
+      Number using O5 output only:             877
+      Number using O5 and O6:                2,537
       Number used as ROM:                        0
     Number used as Memory:                     262 out of  15,616    1%
       Number used as Dual Port RAM:             64
@@ -52,18 +52,18 @@ Slice Logic Utilization:
         Number using O6 output only:            35
         Number using O5 output only:             0
         Number using O5 and O6:                159
-    Number used exclusively as route-thrus:    834
-      Number with same-slice register load:    766
-      Number with same-slice carry load:        65
+    Number used exclusively as route-thrus:    871
+      Number with same-slice register load:    804
+      Number with same-slice carry load:        64
       Number with other load:                    3
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 4,712 out of  15,822   29%
+  Number of occupied Slices:                 4,699 out of  15,822   29%
   Number of MUXCYs used:                     3,460 out of  31,644   10%
-  Number of LUT Flip Flop pairs used:       14,464
-    Number with an unused Flip Flop:         3,968 out of  14,464   27%
-    Number with an unused LUT:               3,558 out of  14,464   24%
-    Number of fully used LUT-FF pairs:       6,938 out of  14,464   47%
+  Number of LUT Flip Flop pairs used:       14,363
+    Number with an unused Flip Flop:         3,907 out of  14,363   27%
+    Number with an unused LUT:               3,427 out of  14,363   23%
+    Number of fully used LUT-FF pairs:       7,029 out of  14,363   48%
     Number of slice register sites lost
       to control set restrictions:               0 out of 126,576    0%
 
@@ -119,8 +119,8 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 22 secs 
-Finished initial Timing Analysis.  REAL time: 23 secs 
+Starting initial Timing Analysis.  REAL time: 21 secs 
+Finished initial Timing Analysis.  REAL time: 22 secs 
 
 WARNING:Par:288 - The signal DRS_WSROUT<1>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal DRS_WSROUT<2>_IBUF has no load.  PAR will not attempt to route this signal.
@@ -141,64 +141,64 @@ WARNING:Par:288 - The signal LED_100M_IBUF has no load.  PAR will not attempt to
 WARNING:Par:288 - The signal LED_10M_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal LED_ACT_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal ETH_IRQ_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM9_RAMD_D1_O has no
-   load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM10_RAMD_D1_O has no
-   load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM16_RAMD_D1_O has no
-   load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM15_RAMD_D1_O has no
-   load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM7_RAMD_D1_O has no
-   load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM6_RAMD_D1_O has no
-   load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM8_RAMD_D1_O has no
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM13_RAMD_D1_O has no
    load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM11_RAMD_D1_O has no
    load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM10_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM14_RAMD_D1_O has no
    load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM13_RAMD_D1_O has no
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM15_RAMD_D1_O has no
    load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM5_RAMD_D1_O has no
-   load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM12_RAMD_D1_O has no
-   load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM4_RAMD_D1_O has no
-   load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMD_D1_O has no
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O has no
    load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM2_RAMD_D1_O has no
    load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM1_RAMD_D1_O has no
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM9_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM16_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM12_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM3_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM4_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM7_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM8_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM6_RAMD_D1_O has no
+   load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM5_RAMD_D1_O has no
    load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 67461 unrouted;      REAL time: 25 secs 
+Phase  1  : 67392 unrouted;      REAL time: 25 secs 
 
-Phase  2  : 52678 unrouted;      REAL time: 34 secs 
+Phase  2  : 52615 unrouted;      REAL time: 34 secs 
 
-Phase  3  : 18413 unrouted;      REAL time: 1 mins 11 secs 
+Phase  3  : 18864 unrouted;      REAL time: 1 mins 19 secs 
 
-Phase  4  : 18464 unrouted; (Setup:607, Hold:916, Component Switching Limit:0)     REAL time: 1 mins 26 secs 
+Phase  4  : 18910 unrouted; (Setup:2640, Hold:828, Component Switching Limit:0)     REAL time: 1 mins 35 secs 
 
 Updating file: dragonv5_main.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:744, Hold:638, Component Switching Limit:0)     REAL time: 2 mins 26 secs 
+Phase  5  : 0 unrouted; (Setup:2640, Hold:845, Component Switching Limit:0)     REAL time: 2 mins 32 secs 
 
-Phase  6  : 0 unrouted; (Setup:744, Hold:638, Component Switching Limit:0)     REAL time: 2 mins 28 secs 
+Phase  6  : 0 unrouted; (Setup:2640, Hold:845, Component Switching Limit:0)     REAL time: 2 mins 34 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:624, Component Switching Limit:0)     REAL time: 3 mins 56 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:689, Component Switching Limit:0)     REAL time: 7 mins 18 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:624, Component Switching Limit:0)     REAL time: 3 mins 56 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:689, Component Switching Limit:0)     REAL time: 7 mins 18 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 58 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 mins 20 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 mins 2 secs 
-Total REAL time to Router completion: 4 mins 2 secs 
-Total CPU time to Router completion: 4 mins 12 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 mins 24 secs 
+Total REAL time to Router completion: 7 mins 24 secs 
+Total CPU time to Router completion: 7 mins 43 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -216,200 +216,200 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|            clk_133m | BUFGMUX_X2Y10| No   | 2222 |  0.166     |  1.277      |
+|             adc_dco |  BUFGMUX_X2Y4| No   |  169 |  0.096     |  1.208      |
 +---------------------+--------------+------+------+------------+-------------+
-|                 clk | BUFGMUX_X2Y12| No   | 1222 |  0.634     |  1.745      |
+|            clk_133m | BUFGMUX_X2Y10| No   | 2202 |  0.166     |  1.278      |
 +---------------------+--------------+------+------+------------+-------------+
-|             adc_dco |  BUFGMUX_X2Y4| No   |  178 |  0.126     |  1.236      |
+|                 clk | BUFGMUX_X2Y12| No   | 1229 |  0.634     |  1.745      |
 +---------------------+--------------+------+------+------------+-------------+
-|      int_ETH_RX_CLK |  BUFGMUX_X3Y6| No   |  149 |  0.072     |  1.207      |
+|      int_ETH_RX_CLK |  BUFGMUX_X3Y6| No   |  157 |  0.149     |  1.260      |
 +---------------------+--------------+------+------+------------+-------------+
-|      int_ETH_TX_CLK |  BUFGMUX_X3Y7| No   |  100 |  0.099     |  1.219      |
+|      int_ETH_TX_CLK |  BUFGMUX_X3Y7| No   |   94 |  0.134     |  1.274      |
 +---------------------+--------------+------+------+------------+-------------+
-|          clk_ext10m |  BUFGMUX_X2Y9| No   |   51 |  0.154     |  1.268      |
+|          clk_ext10m |  BUFGMUX_X2Y9| No   |   53 |  0.097     |  1.221      |
 +---------------------+--------------+------+------+------------+-------------+
-|          clk_33m_90 |  BUFGMUX_X2Y1| No   |    3 |  0.525     |  1.724      |
+|          clk_33m_90 |  BUFGMUX_X2Y1| No   |    3 |  0.516     |  1.724      |
 +---------------------+--------------+------+------+------------+-------------+
 |          clk_ext40m | BUFGMUX_X3Y14| No   |    4 |  0.012     |  1.752      |
 +---------------------+--------------+------+------+------------+-------------+
 |            clk_gmii |  BUFGMUX_X2Y3| No   |    4 |  0.000     |  1.702      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_TRIGGER_FRE |              |      |      |            |             |
-|Q_OFFSET[9]_AND_826_ |              |      |      |            |             |
-|                   o |         Local|      |    2 |  0.000     |  1.117      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_TRIGGER_FRE |              |      |      |            |             |
 |Q_OFFSET[7]_AND_830_ |              |      |      |            |             |
-|                   o |         Local|      |    2 |  0.000     |  0.474      |
+|                   o |         Local|      |    2 |  0.000     |  0.815      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_drs_dfifo_p |              |      |      |            |             |
 |rogfull[2]_AND_862_o |              |      |      |            |             |
-|                     |         Local|      |    2 |  0.000     |  0.467      |
+|                     |         Local|      |    2 |  0.000     |  0.474      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_DRS_SAMP_FREQ[1] |              |      |      |            |             |
-|          _AND_794_o |         Local|      |    2 |  0.000     |  0.285      |
+|          _AND_794_o |         Local|      |    2 |  0.000     |  0.493      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_TRIGGER_FRE |              |      |      |            |             |
 |Q_OFFSET[4]_AND_836_ |              |      |      |            |             |
-|                   o |         Local|      |    2 |  0.000     |  1.393      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_drs_dfifo_p |              |      |      |            |             |
-|rogfull[5]_AND_856_o |              |      |      |            |             |
-|                     |         Local|      |    2 |  0.000     |  0.310      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_TRIGGER_FRE |              |      |      |            |             |
-|Q_OFFSET[8]_AND_828_ |              |      |      |            |             |
-|                   o |         Local|      |    2 |  0.000     |  0.474      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_DRS_SAMP_FREQ[4] |              |      |      |            |             |
-|          _AND_788_o |         Local|      |    2 |  0.000     |  0.916      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_TRIGGER_FRE |              |      |      |            |             |
-|Q_OFFSET[5]_AND_834_ |              |      |      |            |             |
-|                   o |         Local|      |    2 |  0.000     |  0.632      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_TRIGGER_FRE |              |      |      |            |             |
-|Q_OFFSET[6]_AND_832_ |              |      |      |            |             |
-|                   o |         Local|      |    2 |  0.000     |  0.493      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_DRS_DTAP[0] |              |      |      |            |             |
-|          _AND_846_o |         Local|      |    3 |  0.000     |  0.474      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_refclk_DRS_SAMP_ |              |      |      |            |             |
-|   FREQ[5]_AND_802_o |         Local|      |    2 |  0.000     |  0.288      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_TRIGGER_FRE |              |      |      |            |             |
-|Q_OFFSET[0]_AND_844_ |              |      |      |            |             |
-|                   o |         Local|      |    2 |  0.000     |  0.496      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_TRIGGER_FRE |              |      |      |            |             |
-|Q_OFFSET[10]_AND_824 |              |      |      |            |             |
-|                  _o |         Local|      |    2 |  0.000     |  0.307      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_TRIGGER_FRE |              |      |      |            |             |
-|Q_OFFSET[3]_AND_838_ |              |      |      |            |             |
-|                   o |         Local|      |    2 |  0.000     |  0.474      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_TRIGGER_FRE |              |      |      |            |             |
-|Q_OFFSET[13]_AND_818 |              |      |      |            |             |
-|                  _o |         Local|      |    2 |  0.000     |  0.493      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_drs_cfifo_p |              |      |      |            |             |
-|   rogfull_AND_850_o |         Local|      |    2 |  0.000     |  0.468      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_drs_dfifo_p |              |      |      |            |             |
-|rogfull[3]_AND_860_o |              |      |      |            |             |
-|                     |         Local|      |    2 |  0.000     |  0.474      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_DRS_SAMP_FREQ[2] |              |      |      |            |             |
-|          _AND_792_o |         Local|      |    2 |  0.000     |  0.517      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_drs_dfifo_p |              |      |      |            |             |
-|rogfull[6]_AND_854_o |              |      |      |            |             |
-|                     |         Local|      |    2 |  0.000     |  0.813      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_DRS_SAMP_FREQ[5] |              |      |      |            |             |
-|          _AND_786_o |         Local|      |    2 |  0.000     |  0.674      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_refclk_DRS_SAMP_ |              |      |      |            |             |
-|   FREQ[2]_AND_808_o |         Local|      |    2 |  0.000     |  0.470      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_refclk_DRS_SAMP_ |              |      |      |            |             |
-|   FREQ[6]_AND_800_o |         Local|      |    2 |  0.000     |  0.493      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_refclk_DRS_SAMP_ |              |      |      |            |             |
-|   FREQ[7]_AND_798_o |         Local|      |    2 |  0.000     |  0.633      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_read_TRIGGER_FRE |              |      |      |            |             |
-|Q_OFFSET[1]_AND_842_ |              |      |      |            |             |
 |                   o |         Local|      |    2 |  0.000     |  0.468      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_TRIGGER_FRE |              |      |      |            |             |
-|Q_OFFSET[11]_AND_822 |              |      |      |            |             |
+|Q_OFFSET[8]_AND_828_ |              |      |      |            |             |
+|                   o |         Local|      |    2 |  0.000     |  0.493      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_TRIGGER_FRE |              |      |      |            |             |
+|Q_OFFSET[5]_AND_834_ |              |      |      |            |             |
+|                   o |         Local|      |    2 |  0.000     |  0.493      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_drs_dfifo_p |              |      |      |            |             |
+|rogfull[5]_AND_856_o |              |      |      |            |             |
+|                     |         Local|      |    2 |  0.000     |  0.473      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_TRIGGER_FRE |              |      |      |            |             |
+|Q_OFFSET[9]_AND_826_ |              |      |      |            |             |
+|                   o |         Local|      |    2 |  0.000     |  0.307      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_DRS_SAMP_FREQ[4] |              |      |      |            |             |
+|          _AND_788_o |         Local|      |    2 |  0.000     |  0.311      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_TRIGGER_FRE |              |      |      |            |             |
+|Q_OFFSET[6]_AND_832_ |              |      |      |            |             |
+|                   o |         Local|      |    2 |  0.000     |  0.474      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_DRS_DTAP[0] |              |      |      |            |             |
+|          _AND_846_o |         Local|      |    3 |  0.000     |  0.479      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_refclk_DRS_SAMP_ |              |      |      |            |             |
+|   FREQ[5]_AND_802_o |         Local|      |    2 |  0.000     |  0.311      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_TRIGGER_FRE |              |      |      |            |             |
+|Q_OFFSET[0]_AND_844_ |              |      |      |            |             |
+|                   o |         Local|      |    2 |  0.000     |  0.492      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_TRIGGER_FRE |              |      |      |            |             |
+|Q_OFFSET[10]_AND_824 |              |      |      |            |             |
+|                  _o |         Local|      |    2 |  0.000     |  0.311      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_TRIGGER_FRE |              |      |      |            |             |
+|Q_OFFSET[3]_AND_838_ |              |      |      |            |             |
+|                   o |         Local|      |    2 |  0.000     |  0.311      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_TRIGGER_FRE |              |      |      |            |             |
+|Q_OFFSET[13]_AND_818 |              |      |      |            |             |
 |                  _o |         Local|      |    2 |  0.000     |  0.474      |
 +---------------------+--------------+------+------+------------+-------------+
-|            drs_trig |         Local|      |   22 |  1.888     |  3.624      |
+|rst_read_drs_cfifo_p |              |      |      |            |             |
+|   rogfull_AND_850_o |         Local|      |    2 |  0.000     |  0.749      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_drs_dfifo_p |              |      |      |            |             |
+|rogfull[3]_AND_860_o |              |      |      |            |             |
+|                     |         Local|      |    2 |  0.000     |  0.477      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_DRS_SAMP_FREQ[2] |              |      |      |            |             |
+|          _AND_792_o |         Local|      |    2 |  0.000     |  0.492      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_drs_dfifo_p |              |      |      |            |             |
+|rogfull[6]_AND_854_o |              |      |      |            |             |
+|                     |         Local|      |    2 |  0.000     |  0.311      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_DRS_SAMP_FREQ[5] |              |      |      |            |             |
+|          _AND_786_o |         Local|      |    2 |  0.000     |  0.681      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_refclk_DRS_SAMP_ |              |      |      |            |             |
+|   FREQ[2]_AND_808_o |         Local|      |    2 |  0.000     |  0.904      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_refclk_DRS_SAMP_ |              |      |      |            |             |
+|   FREQ[6]_AND_800_o |         Local|      |    2 |  0.000     |  0.470      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_refclk_DRS_SAMP_ |              |      |      |            |             |
+|   FREQ[7]_AND_798_o |         Local|      |    2 |  0.000     |  0.631      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_TRIGGER_FRE |              |      |      |            |             |
+|Q_OFFSET[1]_AND_842_ |              |      |      |            |             |
+|                   o |         Local|      |    2 |  0.000     |  0.493      |
++---------------------+--------------+------+------+------------+-------------+
+|rst_read_TRIGGER_FRE |              |      |      |            |             |
+|Q_OFFSET[11]_AND_822 |              |      |      |            |             |
+|                  _o |         Local|      |    2 |  0.000     |  0.311      |
++---------------------+--------------+------+------+------------+-------------+
+|            drs_trig |         Local|      |   22 |  0.804     |  1.957      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_TRIGGER_FRE |              |      |      |            |             |
 |Q_OFFSET[14]_AND_816 |              |      |      |            |             |
-|                  _o |         Local|      |    2 |  0.000     |  0.559      |
+|                  _o |         Local|      |    2 |  0.000     |  0.307      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_drs_dfifo_p |              |      |      |            |             |
 |rogfull[0]_AND_866_o |              |      |      |            |             |
-|                     |         Local|      |    2 |  0.000     |  0.474      |
+|                     |         Local|      |    2 |  0.000     |  0.310      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_DRS_SAMP_FREQ[3] |              |      |      |            |             |
-|          _AND_790_o |         Local|      |    2 |  0.000     |  0.492      |
+|          _AND_790_o |         Local|      |    2 |  0.000     |  0.947      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_drs_dfifo_p |              |      |      |            |             |
 |rogfull[7]_AND_852_o |              |      |      |            |             |
 |                     |         Local|      |    2 |  0.000     |  0.307      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_DRS_SAMP_FREQ[6] |              |      |      |            |             |
-|          _AND_784_o |         Local|      |    2 |  0.000     |  0.956      |
+|          _AND_784_o |         Local|      |    2 |  0.000     |  0.916      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_refclk_DRS_SAMP_ |              |      |      |            |             |
-|   FREQ[0]_AND_812_o |         Local|      |    2 |  0.000     |  0.681      |
+|   FREQ[0]_AND_812_o |         Local|      |    2 |  0.000     |  0.845      |
 +---------------------+--------------+------+------+------------+-------------+
-|                 pps |         Local|      |    6 |  4.050     | 11.355      |
+|                 pps |         Local|      |    6 |  3.702     |  9.066      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_refclk_DRS_SAMP_ |              |      |      |            |             |
-|   FREQ[3]_AND_806_o |         Local|      |    2 |  0.000     |  0.568      |
+|   FREQ[3]_AND_806_o |         Local|      |    2 |  0.000     |  0.617      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_TRIGGER_FRE |              |      |      |            |             |
 |Q_OFFSET[2]_AND_840_ |              |      |      |            |             |
-|                   o |         Local|      |    2 |  0.000     |  0.474      |
+|                   o |         Local|      |    2 |  0.000     |  0.467      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_TRIGGER_FRE |              |      |      |            |             |
 |Q_OFFSET[12]_AND_820 |              |      |      |            |             |
-|                  _o |         Local|      |    2 |  0.000     |  0.540      |
+|                  _o |         Local|      |    2 |  0.000     |  0.493      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_TRIGGER_FRE |              |      |      |            |             |
 |Q_OFFSET[15]_AND_814 |              |      |      |            |             |
-|                  _o |         Local|      |    2 |  0.000     |  0.311      |
+|                  _o |         Local|      |    2 |  0.000     |  0.680      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_DRS_SAMP_FREQ[0] |              |      |      |            |             |
-|          _AND_796_o |         Local|      |    2 |  0.000     |  0.311      |
+|          _AND_796_o |         Local|      |    2 |  0.000     |  0.310      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_drs_dfifo_p |              |      |      |            |             |
 |rogfull[1]_AND_864_o |              |      |      |            |             |
-|                     |         Local|      |    2 |  0.000     |  0.703      |
+|                     |         Local|      |    2 |  0.000     |  0.474      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_read_drs_dfifo_p |              |      |      |            |             |
 |rogfull[4]_AND_858_o |              |      |      |            |             |
-|                     |         Local|      |    2 |  0.000     |  0.493      |
+|                     |         Local|      |    2 |  0.000     |  0.307      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_DRS_SAMP_FREQ[7] |              |      |      |            |             |
-|          _AND_782_o |         Local|      |    2 |  0.000     |  0.467      |
+|          _AND_782_o |         Local|      |    2 |  0.000     |  0.474      |
 +---------------------+--------------+------+------+------------+-------------+
-|        TRIGL1_async |         Local|      |    2 |  0.000     |  7.715      |
-+---------------------+--------------+------+------+------------+-------------+
-|analog_trigger/l1_ou |              |      |      |            |             |
-|             t_ibufo |         Local|      |    2 |  0.000     |  5.294      |
-+---------------------+--------------+------+------+------------+-------------+
-|analog_trigger/dtrig |              |      |      |            |             |
-|      _trig_ibufo<0> |         Local|      |    2 |  0.000     |  7.067      |
-+---------------------+--------------+------+------+------------+-------------+
-|analog_trigger/dtrig |              |      |      |            |             |
-|      _trig_ibufo<1> |         Local|      |    2 |  0.000     |  3.297      |
-+---------------------+--------------+------+------+------------+-------------+
-|analog_trigger/dtrig |              |      |      |            |             |
-|      _trig_ibufo<2> |         Local|      |    2 |  0.000     |  6.024      |
-+---------------------+--------------+------+------+------------+-------------+
-|analog_trigger/dtrig |              |      |      |            |             |
-|      _trig_ibufo<3> |         Local|      |    2 |  0.000     |  5.947      |
-+---------------------+--------------+------+------+------------+-------------+
-|analog_trigger/dtrig |              |      |      |            |             |
-|      _trig_ibufo<4> |         Local|      |    2 |  0.000     |  6.081      |
-+---------------------+--------------+------+------+------------+-------------+
-|analog_trigger/dtrig |              |      |      |            |             |
-|      _trig_ibufo<5> |         Local|      |    2 |  0.000     |  6.511      |
-+---------------------+--------------+------+------+------------+-------------+
-|analog_trigger/dtrig |              |      |      |            |             |
-|      _trig_ibufo<6> |         Local|      |    2 |  0.000     |  6.675      |
+|        TRIGL1_async |         Local|      |    2 |  0.000     |  6.369      |
 +---------------------+--------------+------+------+------------+-------------+
 |analog_trigger/l1_ou |              |      |      |            |             |
-|            t2_ibufo |         Local|      |    2 |  0.000     |  4.420      |
+|             t_ibufo |         Local|      |    2 |  0.000     |  6.559      |
++---------------------+--------------+------+------+------------+-------------+
+|analog_trigger/dtrig |              |      |      |            |             |
+|      _trig_ibufo<0> |         Local|      |    2 |  0.000     |  5.734      |
++---------------------+--------------+------+------+------------+-------------+
+|analog_trigger/dtrig |              |      |      |            |             |
+|      _trig_ibufo<1> |         Local|      |    2 |  0.000     |  3.783      |
++---------------------+--------------+------+------+------------+-------------+
+|analog_trigger/dtrig |              |      |      |            |             |
+|      _trig_ibufo<2> |         Local|      |    2 |  0.000     |  9.086      |
++---------------------+--------------+------+------+------------+-------------+
+|analog_trigger/dtrig |              |      |      |            |             |
+|      _trig_ibufo<3> |         Local|      |    2 |  0.000     |  6.577      |
++---------------------+--------------+------+------+------------+-------------+
+|analog_trigger/dtrig |              |      |      |            |             |
+|      _trig_ibufo<4> |         Local|      |    2 |  0.000     |  7.497      |
++---------------------+--------------+------+------+------------+-------------+
+|analog_trigger/dtrig |              |      |      |            |             |
+|      _trig_ibufo<5> |         Local|      |    2 |  0.000     |  9.835      |
++---------------------+--------------+------+------+------------+-------------+
+|analog_trigger/dtrig |              |      |      |            |             |
+|      _trig_ibufo<6> |         Local|      |    2 |  0.000     |  8.805      |
++---------------------+--------------+------+------+------------+-------------+
+|analog_trigger/l1_ou |              |      |      |            |             |
+|            t2_ibufo |         Local|      |    2 |  0.000     |  8.695      |
 +---------------------+--------------+------+------+------------+-------------+
 |       adc_ioclk_inv |         Local|      |    4 |  0.000     |  1.508      |
 +---------------------+--------------+------+------+------------+-------------+
@@ -423,7 +423,7 @@ Generating Clock Report
 |   FREQ[1]_AND_810_o |         Local|      |    2 |  0.000     |  0.681      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_refclk_DRS_SAMP_ |              |      |      |            |             |
-|   FREQ[4]_AND_804_o |         Local|      |    2 |  0.000     |  0.681      |
+|   FREQ[4]_AND_804_o |         Local|      |    2 |  0.000     |  0.919      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -445,71 +445,95 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_dcm_v5_clkout1 = PERIOD TIMEGRP "dcm_v | SETUP       |     0.028ns|    14.944ns|       0|           0
-  5_clkout1" TS_OSC / 0.533333333 HIGH      | HOLD        |     0.002ns|            |       0|           0
-      50%                                   |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_adc_divclk = PERIOD TIMEGRP "adc_divcl | SETUP       |     0.161ns|     4.839ns|       0|           0
-  k" TS_AD9222_DCO HIGH 50%                 | HOLD        |     0.046ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  TS_dcm_v5_clkout0 = PERIOD TIMEGRP "dcm_v | SETUP       |     0.162ns|     7.337ns|       0|           0
+  TS_dcm_v5_clkout0 = PERIOD TIMEGRP "dcm_v | SETUP       |     0.006ns|     7.493ns|       0|           0
   5_clkout0" TS_OSC / 1.06666667 HIGH       | HOLD        |     0.003ns|            |       0|           0
      50%                                    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_dcm_gmii_clk0 = PERIOD TIMEGRP "dcm_gm | SETUP       |     1.066ns|     6.934ns|       0|           0
-  ii_clk0" TS_OSC HIGH 50%                  | HOLD        |     0.381ns|            |       0|           0
+  TS_dcm_v5_clkout1 = PERIOD TIMEGRP "dcm_v | SETUP       |     0.009ns|    14.982ns|       0|           0
+  5_clkout1" TS_OSC / 0.533333333 HIGH      | HOLD        |     0.001ns|            |       0|           0
+      50%                                   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_adc_divclk = PERIOD TIMEGRP "adc_divcl | SETUP       |     0.038ns|     4.962ns|       0|           0
+  k" TS_AD9222_DCO HIGH 50%                 | HOLD        |     0.014ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_dcm_gmii_clk0 = PERIOD TIMEGRP "dcm_gm | SETUP       |     0.994ns|     6.710ns|       0|           0
+  ii_clk0" TS_OSC HIGH 50%                  | HOLD        |     0.315ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_dcm_v5_clkout2 = PERIOD TIMEGRP "dcm_v | SETUP       |     1.023ns|    25.906ns|       0|           0
+  5_clkout2" TS_OSC / 0.266666667 PHASE     | HOLD        |     0.436ns|            |       0|           0
+       7.5 ns HIGH 50%                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_10_LDC = MAXDELAY T | SETUP       |     1.481ns|     6.018ns|       0|           0
+  O TIMEGRP "TO_trig_offset_reg_10_LDC"     | HOLD        |     1.794ns|            |       0|           0
+       TS_dcm_v5_clkout0 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_7_LDC = MAXDELAY TO | SETUP       |     1.494ns|     6.005ns|       0|           0
+   TIMEGRP "TO_trig_offset_reg_7_LDC"       | HOLD        |     1.811ns|            |       0|           0
+     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_3_LDC = MAXDELAY TO | SETUP       |     1.695ns|     5.804ns|       0|           0
+   TIMEGRP "TO_trig_offset_reg_3_LDC"       | HOLD        |     1.826ns|            |       0|           0
+     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_5_LDC = MAXDELAY TO | SETUP       |     1.806ns|     5.693ns|       0|           0
+   TIMEGRP "TO_trig_offset_reg_5_LDC"       | HOLD        |     1.329ns|            |       0|           0
+     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_14_LDC = MAXDELAY T | SETUP       |     1.871ns|     5.628ns|       0|           0
+  O TIMEGRP "TO_trig_offset_reg_14_LDC"     | HOLD        |     1.635ns|            |       0|           0
+       TS_dcm_v5_clkout0 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_0_LDC = MAXDELAY TO | SETUP       |     1.876ns|     5.623ns|       0|           0
+   TIMEGRP "TO_trig_offset_reg_0_LDC"       | HOLD        |     1.493ns|            |       0|           0
+     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_2_LDC = MAXDELAY TO | SETUP       |     1.967ns|     5.532ns|       0|           0
+   TIMEGRP "TO_trig_offset_reg_2_LDC"       | HOLD        |     1.507ns|            |       0|           0
+     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_8_LDC = MAXDELAY TO | SETUP       |     2.039ns|     5.460ns|       0|           0
+   TIMEGRP "TO_trig_offset_reg_8_LDC"       | HOLD        |     1.681ns|            |       0|           0
+     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_11_LDC = MAXDELAY T | SETUP       |     2.097ns|     5.402ns|       0|           0
+  O TIMEGRP "TO_trig_offset_reg_11_LDC"     | HOLD        |     1.589ns|            |       0|           0
+       TS_dcm_v5_clkout0 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_6_LDC = MAXDELAY TO | SETUP       |     2.155ns|     5.344ns|       0|           0
+   TIMEGRP "TO_trig_offset_reg_6_LDC"       | HOLD        |     1.780ns|            |       0|           0
+     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_13_LDC = MAXDELAY T | SETUP       |     2.401ns|     5.098ns|       0|           0
+  O TIMEGRP "TO_trig_offset_reg_13_LDC"     | HOLD        |     2.084ns|            |       0|           0
+       TS_dcm_v5_clkout0 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_9_LDC = MAXDELAY TO | SETUP       |     2.561ns|     4.938ns|       0|           0
+   TIMEGRP "TO_trig_offset_reg_9_LDC"       | HOLD        |     1.684ns|            |       0|           0
+     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_OSC = PERIOD TIMEGRP "OSC" 8 ns HIGH 5 | MINLOWPULSE |     2.660ns|     5.340ns|       0|           0
   0%                                        |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_2_LDC = MAXDELAY TO | SETUP       |     2.970ns|     4.529ns|       0|           0
-   TIMEGRP "TO_trig_offset_reg_2_LDC"       | HOLD        |     1.451ns|            |       0|           0
+  TS_TO_trig_offset_reg_12_LDC = MAXDELAY T | SETUP       |     2.786ns|     4.713ns|       0|           0
+  O TIMEGRP "TO_trig_offset_reg_12_LDC"     | HOLD        |     2.025ns|            |       0|           0
+       TS_dcm_v5_clkout0 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_trig_offset_reg_1_LDC = MAXDELAY TO | SETUP       |     3.442ns|     4.057ns|       0|           0
+   TIMEGRP "TO_trig_offset_reg_1_LDC"       | HOLD        |     1.419ns|            |       0|           0
      TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_dcm_v5_clkout2 = PERIOD TIMEGRP "dcm_v | SETUP       |     3.464ns|    16.141ns|       0|           0
-  5_clkout2" TS_OSC / 0.266666667 PHASE     | HOLD        |     0.439ns|            |       0|           0
-       7.5 ns HIGH 50%                      |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_4_LDC = MAXDELAY TO | MAXDELAY    |     3.542ns|     3.957ns|       0|           0
-   TIMEGRP "TO_trig_offset_reg_4_LDC"       | HOLD        |     1.444ns|            |       0|           0
-     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_8_LDC = MAXDELAY TO | SETUP       |     3.616ns|     3.883ns|       0|           0
-   TIMEGRP "TO_trig_offset_reg_8_LDC"       | HOLD        |     1.893ns|            |       0|           0
-     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_0_LDC = MAXDELAY TO | SETUP       |     3.690ns|     3.809ns|       0|           0
-   TIMEGRP "TO_trig_offset_reg_0_LDC"       | HOLD        |     1.408ns|            |       0|           0
-     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_1_LDC = MAXDELAY TO | SETUP       |     3.740ns|     3.759ns|       0|           0
-   TIMEGRP "TO_trig_offset_reg_1_LDC"       | HOLD        |     1.254ns|            |       0|           0
-     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_7_LDC = MAXDELAY TO | SETUP       |     3.770ns|     3.729ns|       0|           0
-   TIMEGRP "TO_trig_offset_reg_7_LDC"       | HOLD        |     1.707ns|            |       0|           0
-     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_6_LDC = MAXDELAY TO | SETUP       |     3.774ns|     3.725ns|       0|           0
-   TIMEGRP "TO_trig_offset_reg_6_LDC"       | HOLD        |     1.511ns|            |       0|           0
-     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_3_LDC = MAXDELAY TO | SETUP       |     3.923ns|     3.576ns|       0|           0
-   TIMEGRP "TO_trig_offset_reg_3_LDC"       | HOLD        |     1.351ns|            |       0|           0
-     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_9_LDC = MAXDELAY TO | MAXDELAY    |     3.967ns|     3.532ns|       0|           0
-   TIMEGRP "TO_trig_offset_reg_9_LDC"       | HOLD        |     0.997ns|            |       0|           0
+  TS_TO_trig_offset_reg_4_LDC = MAXDELAY TO | SETUP       |     3.673ns|     3.826ns|       0|           0
+   TIMEGRP "TO_trig_offset_reg_4_LDC"       | HOLD        |     1.080ns|            |       0|           0
      TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_AD9222_DCO = PERIOD TIMEGRP "AD9222_DC | MINPERIOD   |     4.075ns|     0.925ns|       0|           0
   O" 5 ns HIGH 50%                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_adc_ioclk = PERIOD TIMEGRP "adc_ioclk" | MINPERIOD   |     4.182ns|     0.818ns|       0|           0
-   TS_AD9222_DCO HIGH 50%                   |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
   TS_adc_ioclk2 = PERIOD TIMEGRP "adc_ioclk | MINPERIOD   |     4.182ns|     0.818ns|       0|           0
   2" TS_AD9222_DCO HIGH 50%                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_adc_ioclk = PERIOD TIMEGRP "adc_ioclk" | MINPERIOD   |     4.182ns|     0.818ns|       0|           0
+   TS_AD9222_DCO HIGH 50%                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_adc_ioclk_inv2 = PERIOD TIMEGRP "adc_i | MINPERIOD   |     4.186ns|     0.814ns|       0|           0
   oclk_inv2" TS_AD9222_DCO PHASE 2.5 ns     |             |            |            |        |            
@@ -519,105 +543,81 @@ Asterisk (*) preceding a constraint indicates it was not met.
   clk_inv" TS_AD9222_DCO PHASE 2.5 ns       |             |            |            |        |            
      HIGH 50%                               |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_10_LDC = MAXDELAY T | SETUP       |     4.313ns|     3.186ns|       0|           0
-  O TIMEGRP "TO_trig_offset_reg_10_LDC"     | HOLD        |     1.291ns|            |       0|           0
-       TS_dcm_v5_clkout0 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_11_LDC = MAXDELAY T | SETUP       |     4.359ns|     3.140ns|       0|           0
-  O TIMEGRP "TO_trig_offset_reg_11_LDC"     | HOLD        |     1.306ns|            |       0|           0
-       TS_dcm_v5_clkout0 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_12_LDC = MAXDELAY T | SETUP       |     4.547ns|     2.952ns|       0|           0
-  O TIMEGRP "TO_trig_offset_reg_12_LDC"     | HOLD        |     1.349ns|            |       0|           0
-       TS_dcm_v5_clkout0 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_5_LDC = MAXDELAY TO | SETUP       |     4.565ns|     2.934ns|       0|           0
-   TIMEGRP "TO_trig_offset_reg_5_LDC"       | HOLD        |     1.303ns|            |       0|           0
-     TS_dcm_v5_clkout0 DATAPATHONLY         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_13_LDC = MAXDELAY T | SETUP       |     4.885ns|     2.614ns|       0|           0
-  O TIMEGRP "TO_trig_offset_reg_13_LDC"     | HOLD        |     1.053ns|            |       0|           0
-       TS_dcm_v5_clkout0 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_trig_offset_reg_14_LDC = MAXDELAY T | SETUP       |     5.108ns|     2.391ns|       0|           0
-  O TIMEGRP "TO_trig_offset_reg_14_LDC"     | HOLD        |     1.161ns|            |       0|           0
-       TS_dcm_v5_clkout0 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_reg_1_LDC = MAXDELAY T | SETUP       |     9.362ns|     5.638ns|       0|           0
-  O TIMEGRP "TO_drs_sampfreq_reg_1_LDC"     | HOLD        |     2.059ns|            |       0|           0
-       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_reg_4_LDC = MAXDELAY T | MAXDELAY    |     9.451ns|     5.549ns|       0|           0
-  O TIMEGRP "TO_drs_sampfreq_reg_4_LDC"     | HOLD        |     1.749ns|            |       0|           0
-       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_reg_3_LDC = MAXDELAY T | SETUP       |     9.510ns|     5.490ns|       0|           0
-  O TIMEGRP "TO_drs_sampfreq_reg_3_LDC"     | HOLD        |     1.872ns|            |       0|           0
-       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_cfifo_progfull_ir_LDC = MAXDELA | SETUP       |     9.547ns|     5.453ns|       0|           0
-  Y TO TIMEGRP         "TO_drs_cfifo_progfu | HOLD        |     1.840ns|            |       0|           0
+  TS_TO_drs_cfifo_progfull_ir_LDC = MAXDELA | MAXDELAY    |     9.452ns|     5.548ns|       0|           0
+  Y TO TIMEGRP         "TO_drs_cfifo_progfu | HOLD        |     1.854ns|            |       0|           0
   ll_ir_LDC" TS_dcm_v5_clkout1 DATAPATHONLY |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_reg_2_LDC = MAXDELAY T | SETUP       |     9.551ns|     5.449ns|       0|           0
-  O TIMEGRP "TO_drs_sampfreq_reg_2_LDC"     | HOLD        |     1.760ns|            |       0|           0
-       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_reg_6_LDC = MAXDELAY T | SETUP       |     9.734ns|     5.266ns|       0|           0
-  O TIMEGRP "TO_drs_sampfreq_reg_6_LDC"     | HOLD        |     1.995ns|            |       0|           0
-       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_reg_0_LDC = MAXDELAY T | SETUP       |     9.885ns|     5.115ns|       0|           0
-  O TIMEGRP "TO_drs_sampfreq_reg_0_LDC"     | HOLD        |     1.736ns|            |       0|           0
-       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_reg_5_LDC = MAXDELAY T | SETUP       |     9.950ns|     5.050ns|       0|           0
-  O TIMEGRP "TO_drs_sampfreq_reg_5_LDC"     | HOLD        |     2.160ns|            |       0|           0
-       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_reg_7_LDC = MAXDELAY T | SETUP       |    10.020ns|     4.980ns|       0|           0
-  O TIMEGRP "TO_drs_sampfreq_reg_7_LDC"     | HOLD        |     1.429ns|            |       0|           0
-       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_dfifo_progfull_ir_1_LDC = MAXDE | SETUP       |    10.835ns|     4.165ns|       0|           0
-  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.197ns|            |       0|           0
+  TS_TO_drs_dfifo_progfull_ir_1_LDC = MAXDE | SETUP       |    10.613ns|     4.387ns|       0|           0
+  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.574ns|            |       0|           0
   full_ir_1_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
   ONLY                                      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_dfifo_progfull_ir_2_LDC = MAXDE | SETUP       |    10.858ns|     4.142ns|       0|           0
-  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.560ns|            |       0|           0
-  full_ir_2_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
-  ONLY                                      |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_dfifo_progfull_ir_6_LDC = MAXDE | MAXDELAY    |    10.866ns|     4.134ns|       0|           0
-  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.858ns|            |       0|           0
-  full_ir_6_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
-  ONLY                                      |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_dfifo_progfull_ir_5_LDC = MAXDE | SETUP       |    11.176ns|     3.824ns|       0|           0
-  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.592ns|            |       0|           0
-  full_ir_5_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
-  ONLY                                      |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_dfifo_progfull_ir_4_LDC = MAXDE | SETUP       |    11.349ns|     3.651ns|       0|           0
-  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.612ns|            |       0|           0
-  full_ir_4_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
-  ONLY                                      |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_dfifo_progfull_ir_0_LDC = MAXDE | SETUP       |    11.495ns|     3.505ns|       0|           0
-  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     0.964ns|            |       0|           0
-  full_ir_0_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
-  ONLY                                      |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_dfifo_progfull_ir_3_LDC = MAXDE | SETUP       |    11.579ns|     3.421ns|       0|           0
-  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.513ns|            |       0|           0
+  TS_TO_drs_dfifo_progfull_ir_3_LDC = MAXDE | SETUP       |    10.805ns|     4.195ns|       0|           0
+  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.277ns|            |       0|           0
   full_ir_3_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
   ONLY                                      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_dfifo_progfull_ir_7_LDC = MAXDE | SETUP       |    11.756ns|     3.244ns|       0|           0
-  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.173ns|            |       0|           0
+  TS_TO_drs_dfifo_progfull_ir_7_LDC = MAXDE | SETUP       |    10.843ns|     4.157ns|       0|           0
+  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.358ns|            |       0|           0
   full_ir_7_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
   ONLY                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_dfifo_progfull_ir_6_LDC = MAXDE | SETUP       |    10.895ns|     4.105ns|       0|           0
+  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.470ns|            |       0|           0
+  full_ir_6_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
+  ONLY                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_dfifo_progfull_ir_0_LDC = MAXDE | SETUP       |    11.048ns|     3.952ns|       0|           0
+  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.321ns|            |       0|           0
+  full_ir_0_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
+  ONLY                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_dfifo_progfull_ir_5_LDC = MAXDE | SETUP       |    11.092ns|     3.908ns|       0|           0
+  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.628ns|            |       0|           0
+  full_ir_5_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
+  ONLY                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_dfifo_progfull_ir_2_LDC = MAXDE | SETUP       |    11.244ns|     3.756ns|       0|           0
+  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.667ns|            |       0|           0
+  full_ir_2_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
+  ONLY                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_reg_0_LDC = MAXDELAY T | SETUP       |    11.412ns|     3.588ns|       0|           0
+  O TIMEGRP "TO_drs_sampfreq_reg_0_LDC"     | HOLD        |     1.018ns|            |       0|           0
+       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_reg_6_LDC = MAXDELAY T | MAXDELAY    |    11.779ns|     3.221ns|       0|           0
+  O TIMEGRP "TO_drs_sampfreq_reg_6_LDC"     | HOLD        |     1.337ns|            |       0|           0
+       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_dfifo_progfull_ir_4_LDC = MAXDE | SETUP       |    11.825ns|     3.175ns|       0|           0
+  LAY TO TIMEGRP         "TO_drs_dfifo_prog | HOLD        |     1.314ns|            |       0|           0
+  full_ir_4_LDC" TS_dcm_v5_clkout1 DATAPATH |             |            |            |        |            
+  ONLY                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_reg_1_LDC = MAXDELAY T | SETUP       |    12.009ns|     2.991ns|       0|           0
+  O TIMEGRP "TO_drs_sampfreq_reg_1_LDC"     | HOLD        |     1.217ns|            |       0|           0
+       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_reg_3_LDC = MAXDELAY T | MAXDELAY    |    12.045ns|     2.955ns|       0|           0
+  O TIMEGRP "TO_drs_sampfreq_reg_3_LDC"     | HOLD        |     1.123ns|            |       0|           0
+       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_reg_2_LDC = MAXDELAY T | SETUP       |    12.051ns|     2.949ns|       0|           0
+  O TIMEGRP "TO_drs_sampfreq_reg_2_LDC"     | HOLD        |     1.036ns|            |       0|           0
+       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_reg_7_LDC = MAXDELAY T | SETUP       |    12.225ns|     2.775ns|       0|           0
+  O TIMEGRP "TO_drs_sampfreq_reg_7_LDC"     | HOLD        |     1.357ns|            |       0|           0
+       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_reg_4_LDC = MAXDELAY T | SETUP       |    12.300ns|     2.700ns|       0|           0
+  O TIMEGRP "TO_drs_sampfreq_reg_4_LDC"     | HOLD        |     1.445ns|            |       0|           0
+       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_reg_5_LDC = MAXDELAY T | SETUP       |    12.399ns|     2.601ns|       0|           0
+  O TIMEGRP "TO_drs_sampfreq_reg_5_LDC"     | HOLD        |     1.391ns|            |       0|           0
+       TS_dcm_v5_clkout1 DATAPATHONLY       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_BP_EXTCLK = PERIOD TIMEGRP "BP_EXTCLK" | MINLOWPULSE |    68.000ns|    32.000ns|       0|           0
    100 ns HIGH 50%                          |             |            |            |        |            
@@ -626,48 +626,48 @@ Asterisk (*) preceding a constraint indicates it was not met.
   _extclk_clkfx" TS_BP_EXTCLK / 4 HIGH      |             |            |            |        |            
       50%                                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_dcm_extclk_clk180 = PERIOD TIMEGRP "dc | SETUP       |    93.791ns|     6.209ns|       0|           0
-  m_extclk_clk180" TS_BP_EXTCLK PHASE       | HOLD        |     0.454ns|            |       0|           0
+  TS_dcm_extclk_clk180 = PERIOD TIMEGRP "dc | SETUP       |    93.668ns|     6.332ns|       0|           0
+  m_extclk_clk180" TS_BP_EXTCLK PHASE       | HOLD        |     0.434ns|            |       0|           0
      50 ns HIGH 50%                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_TenMreg_3_LDC = MAXDEL | SETUP       |    96.302ns|     3.698ns|       0|           0
-  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.826ns|            |       0|           0
-  nMreg_3_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
-  HONLY                                     |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_TenMreg_0_LDC = MAXDEL | SETUP       |    97.223ns|     2.777ns|       0|           0
-  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.287ns|            |       0|           0
-  nMreg_0_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
-  HONLY                                     |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_TenMreg_4_LDC = MAXDEL | SETUP       |    97.388ns|     2.612ns|       0|           0
-  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.371ns|            |       0|           0
-  nMreg_4_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
-  HONLY                                     |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_TenMreg_5_LDC = MAXDEL | SETUP       |    97.465ns|     2.535ns|       0|           0
-  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.250ns|            |       0|           0
-  nMreg_5_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
-  HONLY                                     |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_TenMreg_1_LDC = MAXDEL | SETUP       |    97.545ns|     2.455ns|       0|           0
-  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.143ns|            |       0|           0
+  TS_TO_drs_sampfreq_TenMreg_1_LDC = MAXDEL | SETUP       |    96.689ns|     3.311ns|       0|           0
+  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.070ns|            |       0|           0
   nMreg_1_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
   HONLY                                     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_TenMreg_6_LDC = MAXDEL | SETUP       |    97.614ns|     2.386ns|       0|           0
-  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.277ns|            |       0|           0
-  nMreg_6_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
-  HONLY                                     |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_TenMreg_7_LDC = MAXDEL | SETUP       |    97.663ns|     2.337ns|       0|           0
-  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.195ns|            |       0|           0
+  TS_TO_drs_sampfreq_TenMreg_7_LDC = MAXDEL | SETUP       |    96.799ns|     3.201ns|       0|           0
+  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.325ns|            |       0|           0
   nMreg_7_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
   HONLY                                     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_TO_drs_sampfreq_TenMreg_2_LDC = MAXDEL | SETUP       |    97.850ns|     2.150ns|       0|           0
-  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.104ns|            |       0|           0
+  TS_TO_drs_sampfreq_TenMreg_0_LDC = MAXDEL | SETUP       |    96.838ns|     3.162ns|       0|           0
+  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.145ns|            |       0|           0
+  nMreg_0_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
+  HONLY                                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_TenMreg_3_LDC = MAXDEL | SETUP       |    96.963ns|     3.037ns|       0|           0
+  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.075ns|            |       0|           0
+  nMreg_3_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
+  HONLY                                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_TenMreg_4_LDC = MAXDEL | MAXDELAY    |    97.197ns|     2.803ns|       0|           0
+  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.167ns|            |       0|           0
+  nMreg_4_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
+  HONLY                                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_TenMreg_2_LDC = MAXDEL | SETUP       |    97.316ns|     2.684ns|       0|           0
+  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.263ns|            |       0|           0
   nMreg_2_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
+  HONLY                                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_TenMreg_5_LDC = MAXDEL | SETUP       |    97.620ns|     2.380ns|       0|           0
+  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.233ns|            |       0|           0
+  nMreg_5_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
+  HONLY                                     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_TO_drs_sampfreq_TenMreg_6_LDC = MAXDEL | SETUP       |    97.810ns|     2.190ns|       0|           0
+  AY TO TIMEGRP         "TO_drs_sampfreq_Te | HOLD        |     1.031ns|            |       0|           0
+  nMreg_6_LDC" TS_dcm_extclk_clk180 DATAPAT |             |            |            |        |            
   HONLY                                     |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 
@@ -682,51 +682,51 @@ Derived Constraints for TS_OSC
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_OSC                         |      8.000ns|      5.340ns|      7.970ns|            0|            0|            0|       269413|
-| TS_dcm_gmii_clk0              |      8.000ns|      6.934ns|          N/A|            0|            0|         2236|            0|
-| TS_dcm_v5_clkout2             |     30.000ns|     16.141ns|          N/A|            0|            0|            2|            0|
-| TS_dcm_v5_clkout0             |      7.500ns|      7.337ns|      4.529ns|            0|            0|       140907|           60|
-|  TS_TO_trig_offset_reg_14_LDC |      7.500ns|      2.391ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_11_LDC |      7.500ns|      3.140ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_13_LDC |      7.500ns|      2.614ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_12_LDC |      7.500ns|      2.952ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_8_LDC  |      7.500ns|      3.883ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_10_LDC |      7.500ns|      3.186ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_9_LDC  |      7.500ns|      3.532ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_5_LDC  |      7.500ns|      2.934ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_7_LDC  |      7.500ns|      3.729ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_6_LDC  |      7.500ns|      3.725ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_4_LDC  |      7.500ns|      3.957ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_3_LDC  |      7.500ns|      3.576ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_2_LDC  |      7.500ns|      4.529ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_1_LDC  |      7.500ns|      3.759ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_trig_offset_reg_0_LDC  |      7.500ns|      3.809ns|          N/A|            0|            0|            4|            0|
-| TS_dcm_v5_clkout1             |     15.000ns|     14.944ns|      5.638ns|            0|            0|       126140|           68|
-|  TS_TO_drs_sampfreq_reg_7_LDC |     15.000ns|      4.980ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_drs_sampfreq_reg_6_LDC |     15.000ns|      5.266ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_drs_sampfreq_reg_3_LDC |     15.000ns|      5.490ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_drs_sampfreq_reg_5_LDC |     15.000ns|      5.050ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_drs_sampfreq_reg_4_LDC |     15.000ns|      5.549ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_drs_sampfreq_reg_0_LDC |     15.000ns|      5.115ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_drs_sampfreq_reg_2_LDC |     15.000ns|      5.449ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_drs_sampfreq_reg_1_LDC |     15.000ns|      5.638ns|          N/A|            0|            0|            4|            0|
-|  TS_TO_drs_cfifo_progfull_ir_L|     15.000ns|      5.453ns|          N/A|            0|            0|            4|            0|
+|TS_OSC                         |      8.000ns|      5.340ns|      7.993ns|            0|            0|            0|       272603|
+| TS_dcm_gmii_clk0              |      8.000ns|      6.710ns|          N/A|            0|            0|         2236|            0|
+| TS_dcm_v5_clkout2             |     30.000ns|     25.906ns|          N/A|            0|            0|            2|            0|
+| TS_dcm_v5_clkout0             |      7.500ns|      7.493ns|      6.018ns|            0|            0|       144097|           60|
+|  TS_TO_trig_offset_reg_14_LDC |      7.500ns|      5.628ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_11_LDC |      7.500ns|      5.402ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_13_LDC |      7.500ns|      5.098ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_12_LDC |      7.500ns|      4.713ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_8_LDC  |      7.500ns|      5.460ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_10_LDC |      7.500ns|      6.018ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_9_LDC  |      7.500ns|      4.938ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_5_LDC  |      7.500ns|      5.693ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_7_LDC  |      7.500ns|      6.005ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_6_LDC  |      7.500ns|      5.344ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_4_LDC  |      7.500ns|      3.826ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_3_LDC  |      7.500ns|      5.804ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_2_LDC  |      7.500ns|      5.532ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_1_LDC  |      7.500ns|      4.057ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_trig_offset_reg_0_LDC  |      7.500ns|      5.623ns|          N/A|            0|            0|            4|            0|
+| TS_dcm_v5_clkout1             |     15.000ns|     14.982ns|      5.548ns|            0|            0|       126140|           68|
+|  TS_TO_drs_sampfreq_reg_7_LDC |     15.000ns|      2.775ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_reg_6_LDC |     15.000ns|      3.221ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_reg_3_LDC |     15.000ns|      2.955ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_reg_5_LDC |     15.000ns|      2.601ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_reg_4_LDC |     15.000ns|      2.700ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_reg_0_LDC |     15.000ns|      3.588ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_reg_2_LDC |     15.000ns|      2.949ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_reg_1_LDC |     15.000ns|      2.991ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_cfifo_progfull_ir_L|     15.000ns|      5.548ns|          N/A|            0|            0|            4|            0|
 |  DC                           |             |             |             |             |             |             |             |
-|  TS_TO_drs_dfifo_progfull_ir_0|     15.000ns|      3.505ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_dfifo_progfull_ir_0|     15.000ns|      3.952ns|          N/A|            0|            0|            4|            0|
 |  _LDC                         |             |             |             |             |             |             |             |
-|  TS_TO_drs_dfifo_progfull_ir_3|     15.000ns|      3.421ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_dfifo_progfull_ir_3|     15.000ns|      4.195ns|          N/A|            0|            0|            4|            0|
 |  _LDC                         |             |             |             |             |             |             |             |
-|  TS_TO_drs_dfifo_progfull_ir_1|     15.000ns|      4.165ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_dfifo_progfull_ir_1|     15.000ns|      4.387ns|          N/A|            0|            0|            4|            0|
 |  _LDC                         |             |             |             |             |             |             |             |
-|  TS_TO_drs_dfifo_progfull_ir_2|     15.000ns|      4.142ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_dfifo_progfull_ir_2|     15.000ns|      3.756ns|          N/A|            0|            0|            4|            0|
 |  _LDC                         |             |             |             |             |             |             |             |
-|  TS_TO_drs_dfifo_progfull_ir_6|     15.000ns|      4.134ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_dfifo_progfull_ir_6|     15.000ns|      4.105ns|          N/A|            0|            0|            4|            0|
 |  _LDC                         |             |             |             |             |             |             |             |
-|  TS_TO_drs_dfifo_progfull_ir_4|     15.000ns|      3.651ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_dfifo_progfull_ir_4|     15.000ns|      3.175ns|          N/A|            0|            0|            4|            0|
 |  _LDC                         |             |             |             |             |             |             |             |
-|  TS_TO_drs_dfifo_progfull_ir_5|     15.000ns|      3.824ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_dfifo_progfull_ir_5|     15.000ns|      3.908ns|          N/A|            0|            0|            4|            0|
 |  _LDC                         |             |             |             |             |             |             |             |
-|  TS_TO_drs_dfifo_progfull_ir_7|     15.000ns|      3.244ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_dfifo_progfull_ir_7|     15.000ns|      4.157ns|          N/A|            0|            0|            4|            0|
 |  _LDC                         |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -736,10 +736,10 @@ Derived Constraints for TS_AD9222_DCO
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_AD9222_DCO                  |      5.000ns|      0.925ns|      4.839ns|            0|            0|            0|         1808|
-| TS_adc_divclk                 |      5.000ns|      4.839ns|          N/A|            0|            0|         1808|            0|
-| TS_adc_ioclk                  |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
+|TS_AD9222_DCO                  |      5.000ns|      0.925ns|      4.962ns|            0|            0|            0|         1808|
 | TS_adc_ioclk_inv              |      5.000ns|      0.814ns|          N/A|            0|            0|            0|            0|
+| TS_adc_ioclk                  |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
+| TS_adc_divclk                 |      5.000ns|      4.962ns|          N/A|            0|            0|         1808|            0|
 | TS_adc_ioclk2                 |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
 | TS_adc_ioclk_inv2             |      5.000ns|      0.814ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
@@ -752,22 +752,22 @@ Derived Constraints for TS_BP_EXTCLK
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |TS_BP_EXTCLK                   |    100.000ns|     32.000ns|      6.920ns|            0|            0|            0|        41298|
 | TS_dcm_extclk_clkfx           |     25.000ns|      1.730ns|          N/A|            0|            0|            0|            0|
-| TS_dcm_extclk_clk180          |    100.000ns|      6.209ns|      3.698ns|            0|            0|        41266|           32|
-|  TS_TO_drs_sampfreq_TenMreg_7_|    100.000ns|      2.337ns|          N/A|            0|            0|            4|            0|
+| TS_dcm_extclk_clk180          |    100.000ns|      6.332ns|      3.311ns|            0|            0|        41266|           32|
+|  TS_TO_drs_sampfreq_TenMreg_7_|    100.000ns|      3.201ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
-|  TS_TO_drs_sampfreq_TenMreg_4_|    100.000ns|      2.612ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_TenMreg_4_|    100.000ns|      2.803ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
-|  TS_TO_drs_sampfreq_TenMreg_6_|    100.000ns|      2.386ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_TenMreg_6_|    100.000ns|      2.190ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
-|  TS_TO_drs_sampfreq_TenMreg_5_|    100.000ns|      2.535ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_TenMreg_5_|    100.000ns|      2.380ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
-|  TS_TO_drs_sampfreq_TenMreg_3_|    100.000ns|      3.698ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_TenMreg_3_|    100.000ns|      3.037ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
-|  TS_TO_drs_sampfreq_TenMreg_2_|    100.000ns|      2.150ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_TenMreg_2_|    100.000ns|      2.684ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
-|  TS_TO_drs_sampfreq_TenMreg_1_|    100.000ns|      2.455ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_TenMreg_1_|    100.000ns|      3.311ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
-|  TS_TO_drs_sampfreq_TenMreg_0_|    100.000ns|      2.777ns|          N/A|            0|            0|            4|            0|
+|  TS_TO_drs_sampfreq_TenMreg_0_|    100.000ns|      3.162ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -780,10 +780,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 35 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 4 mins 11 secs 
-Total CPU time to PAR completion: 4 mins 18 secs 
+Total REAL time to PAR completion: 7 mins 31 secs 
+Total CPU time to PAR completion: 7 mins 49 secs 
 
-Peak Memory Usage:  843 MB
+Peak Memory Usage:  849 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
