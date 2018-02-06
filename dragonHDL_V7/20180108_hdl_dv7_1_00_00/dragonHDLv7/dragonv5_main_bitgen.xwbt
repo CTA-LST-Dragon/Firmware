@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\CTA_PC\Desktop\dragonHDLv7\dragonHDLv7\dragonv5_main.ncd
+OUTFILE=C:\Users\CTA_PC\Desktop\dragonHDLv7\dragonHDLv7\dragonv5_main.bit
+FAMILY=Spartan6
+PART=xc6slx100-3fgg676
+WORKINGDIR=C:\Users\CTA_PC\Desktop\dragonHDLv7\dragonHDLv7
+LICENSE=ISE
+USER_INFO=174114377_174114378_210582442_362

@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            01/08/2018 - 21:43
+SOURCE          C:\Users\CTA_PC\Dropbox\TeV\dragon_verilogHDL\201612xx_hdl_dv6_1_0A_00\dragonHDLv6\dv7_1_01_00.mcs
+DEVICE          8192K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x4E71DBC8
+START_ADDRESS   0x00000000 END_ADDRESS 0x0032A093 DIRECTION_UP   "C:/Users/CTA_PC/Desktop/dragonHDLv7/dragonHDLv7/dragonv5_main.bit" 6slx100fgg676
