@@ -2,10 +2,10 @@
 # Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 SOFTWARE_VERSION P.20131013
-DATE            02/06/2018 - 23:44
+DATE            02/07/2018 - 08:52
 SOURCE          C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_00\dv5_3_00_00.mcs
 DEVICE          8192K
 DATA_WIDTH      1
 FILL_DATA       0xFF
-SIGNATURE       0x4E724656
+SIGNATURE       0x4E7371AC
 START_ADDRESS   0x00000000 END_ADDRESS 0x0032A093 DIRECTION_UP   "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.bit" 6slx100fgg676
