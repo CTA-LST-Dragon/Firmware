@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.42 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.42 secs
  
 --> Reading design: dragonv5_main.prj
 
@@ -674,9 +674,9 @@ INFO:Xst:3210 - "C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_
     Found 12-bit adder for signal <n1453[11:0]> created at line 1711.
     Found 13-bit adder for signal <drs_dwrite_c[12]_GND_1_o_add_155_OUT> created at line 1714.
     Found 11-bit adder for signal <drs_c[10]_GND_1_o_add_184_OUT> created at line 1832.
-    Found 1-bit 12-to-1 multiplexer for signal <_n1948> created at line 1358.
-    Found 1-bit 4-to-1 multiplexer for signal <_n1951> created at line 1816.
-    Found 1-bit 4-to-1 multiplexer for signal <_n1954> created at line 1991.
+    Found 1-bit 12-to-1 multiplexer for signal <_n1946> created at line 1358.
+    Found 1-bit 4-to-1 multiplexer for signal <_n1949> created at line 1816.
+    Found 1-bit 4-to-1 multiplexer for signal <_n1952> created at line 1991.
     Found 1-bit tristate buffer for signal <ETH_MDIO> created at line 1033
     Found 8-bit comparator equal for signal <drs_refclk_c[7]_drs_sampfreq_reg[7]_equal_21_o> created at line 1262
     Found 8-bit comparator equal for signal <drs_refclkTenM_c[7]_drs_sampfreq_TenMreg[7]_equal_29_o> created at line 1286
@@ -1389,12 +1389,14 @@ INFO:Xst:3210 - "C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 15-bit adder for signal <n0217[14:0]> created at line 148.
-    Found 16-bit adder for signal <fmt_c2[15]_GND_82_o_add_74_OUT> created at line 153.
-    Found 16-bit adder for signal <fmt_c[15]_GND_82_o_add_101_OUT> created at line 173.
-    Found 16-bit comparator equal for signal <fmt_c2[15]_GND_82_o_equal_74_o> created at line 148
+    Found 15-bit adder for signal <n0225[14:0]> created at line 148.
+    Found 16-bit adder for signal <n0229> created at line 148.
+    Found 16-bit adder for signal <BUS_0038_GND_82_o_add_88_OUT> created at line 148.
+    Found 16-bit adder for signal <fmt_c2[15]_GND_82_o_add_90_OUT> created at line 153.
+    Found 16-bit adder for signal <fmt_c[15]_GND_82_o_add_117_OUT> created at line 173.
+    Found 16-bit comparator equal for signal <fmt_c2[15]_BUS_0038_equal_90_o> created at line 148
     Summary:
-	inferred   3 Adder/Subtractor(s).
+	inferred   5 Adder/Subtractor(s).
 	inferred  50 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 	inferred  19 Multiplexer(s).
@@ -1864,7 +1866,7 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  2048x8-bit dual-port RAM                              : 1
-# Adders/Subtractors                                   : 178
+# Adders/Subtractors                                   : 180
  1-bit adder                                           : 8
  10-bit adder                                          : 3
  11-bit adder                                          : 3
@@ -1874,7 +1876,7 @@ Macro Statistics
  13-bit subtractor                                     : 24
  14-bit adder                                          : 8
  15-bit adder                                          : 1
- 16-bit adder                                          : 18
+ 16-bit adder                                          : 20
  2-bit adder                                           : 8
  2-bit subtractor                                      : 8
  24-bit subtractor                                     : 1
@@ -2279,7 +2281,7 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  2048x8-bit dual-port block RAM                        : 1
-# Adders/Subtractors                                   : 128
+# Adders/Subtractors                                   : 130
  1-bit adder                                           : 8
  11-bit adder                                          : 1
  11-bit subtractor                                     : 8
@@ -2288,7 +2290,7 @@ Macro Statistics
  13-bit subtractor                                     : 24
  14-bit adder                                          : 8
  15-bit adder                                          : 1
- 16-bit adder                                          : 1
+ 16-bit adder                                          : 3
  2-bit adder                                           : 8
  2-bit subtractor                                      : 8
  30-bit adder                                          : 2
@@ -3073,20 +3075,20 @@ Top Level Output File Name         : dragonv5_main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 17012
+# BELS                             : 17040
 #      GND                         : 23
-#      INV                         : 427
-#      LUT1                        : 938
+#      INV                         : 428
+#      LUT1                        : 951
 #      LUT2                        : 2364
-#      LUT3                        : 2254
-#      LUT4                        : 1634
-#      LUT5                        : 883
-#      LUT6                        : 2747
-#      MUXCY                       : 2963
-#      MUXF7                       : 354
+#      LUT3                        : 2255
+#      LUT4                        : 1635
+#      LUT5                        : 884
+#      LUT6                        : 2745
+#      MUXCY                       : 2964
+#      MUXF7                       : 353
 #      MUXF8                       : 103
 #      VCC                         : 12
-#      XORCY                       : 2310
+#      XORCY                       : 2323
 # FlipFlops/Latches                : 12178
 #      FD                          : 1744
 #      FDC                         : 2686
@@ -3134,17 +3136,17 @@ Selected Device : 6slx100fgg676-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:           12177  out of  126576     9%  
- Number of Slice LUTs:                11672  out of  63288    18%  
-    Number used as Logic:             11247  out of  63288    17%  
+ Number of Slice LUTs:                11687  out of  63288    18%  
+    Number used as Logic:             11262  out of  63288    17%  
     Number used as Memory:              425  out of  15616     2%  
        Number used as RAM:               72
        Number used as SRL:              353
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  16744
-   Number with an unused Flip Flop:    4567  out of  16744    27%  
-   Number with an unused LUT:          5072  out of  16744    30%  
-   Number of fully used LUT-FF pairs:  7105  out of  16744    42%  
+ Number of LUT Flip Flop pairs used:  16753
+   Number with an unused Flip Flop:    4576  out of  16753    27%  
+   Number with an unused LUT:          5066  out of  16753    30%  
+   Number of fully used LUT-FF pairs:  7111  out of  16753    42%  
    Number of unique control sets:       883
 
 IO Utilization: 
@@ -3375,7 +3377,7 @@ Delay:               2.885ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'dcm_v5/pll_base_inst/CLKOUT0'
   Clock period: 5.769ns (frequency: 173.342MHz)
-  Total number of paths / destination ports: 144511 / 15325
+  Total number of paths / destination ports: 144480 / 15325
 -------------------------------------------------------------------------
 Delay:               5.769ns (Levels of Logic = 5)
   Source:            analog_trigger/dtrig_ir_2 (FF)
@@ -3554,7 +3556,7 @@ Offset:              6.220ns (Levels of Logic = 4)
      IBUF:I->O             1   1.222   0.944  DRS_PLLLCK_1_IBUF (DRS_PLLLCK_1_IBUF)
      LUT6:I0->O            1   0.203   0.944  DRS_PLLLCK[7]_PWR_1_o_equal_121_o<7>1 (DRS_PLLLCK[7]_PWR_1_o_equal_121_o<7>)
      LUT6:I0->O           13   0.203   1.297  DRS_PLLLCK[7]_PWR_1_o_equal_121_o<7>3 (DRS_PLLLCK[7]_PWR_1_o_equal_121_o)
-     LUT6:I0->O           11   0.203   0.882  drs_state__n2136_inv4 (_n2136_inv)
+     LUT6:I0->O           11   0.203   0.882  drs_state__n2134_inv4 (_n2134_inv)
      FDCE:CE                   0.322          drs_c_0
     ----------------------------------------
     Total                      6.220ns (2.153ns logic, 4.067ns route)
@@ -4393,12 +4395,12 @@ dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 117.00 secs
-Total CPU time to Xst completion: 117.60 secs
+Total REAL time to Xst completion: 100.00 secs
+Total CPU time to Xst completion: 99.44 secs
  
 --> 
 
-Total memory usage is 422792 kilobytes
+Total memory usage is 422856 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  336 (   0 filtered)
