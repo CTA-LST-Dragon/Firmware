@@ -11,7 +11,7 @@ Target Device  : xc6slx100
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : WED 7 FEB 0:26:22 2018
+Mapped Date    : SUN 11 MAR 19:49:13 2018
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:56 - Part 'xc6slx100' is not a WebPack part.
@@ -80,7 +80,7 @@ Asterisk (*) preceding a constraint indicates it was not met.
   clk_inv" TS_AD9222_DCO PHASE 2.5 ns HIGH  |             |            |            |        |            
   50%                                       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_dcm_v5_clkout1 = PERIOD TIMEGRP "dcm_v | SETUP       |     5.026ns|     4.948ns|       0|           0
+  TS_dcm_v5_clkout1 = PERIOD TIMEGRP "dcm_v | SETUP       |     4.863ns|     5.274ns|       0|           0
   5_clkout1" TS_OSC / 0.533333333 HIGH 50%  | HOLD        |     0.004ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_TO_trig_offset_reg_1_LDC = MAXDELAY TO | SETUP       |     6.469ns|     1.030ns|       0|           0
@@ -275,10 +275,10 @@ Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
 ----------+
 |TS_OSC                         |      8.000ns|      5.340ns|      9.840ns|            0|            9|            0|   
-   272572|
+   283415|
 | TS_dcm_gmii_clk0              |      8.000ns|      9.840ns|          N/A|            1|            0|         2236|   
         0|
-| TS_dcm_v5_clkout1             |     15.000ns|      4.948ns|      1.047ns|            0|            0|       126140|   
+| TS_dcm_v5_clkout1             |     15.000ns|      5.274ns|      1.047ns|            0|            0|       138562|   
        68|
 |  TS_TO_drs_sampfreq_reg_7_LDC |     15.000ns|      1.030ns|          N/A|            0|            0|            4|   
         0|
@@ -334,7 +334,7 @@ Derivative  |
          |
 | TS_dcm_v5_clkout2             |     30.000ns|      3.924ns|          N/A|            0|            0|            2|   
         0|
-| TS_dcm_v5_clkout0             |      7.500ns|      3.124ns|      1.030ns|            8|            0|       144066|   
+| TS_dcm_v5_clkout0             |      7.500ns|      3.124ns|      1.030ns|            8|            0|       142487|   
        60|
 |  TS_TO_trig_offset_reg_14_LDC |      7.500ns|      1.030ns|          N/A|            0|            0|            4|   
         0|
@@ -382,15 +382,15 @@ Derivative  |
 ----------+
 |TS_AD9222_DCO                  |      5.000ns|      0.925ns|      1.730ns|            0|            0|            0|   
      1808|
-| TS_adc_ioclk2                 |      5.000ns|      0.818ns|          N/A|            0|            0|            0|   
+| TS_adc_divclk                 |      5.000ns|      1.730ns|          N/A|            0|            0|         1808|   
         0|
 | TS_adc_ioclk                  |      5.000ns|      0.818ns|          N/A|            0|            0|            0|   
         0|
-| TS_adc_ioclk_inv              |      5.000ns|      0.814ns|          N/A|            0|            0|            0|   
+| TS_adc_ioclk2                 |      5.000ns|      0.818ns|          N/A|            0|            0|            0|   
         0|
 | TS_adc_ioclk_inv2             |      5.000ns|      0.814ns|          N/A|            0|            0|            0|   
         0|
-| TS_adc_divclk                 |      5.000ns|      1.730ns|          N/A|            0|            0|         1808|   
+| TS_adc_ioclk_inv              |      5.000ns|      0.814ns|          N/A|            0|            0|            0|   
         0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
 ----------+
@@ -408,8 +408,6 @@ Derivative  |
 ----------+
 |TS_BP_EXTCLK                   |    100.000ns|     32.000ns|      6.920ns|            0|            0|            0|   
     41298|
-| TS_dcm_extclk_clkfx           |     25.000ns|      1.730ns|          N/A|            0|            0|            0|   
-        0|
 | TS_dcm_extclk_clk180          |    100.000ns|      2.402ns|      1.030ns|            0|            0|        41266|   
        32|
 |  TS_TO_drs_sampfreq_TenMreg_7_|    100.000ns|      1.030ns|          N/A|            0|            0|            4|   
@@ -444,6 +442,8 @@ Derivative  |
         0|
 |  LDC                          |             |             |             |             |             |             |   
          |
+| TS_dcm_extclk_clkfx           |     25.000ns|      1.730ns|          N/A|            0|            0|            0|   
+        0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
 ----------+
 
@@ -453,81 +453,61 @@ Derivative  |
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 49 secs 
-Total CPU  time at the beginning of Placer: 48 secs 
+Total REAL time at the beginning of Placer: 50 secs 
+Total CPU  time at the beginning of Placer: 47 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:5b367556) REAL time: 57 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:bb97d2e0) REAL time: 59 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:5b367556) REAL time: 59 secs 
+Phase 2.7  Design Feasibility Check (Checksum:bb97d2e0) REAL time: 1 mins 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:5b367556) REAL time: 59 secs 
+Phase 3.31  Local Placement Optimization (Checksum:bb97d2e0) REAL time: 1 mins 1 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:8c18ec33) REAL time: 3 mins 27 secs 
+(Checksum:fa3af2be) REAL time: 3 mins 27 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:8c18ec33) REAL time: 3 mins 27 secs 
+Phase 5.36  Local Placement Optimization (Checksum:fa3af2be) REAL time: 3 mins 27 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:8c18ec33) REAL time: 3 mins 27 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:fa3af2be) REAL time: 3 mins 27 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:8c18ec33) REAL time: 3 mins 28 secs 
+Phase 7.3  Local Placement Optimization (Checksum:fa3af2be) REAL time: 3 mins 27 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:8c18ec33) REAL time: 3 mins 28 secs 
+Phase 8.5  Local Placement Optimization (Checksum:fa3af2be) REAL time: 3 mins 28 secs 
 
 Phase 9.8  Global Placement
-.........................
-.......................................
-.............................................................................................................................
-...............................................................................................................
-..................................
-Phase 9.8  Global Placement (Checksum:50193a8e) REAL time: 6 mins 54 secs 
+.............................
+..........................................................................................
+................................................................................................................
+...................................................................................................................................
+..............................................
+Phase 9.8  Global Placement (Checksum:673c90d2) REAL time: 6 mins 50 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:50193a8e) REAL time: 6 mins 54 secs 
+Phase 10.5  Local Placement Optimization (Checksum:673c90d2) REAL time: 6 mins 50 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:d6a663af) REAL time: 7 mins 43 secs 
+Phase 11.18  Placement Optimization (Checksum:ac180c3d) REAL time: 7 mins 33 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:d6a663af) REAL time: 7 mins 43 secs 
+Phase 12.5  Local Placement Optimization (Checksum:ac180c3d) REAL time: 7 mins 34 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:88791068) REAL time: 7 mins 44 secs 
+Phase 13.34  Placement Validation (Checksum:11a6335e) REAL time: 7 mins 35 secs 
 
-Total REAL time to Placer completion: 8 mins 27 secs 
-Total CPU  time to Placer completion: 8 mins 22 secs 
+Total REAL time to Placer completion: 8 mins 17 secs 
+Total CPU  time to Placer completion: 8 mins 9 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[6]_AND_832_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[4]_AND_836_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[1]_AND_842_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[5]_AND_834_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[2]_AND_840_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[3]_AND_838_o is sourced by a combinatorial pin.
+   rst_read_TRIGGER_FREQ_OFFSET[9]_AND_826_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -535,15 +515,7 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[9]_AND_826_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_drs_dfifo_progfull[2]_AND_862_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[8]_AND_828_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -551,13 +523,29 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[4]_AND_836_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[8]_AND_828_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_drs_dfifo_progfull[5]_AND_856_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[5]_AND_834_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_DRS_SAMP_FREQ[4]_AND_788_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[6]_AND_832_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_DRS_DTAP[0]_AND_846_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
@@ -572,6 +560,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_TRIGGER_FREQ_OFFSET[10]_AND_824_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[3]_AND_838_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -611,6 +603,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    is not good design practice. Use the CE pin to control the loading of data
    into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[1]_AND_842_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_TRIGGER_FREQ_OFFSET[11]_AND_822_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
@@ -646,6 +642,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    is not good design practice. Use the CE pin to control the loading of data
    into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[2]_AND_840_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_TRIGGER_FREQ_OFFSET[12]_AND_820_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
@@ -679,14 +679,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM9_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM5_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
    /gdm.dm/Mram_RAM8_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
@@ -695,19 +687,7 @@ WARNING:PhysDesignRules:367 - The signal
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM6_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
    /gdm.dm/Mram_RAM4_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM1_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM14_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
@@ -719,19 +699,27 @@ WARNING:PhysDesignRules:367 - The signal
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM6_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM5_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM1_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
    /gdm.dm/Mram_RAM15_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM10_RAMD_D1_O> is incomplete. The signal does not drive any
+   /gdm.dm/Mram_RAM14_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
    /gdm.dm/Mram_RAM13_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM16_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
@@ -740,6 +728,18 @@ WARNING:PhysDesignRules:367 - The signal
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
    /gdm.dm/Mram_RAM11_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM10_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM16_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM9_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:2212 - Async clocking for BRAM (comp
    SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM1) port(s) with READ_FIRST mode
@@ -783,16 +783,16 @@ Design Summary:
 Number of errors:      0
 Number of warnings:   67
 Slice Logic Utilization:
-  Number of Slice Registers:                12,085 out of 126,576    9%
-    Number used as Flip Flops:              12,041
+  Number of Slice Registers:                12,078 out of 126,576    9%
+    Number used as Flip Flops:              12,034
     Number used as Latches:                     42
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                2
-  Number of Slice LUTs:                     10,901 out of  63,288   17%
-    Number used as logic:                    9,804 out of  63,288   15%
-      Number using O6 output only:           6,388
-      Number using O5 output only:             877
-      Number using O5 and O6:                2,539
+  Number of Slice LUTs:                     10,793 out of  63,288   17%
+    Number used as logic:                    9,784 out of  63,288   15%
+      Number using O6 output only:           6,358
+      Number using O5 output only:             892
+      Number using O5 and O6:                2,534
       Number used as ROM:                        0
     Number used as Memory:                     262 out of  15,616    1%
       Number used as Dual Port RAM:             64
@@ -807,21 +807,21 @@ Slice Logic Utilization:
         Number using O6 output only:            35
         Number using O5 output only:             0
         Number using O5 and O6:                159
-    Number used exclusively as route-thrus:    835
-      Number with same-slice register load:    755
-      Number with same-slice carry load:        77
+    Number used exclusively as route-thrus:    747
+      Number with same-slice register load:    679
+      Number with same-slice carry load:        65
       Number with other load:                    3
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 4,767 out of  15,822   30%
-  Number of MUXCYs used:                     3,512 out of  31,644   11%
-  Number of LUT Flip Flop pairs used:       14,446
-    Number with an unused Flip Flop:         3,937 out of  14,446   27%
-    Number with an unused LUT:               3,545 out of  14,446   24%
-    Number of fully used LUT-FF pairs:       6,964 out of  14,446   48%
+  Number of occupied Slices:                 4,817 out of  15,822   30%
+  Number of MUXCYs used:                     3,476 out of  31,644   10%
+  Number of LUT Flip Flop pairs used:       14,526
+    Number with an unused Flip Flop:         3,949 out of  14,526   27%
+    Number with an unused LUT:               3,733 out of  14,526   25%
+    Number of fully used LUT-FF pairs:       6,844 out of  14,526   47%
     Number of unique control sets:             835
     Number of slice register sites lost
-      to control set restrictions:           2,548 out of 126,576    2%
+      to control set restrictions:           2,571 out of 126,576    2%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -873,9 +873,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                3.73
 
-Peak Memory Usage:  934 MB
-Total REAL time to MAP completion:  8 mins 43 secs 
-Total CPU time to MAP completion:   8 mins 37 secs 
+Peak Memory Usage:  930 MB
+Total REAL time to MAP completion:  8 mins 38 secs 
+Total CPU time to MAP completion:   8 mins 24 secs 
 
 Mapping completed.
 See MAP report file "dragonv5_main_map.mrp" for details.

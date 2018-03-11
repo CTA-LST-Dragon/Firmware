@@ -6,9 +6,9 @@ C:\Xilinx\14.7\ISE_DS\ISE\.
 speed -3
 Opened constraints file dragonv5_main.pcf.
 
-WED 7 FEB 0:41:56 2018
+SUN 11 MAR 20:3:28 2018
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:16 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g Encrypt:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 dragonv5_main.ncd 
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:16 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:JtagClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g Encrypt:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 dragonv5_main.ncd 
 
 Summary of Bitgen Options:
 +----------------------+----------------------+
@@ -24,7 +24,7 @@ Summary of Bitgen Options:
 +----------------------+----------------------+
 | ConfigRate           | 16                   |
 +----------------------+----------------------+
-| StartupClk           | Cclk**               |
+| StartupClk           | JtagClk              |
 +----------------------+----------------------+
 | DonePin              | Pullup*              |
 +----------------------+----------------------+
@@ -131,27 +131,7 @@ There were 1 CONFIG constraint(s) processed from dragonv5_main.pcf.
 
 Running DRC.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[6]_AND_832_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[4]_AND_836_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[1]_AND_842_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[5]_AND_834_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[2]_AND_840_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[3]_AND_838_o is sourced by a combinatorial pin.
+   rst_read_TRIGGER_FREQ_OFFSET[9]_AND_826_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -159,15 +139,7 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[9]_AND_826_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_drs_dfifo_progfull[2]_AND_862_o is sourced by a combinatorial pin.
-   This is not good design practice. Use the CE pin to control the loading of
-   data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   rst_read_TRIGGER_FREQ_OFFSET[8]_AND_828_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -175,13 +147,29 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[4]_AND_836_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[8]_AND_828_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_drs_dfifo_progfull[5]_AND_856_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[5]_AND_834_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_DRS_SAMP_FREQ[4]_AND_788_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[6]_AND_832_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_DRS_DTAP[0]_AND_846_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
@@ -196,6 +184,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_TRIGGER_FREQ_OFFSET[10]_AND_824_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[3]_AND_838_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -235,6 +227,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    is not good design practice. Use the CE pin to control the loading of data
    into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[1]_AND_842_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_TRIGGER_FREQ_OFFSET[11]_AND_822_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
@@ -270,6 +266,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    is not good design practice. Use the CE pin to control the loading of data
    into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   rst_read_TRIGGER_FREQ_OFFSET[2]_AND_840_o is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    rst_read_TRIGGER_FREQ_OFFSET[12]_AND_820_o is sourced by a combinatorial pin.
    This is not good design practice. Use the CE pin to control the loading of
    data into the flip-flop.
@@ -303,14 +303,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM9_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM5_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
    /gdm.dm/Mram_RAM8_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
@@ -319,19 +311,7 @@ WARNING:PhysDesignRules:367 - The signal
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM6_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
    /gdm.dm/Mram_RAM4_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM1_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM14_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
@@ -343,19 +323,27 @@ WARNING:PhysDesignRules:367 - The signal
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM6_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM5_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM1_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
    /gdm.dm/Mram_RAM15_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM10_RAMD_D1_O> is incomplete. The signal does not drive any
+   /gdm.dm/Mram_RAM14_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
    /gdm.dm/Mram_RAM13_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
-   /gdm.dm/Mram_RAM16_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
@@ -364,6 +352,18 @@ WARNING:PhysDesignRules:367 - The signal
 WARNING:PhysDesignRules:367 - The signal
    <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
    /gdm.dm/Mram_RAM11_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM10_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM16_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem
+   /gdm.dm/Mram_RAM9_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:2212 - Async clocking for BRAM (comp
    SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM1) port(s) with READ_FIRST mode
