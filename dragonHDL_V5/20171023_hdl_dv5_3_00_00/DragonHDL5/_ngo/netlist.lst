@@ -1,7 +1,7 @@
-C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_00\DragonHDL5\dragonv5_main.ngc 1520765328
-../CoreGen/ADC_BUF_FIFO.ngc 1517895265
+C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_00\DragonHDL5\dragonv5_main.ngc 1520824176
+../CoreGen/ADC_BUF_FIFO.ngc 1520771750
 ../SiTCP/SiTCP_XC6S_16K_BBT_V40.ngc 1464623630
-../CoreGen/DRS_FIFO.ngc 1517894988
-../CoreGen/FORMAT_FIFO.ngc 1517895139
-../CoreGen/COUNTER_FIFO.ngc 1517894781
+../CoreGen/DRS_FIFO.ngc 1520771479
+../CoreGen/FORMAT_FIFO.ngc 1520771626
+../CoreGen/COUNTER_FIFO.ngc 1520771279
 OK

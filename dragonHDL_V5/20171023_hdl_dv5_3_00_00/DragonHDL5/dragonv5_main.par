@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CTA::  Sun Mar 11 19:58:01 2018
+CTA::  Mon Mar 12 12:31:48 2018
 
 par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd
 dragonv5_main.pcf 
@@ -119,8 +119,8 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 22 secs 
-Finished initial Timing Analysis.  REAL time: 23 secs 
+Starting initial Timing Analysis.  REAL time: 37 secs 
+Finished initial Timing Analysis.  REAL time: 38 secs 
 
 WARNING:Par:288 - The signal DRS_WSROUT<1>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal DRS_WSROUT<2>_IBUF has no load.  PAR will not attempt to route this signal.
@@ -176,29 +176,29 @@ WARNING:Par:288 - The signal adc_buf_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf
 Starting Router
 
 
-Phase  1  : 67361 unrouted;      REAL time: 25 secs 
+Phase  1  : 67361 unrouted;      REAL time: 45 secs 
 
-Phase  2  : 52522 unrouted;      REAL time: 34 secs 
+Phase  2  : 52522 unrouted;      REAL time: 55 secs 
 
-Phase  3  : 18451 unrouted;      REAL time: 1 mins 17 secs 
+Phase  3  : 18451 unrouted;      REAL time: 1 mins 46 secs 
 
-Phase  4  : 18464 unrouted; (Setup:148, Hold:1663, Component Switching Limit:0)     REAL time: 1 mins 31 secs 
+Phase  4  : 18464 unrouted; (Setup:148, Hold:1663, Component Switching Limit:0)     REAL time: 2 mins 11 secs 
 
 Updating file: dragonv5_main.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:148, Hold:1450, Component Switching Limit:0)     REAL time: 2 mins 20 secs 
+Phase  5  : 0 unrouted; (Setup:148, Hold:1450, Component Switching Limit:0)     REAL time: 3 mins 15 secs 
 
-Phase  6  : 0 unrouted; (Setup:148, Hold:1450, Component Switching Limit:0)     REAL time: 2 mins 23 secs 
+Phase  6  : 0 unrouted; (Setup:148, Hold:1450, Component Switching Limit:0)     REAL time: 3 mins 23 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:1450, Component Switching Limit:0)     REAL time: 4 mins 20 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:1450, Component Switching Limit:0)     REAL time: 5 mins 34 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:1450, Component Switching Limit:0)     REAL time: 4 mins 20 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:1450, Component Switching Limit:0)     REAL time: 5 mins 34 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 mins 21 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 5 mins 35 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 mins 26 secs 
-Total REAL time to Router completion: 4 mins 26 secs 
-Total CPU time to Router completion: 4 mins 38 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 5 mins 40 secs 
+Total REAL time to Router completion: 5 mins 44 secs 
+Total CPU time to Router completion: 4 mins 35 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -711,7 +711,6 @@ Derived Constraints for TS_OSC
 |  _LDC                         |             |             |             |             |             |             |             |
 |  TS_TO_drs_dfifo_progfull_ir_7|     15.000ns|      5.188ns|          N/A|            0|            0|            4|            0|
 |  _LDC                         |             |             |             |             |             |             |             |
-| TS_dcm_v5_clkout2             |     30.000ns|     14.277ns|          N/A|            0|            0|            2|            0|
 | TS_dcm_v5_clkout0             |      7.500ns|      7.481ns|      5.623ns|            0|            0|       142487|           60|
 |  TS_TO_trig_offset_reg_14_LDC |      7.500ns|      3.921ns|          N/A|            0|            0|            4|            0|
 |  TS_TO_trig_offset_reg_11_LDC |      7.500ns|      4.574ns|          N/A|            0|            0|            4|            0|
@@ -728,6 +727,7 @@ Derived Constraints for TS_OSC
 |  TS_TO_trig_offset_reg_2_LDC  |      7.500ns|      5.532ns|          N/A|            0|            0|            4|            0|
 |  TS_TO_trig_offset_reg_1_LDC  |      7.500ns|      5.473ns|          N/A|            0|            0|            4|            0|
 |  TS_TO_trig_offset_reg_0_LDC  |      7.500ns|      5.309ns|          N/A|            0|            0|            4|            0|
+| TS_dcm_v5_clkout2             |     30.000ns|     14.277ns|          N/A|            0|            0|            2|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_AD9222_DCO
@@ -737,11 +737,11 @@ Derived Constraints for TS_AD9222_DCO
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |TS_AD9222_DCO                  |      5.000ns|      0.925ns|      4.839ns|            0|            0|            0|         1808|
-| TS_adc_divclk                 |      5.000ns|      4.839ns|          N/A|            0|            0|         1808|            0|
-| TS_adc_ioclk                  |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
-| TS_adc_ioclk2                 |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
-| TS_adc_ioclk_inv2             |      5.000ns|      0.814ns|          N/A|            0|            0|            0|            0|
 | TS_adc_ioclk_inv              |      5.000ns|      0.814ns|          N/A|            0|            0|            0|            0|
+| TS_adc_ioclk                  |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
+| TS_adc_ioclk_inv2             |      5.000ns|      0.814ns|          N/A|            0|            0|            0|            0|
+| TS_adc_divclk                 |      5.000ns|      4.839ns|          N/A|            0|            0|         1808|            0|
+| TS_adc_ioclk2                 |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_BP_EXTCLK
@@ -751,6 +751,7 @@ Derived Constraints for TS_BP_EXTCLK
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |TS_BP_EXTCLK                   |    100.000ns|     32.000ns|      7.404ns|            0|            0|            0|        41298|
+| TS_dcm_extclk_clkfx           |     25.000ns|      1.730ns|          N/A|            0|            0|            0|            0|
 | TS_dcm_extclk_clk180          |    100.000ns|      7.404ns|      3.605ns|            0|            0|        41266|           32|
 |  TS_TO_drs_sampfreq_TenMreg_7_|    100.000ns|      3.183ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
@@ -768,7 +769,6 @@ Derived Constraints for TS_BP_EXTCLK
 |  LDC                          |             |             |             |             |             |             |             |
 |  TS_TO_drs_sampfreq_TenMreg_0_|    100.000ns|      3.148ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
-| TS_dcm_extclk_clkfx           |     25.000ns|      1.730ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -780,8 +780,8 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 35 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 4 mins 34 secs 
-Total CPU time to PAR completion: 4 mins 44 secs 
+Total REAL time to PAR completion: 5 mins 56 secs 
+Total CPU time to PAR completion: 4 mins 41 secs 
 
 Peak Memory Usage:  848 MB
 

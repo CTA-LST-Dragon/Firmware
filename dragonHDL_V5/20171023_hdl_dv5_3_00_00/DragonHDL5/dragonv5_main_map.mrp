@@ -11,7 +11,7 @@ Target Device  : xc6slx100
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : SUN 11 MAR 19:49:13 2018
+Mapped Date    : MON 12 MAR 12:10:25 2018
 
 Design Summary
 --------------
@@ -109,8 +109,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                3.73
 
 Peak Memory Usage:  930 MB
-Total REAL time to MAP completion:  8 mins 38 secs 
-Total CPU time to MAP completion:   8 mins 24 secs 
+Total REAL time to MAP completion:  20 mins 30 secs 
+Total CPU time to MAP completion:   9 mins 6 secs 
 
 Table of Contents
 -----------------
@@ -1400,7 +1400,6 @@ Derived Constraints for TS_OSC
 |  _LDC                         |             |             |             |             |             |             |             |
 |  TS_TO_drs_dfifo_progfull_ir_7|     15.000ns|      1.047ns|          N/A|            0|            0|            4|            0|
 |  _LDC                         |             |             |             |             |             |             |             |
-| TS_dcm_v5_clkout2             |     30.000ns|      3.924ns|          N/A|            0|            0|            2|            0|
 | TS_dcm_v5_clkout0             |      7.500ns|      3.124ns|      1.030ns|            8|            0|       142487|           60|
 |  TS_TO_trig_offset_reg_14_LDC |      7.500ns|      1.030ns|          N/A|            0|            0|            4|            0|
 |  TS_TO_trig_offset_reg_11_LDC |      7.500ns|      1.030ns|          N/A|            0|            0|            4|            0|
@@ -1417,6 +1416,7 @@ Derived Constraints for TS_OSC
 |  TS_TO_trig_offset_reg_2_LDC  |      7.500ns|      1.030ns|          N/A|            0|            0|            4|            0|
 |  TS_TO_trig_offset_reg_1_LDC  |      7.500ns|      1.030ns|          N/A|            0|            0|            4|            0|
 |  TS_TO_trig_offset_reg_0_LDC  |      7.500ns|      1.030ns|          N/A|            0|            0|            4|            0|
+| TS_dcm_v5_clkout2             |     30.000ns|      3.924ns|          N/A|            0|            0|            2|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_AD9222_DCO
@@ -1426,11 +1426,11 @@ Derived Constraints for TS_AD9222_DCO
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |TS_AD9222_DCO                  |      5.000ns|      0.925ns|      1.730ns|            0|            0|            0|         1808|
-| TS_adc_divclk                 |      5.000ns|      1.730ns|          N/A|            0|            0|         1808|            0|
-| TS_adc_ioclk                  |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
-| TS_adc_ioclk2                 |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
-| TS_adc_ioclk_inv2             |      5.000ns|      0.814ns|          N/A|            0|            0|            0|            0|
 | TS_adc_ioclk_inv              |      5.000ns|      0.814ns|          N/A|            0|            0|            0|            0|
+| TS_adc_ioclk                  |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
+| TS_adc_ioclk_inv2             |      5.000ns|      0.814ns|          N/A|            0|            0|            0|            0|
+| TS_adc_divclk                 |      5.000ns|      1.730ns|          N/A|            0|            0|         1808|            0|
+| TS_adc_ioclk2                 |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_BP_EXTCLK
@@ -1440,6 +1440,7 @@ Derived Constraints for TS_BP_EXTCLK
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |TS_BP_EXTCLK                   |    100.000ns|     32.000ns|      6.920ns|            0|            0|            0|        41298|
+| TS_dcm_extclk_clkfx           |     25.000ns|      1.730ns|          N/A|            0|            0|            0|            0|
 | TS_dcm_extclk_clk180          |    100.000ns|      2.402ns|      1.030ns|            0|            0|        41266|           32|
 |  TS_TO_drs_sampfreq_TenMreg_7_|    100.000ns|      1.030ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
@@ -1457,7 +1458,6 @@ Derived Constraints for TS_BP_EXTCLK
 |  LDC                          |             |             |             |             |             |             |             |
 |  TS_TO_drs_sampfreq_TenMreg_0_|    100.000ns|      1.030ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
-| TS_dcm_extclk_clkfx           |     25.000ns|      1.730ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 2 constraints not met.

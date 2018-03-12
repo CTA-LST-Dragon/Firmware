@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Mar 11 19:57:42 2018
+// Written by: Map P.20131013 on Mon Mar 12 12:30:19 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -13866,21 +13866,21 @@ TS_BP_EXTCLK = PERIOD TIMEGRP "BP_EXTCLK" 100 ns HIGH 50%;
 TS_dcm_gmii_clk0 = PERIOD TIMEGRP "dcm_gmii_clk0" TS_OSC HIGH 50%;
 TS_dcm_v5_clkout1 = PERIOD TIMEGRP "dcm_v5_clkout1" TS_OSC / 0.533333333 HIGH
         50%;
-TS_dcm_v5_clkout2 = PERIOD TIMEGRP "dcm_v5_clkout2" TS_OSC / 0.266666667 PHASE
-        7.5 ns HIGH 50%;
 TS_dcm_v5_clkout0 = PERIOD TIMEGRP "dcm_v5_clkout0" TS_OSC / 1.06666667 HIGH
         50%;
-TS_adc_divclk = PERIOD TIMEGRP "adc_divclk" TS_AD9222_DCO HIGH 50%;
-TS_adc_ioclk = PERIOD TIMEGRP "adc_ioclk" TS_AD9222_DCO HIGH 50%;
-TS_adc_ioclk2 = PERIOD TIMEGRP "adc_ioclk2" TS_AD9222_DCO HIGH 50%;
-TS_adc_ioclk_inv2 = PERIOD TIMEGRP "adc_ioclk_inv2" TS_AD9222_DCO PHASE 2.5 ns
-        HIGH 50%;
+TS_dcm_v5_clkout2 = PERIOD TIMEGRP "dcm_v5_clkout2" TS_OSC / 0.266666667 PHASE
+        7.5 ns HIGH 50%;
 TS_adc_ioclk_inv = PERIOD TIMEGRP "adc_ioclk_inv" TS_AD9222_DCO PHASE 2.5 ns
         HIGH 50%;
-TS_dcm_extclk_clk180 = PERIOD TIMEGRP "dcm_extclk_clk180" TS_BP_EXTCLK PHASE
-        50 ns HIGH 50%;
+TS_adc_ioclk = PERIOD TIMEGRP "adc_ioclk" TS_AD9222_DCO HIGH 50%;
+TS_adc_ioclk_inv2 = PERIOD TIMEGRP "adc_ioclk_inv2" TS_AD9222_DCO PHASE 2.5 ns
+        HIGH 50%;
+TS_adc_divclk = PERIOD TIMEGRP "adc_divclk" TS_AD9222_DCO HIGH 50%;
+TS_adc_ioclk2 = PERIOD TIMEGRP "adc_ioclk2" TS_AD9222_DCO HIGH 50%;
 TS_dcm_extclk_clkfx = PERIOD TIMEGRP "dcm_extclk_clkfx" TS_BP_EXTCLK / 4 HIGH
         50%;
+TS_dcm_extclk_clk180 = PERIOD TIMEGRP "dcm_extclk_clk180" TS_BP_EXTCLK PHASE
+        50 ns HIGH 50%;
 TS_TO_trig_offset_reg_14_LDC = MAXDELAY TO TIMEGRP "TO_trig_offset_reg_14_LDC"
         TS_dcm_v5_clkout0 DATAPATHONLY;
 TS_TO_trig_offset_reg_11_LDC = MAXDELAY TO TIMEGRP "TO_trig_offset_reg_11_LDC"

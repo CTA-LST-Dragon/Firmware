@@ -910,173 +910,6 @@ Slack: 11.876ns (period - min period limit)
 --------------------------------------------------------------------------------
 
 ================================================================================
-Timing constraint: TS_dcm_v5_clkout2 = PERIOD TIMEGRP "dcm_v5_clkout2" TS_OSC / 
-0.266666667 PHASE         7.5 ns HIGH 50%;
-For more information, see Period Analysis in the Timing Closure User Guide (UG612).
-
- 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  14.277ns.
---------------------------------------------------------------------------------
-
-Paths for end point int_clk_33m_90 (SLICE_X32Y123.SR), 1 path
---------------------------------------------------------------------------------
-Slack (setup path):     3.931ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               rst_sync (FF)
-  Destination:          int_clk_33m_90 (FF)
-  Requirement:          7.500ns
-  Data Path Delay:      3.081ns (Levels of Logic = 0)
-  Clock Path Skew:      -0.223ns (1.618 - 1.841)
-  Source Clock:         clk rising at 0.000ns
-  Destination Clock:    clk_33m_90 rising at 7.500ns
-  Clock Uncertainty:    0.265ns
-
-  Clock Uncertainty:          0.265ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.280ns
-    Phase Error (PE):           0.120ns
-
-  Maximum Data Path at Slow Process Corner: rst_sync to int_clk_33m_90
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X28Y106.DQ     Tcko                  0.447   rst_sync
-                                                       rst_sync
-    SLICE_X32Y123.SR     net (fanout=930)      2.423   rst_sync
-    SLICE_X32Y123.CLK    Trck                  0.211   int_clk_33m_90
-                                                       int_clk_33m_90
-    -------------------------------------------------  ---------------------------
-    Total                                      3.081ns (0.658ns logic, 2.423ns route)
-                                                       (21.4% logic, 78.6% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point int_clk_33m_90 (SLICE_X32Y123.A6), 1 path
---------------------------------------------------------------------------------
-Slack (setup path):     28.995ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               int_clk_33m_90 (FF)
-  Destination:          int_clk_33m_90 (FF)
-  Requirement:          30.000ns
-  Data Path Delay:      0.860ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         clk_33m_90 rising at 7.500ns
-  Destination Clock:    clk_33m_90 rising at 37.500ns
-  Clock Uncertainty:    0.145ns
-
-  Clock Uncertainty:          0.145ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.280ns
-    Phase Error (PE):           0.000ns
-
-  Maximum Data Path at Slow Process Corner: int_clk_33m_90 to int_clk_33m_90
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y123.AQ     Tcko                  0.447   int_clk_33m_90
-                                                       int_clk_33m_90
-    SLICE_X32Y123.A6     net (fanout=2)        0.124   int_clk_33m_90
-    SLICE_X32Y123.CLK    Tas                   0.289   int_clk_33m_90
-                                                       int_clk_33m_90_INV_81_o1_INV_0
-                                                       int_clk_33m_90
-    -------------------------------------------------  ---------------------------
-    Total                                      0.860ns (0.736ns logic, 0.124ns route)
-                                                       (85.6% logic, 14.4% route)
-
---------------------------------------------------------------------------------
-
-Hold Paths: TS_dcm_v5_clkout2 = PERIOD TIMEGRP "dcm_v5_clkout2" TS_OSC / 0.266666667 PHASE
-        7.5 ns HIGH 50%;
---------------------------------------------------------------------------------
-
-Paths for end point int_clk_33m_90 (SLICE_X32Y123.A6), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      0.453ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               int_clk_33m_90 (FF)
-  Destination:          int_clk_33m_90 (FF)
-  Requirement:          0.000ns
-  Data Path Delay:      0.453ns (Levels of Logic = 1)
-  Clock Path Skew:      0.000ns
-  Source Clock:         clk_33m_90 rising at 37.500ns
-  Destination Clock:    clk_33m_90 rising at 37.500ns
-  Clock Uncertainty:    0.000ns
-
-  Minimum Data Path at Fast Process Corner: int_clk_33m_90 to int_clk_33m_90
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X32Y123.AQ     Tcko                  0.234   int_clk_33m_90
-                                                       int_clk_33m_90
-    SLICE_X32Y123.A6     net (fanout=2)        0.022   int_clk_33m_90
-    SLICE_X32Y123.CLK    Tah         (-Th)    -0.197   int_clk_33m_90
-                                                       int_clk_33m_90_INV_81_o1_INV_0
-                                                       int_clk_33m_90
-    -------------------------------------------------  ---------------------------
-    Total                                      0.453ns (0.431ns logic, 0.022ns route)
-                                                       (95.1% logic, 4.9% route)
-
---------------------------------------------------------------------------------
-
-Paths for end point int_clk_33m_90 (SLICE_X32Y123.SR), 1 path
---------------------------------------------------------------------------------
-Slack (hold path):      8.902ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               rst_sync (FF)
-  Destination:          int_clk_33m_90 (FF)
-  Requirement:          7.500ns
-  Data Path Delay:      1.869ns (Levels of Logic = 0)
-  Clock Path Skew:      0.202ns (0.982 - 0.780)
-  Source Clock:         clk rising at 15.000ns
-  Destination Clock:    clk_33m_90 rising at 7.500ns
-  Clock Uncertainty:    0.265ns
-
-  Clock Uncertainty:          0.265ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter (TSJ):  0.070ns
-    Discrete Jitter (DJ):       0.280ns
-    Phase Error (PE):           0.120ns
-
-  Minimum Data Path at Fast Process Corner: rst_sync to int_clk_33m_90
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X28Y106.DQ     Tcko                  0.234   rst_sync
-                                                       rst_sync
-    SLICE_X32Y123.SR     net (fanout=930)      1.550   rst_sync
-    SLICE_X32Y123.CLK    Tremck      (-Th)    -0.085   int_clk_33m_90
-                                                       int_clk_33m_90
-    -------------------------------------------------  ---------------------------
-    Total                                      1.869ns (0.319ns logic, 1.550ns route)
-                                                       (17.1% logic, 82.9% route)
-
---------------------------------------------------------------------------------
-
-Component Switching Limit Checks: TS_dcm_v5_clkout2 = PERIOD TIMEGRP "dcm_v5_clkout2" TS_OSC / 0.266666667 PHASE
-        7.5 ns HIGH 50%;
---------------------------------------------------------------------------------
-Slack: 28.270ns (period - min period limit)
-  Period: 30.000ns
-  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
-  Physical resource: dcm_v5/clkout3_buf/I0
-  Logical resource: dcm_v5/clkout3_buf/I0
-  Location pin: BUFGMUX_X2Y1.I0
-  Clock network: dcm_v5/clkout2
---------------------------------------------------------------------------------
-Slack: 28.361ns (period - min period limit)
-  Period: 30.000ns
-  Min period limit: 1.639ns (610.128MHz) (Tockper)
-  Physical resource: adc_clk/CLK0
-  Logical resource: ODDR2_AD9222_CLK/CK0
-  Location pin: OLOGIC_X8Y175.CLK0
-  Clock network: clk_33m_90
---------------------------------------------------------------------------------
-Slack: 28.597ns (period - min period limit)
-  Period: 30.000ns
-  Min period limit: 1.403ns (712.758MHz) (Tockper)
-  Physical resource: adc_clk/CLK1
-  Logical resource: ODDR2_AD9222_CLK/CK1
-  Location pin: OLOGIC_X8Y175.CLK1
-  Clock network: clk_33m_90
---------------------------------------------------------------------------------
-
-================================================================================
 Timing constraint: TS_dcm_v5_clkout0 = PERIOD TIMEGRP "dcm_v5_clkout0" TS_OSC / 
 1.06666667 HIGH         50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
@@ -1309,6 +1142,286 @@ Slack: 4.376ns (period - min period limit)
   Logical resource: SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM/CLKA
   Location pin: RAMB16_X1Y6.CLKA
   Clock network: clk_133m
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_dcm_v5_clkout2 = PERIOD TIMEGRP "dcm_v5_clkout2" TS_OSC / 
+0.266666667 PHASE         7.5 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  14.277ns.
+--------------------------------------------------------------------------------
+
+Paths for end point int_clk_33m_90 (SLICE_X32Y123.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     3.931ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               rst_sync (FF)
+  Destination:          int_clk_33m_90 (FF)
+  Requirement:          7.500ns
+  Data Path Delay:      3.081ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.223ns (1.618 - 1.841)
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk_33m_90 rising at 7.500ns
+  Clock Uncertainty:    0.265ns
+
+  Clock Uncertainty:          0.265ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.280ns
+    Phase Error (PE):           0.120ns
+
+  Maximum Data Path at Slow Process Corner: rst_sync to int_clk_33m_90
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y106.DQ     Tcko                  0.447   rst_sync
+                                                       rst_sync
+    SLICE_X32Y123.SR     net (fanout=930)      2.423   rst_sync
+    SLICE_X32Y123.CLK    Trck                  0.211   int_clk_33m_90
+                                                       int_clk_33m_90
+    -------------------------------------------------  ---------------------------
+    Total                                      3.081ns (0.658ns logic, 2.423ns route)
+                                                       (21.4% logic, 78.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point int_clk_33m_90 (SLICE_X32Y123.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     28.995ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               int_clk_33m_90 (FF)
+  Destination:          int_clk_33m_90 (FF)
+  Requirement:          30.000ns
+  Data Path Delay:      0.860ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_33m_90 rising at 7.500ns
+  Destination Clock:    clk_33m_90 rising at 37.500ns
+  Clock Uncertainty:    0.145ns
+
+  Clock Uncertainty:          0.145ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.280ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: int_clk_33m_90 to int_clk_33m_90
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y123.AQ     Tcko                  0.447   int_clk_33m_90
+                                                       int_clk_33m_90
+    SLICE_X32Y123.A6     net (fanout=2)        0.124   int_clk_33m_90
+    SLICE_X32Y123.CLK    Tas                   0.289   int_clk_33m_90
+                                                       int_clk_33m_90_INV_81_o1_INV_0
+                                                       int_clk_33m_90
+    -------------------------------------------------  ---------------------------
+    Total                                      0.860ns (0.736ns logic, 0.124ns route)
+                                                       (85.6% logic, 14.4% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_dcm_v5_clkout2 = PERIOD TIMEGRP "dcm_v5_clkout2" TS_OSC / 0.266666667 PHASE
+        7.5 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point int_clk_33m_90 (SLICE_X32Y123.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.453ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               int_clk_33m_90 (FF)
+  Destination:          int_clk_33m_90 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.453ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_33m_90 rising at 37.500ns
+  Destination Clock:    clk_33m_90 rising at 37.500ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: int_clk_33m_90 to int_clk_33m_90
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y123.AQ     Tcko                  0.234   int_clk_33m_90
+                                                       int_clk_33m_90
+    SLICE_X32Y123.A6     net (fanout=2)        0.022   int_clk_33m_90
+    SLICE_X32Y123.CLK    Tah         (-Th)    -0.197   int_clk_33m_90
+                                                       int_clk_33m_90_INV_81_o1_INV_0
+                                                       int_clk_33m_90
+    -------------------------------------------------  ---------------------------
+    Total                                      0.453ns (0.431ns logic, 0.022ns route)
+                                                       (95.1% logic, 4.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point int_clk_33m_90 (SLICE_X32Y123.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      8.902ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               rst_sync (FF)
+  Destination:          int_clk_33m_90 (FF)
+  Requirement:          7.500ns
+  Data Path Delay:      1.869ns (Levels of Logic = 0)
+  Clock Path Skew:      0.202ns (0.982 - 0.780)
+  Source Clock:         clk rising at 15.000ns
+  Destination Clock:    clk_33m_90 rising at 7.500ns
+  Clock Uncertainty:    0.265ns
+
+  Clock Uncertainty:          0.265ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Discrete Jitter (DJ):       0.280ns
+    Phase Error (PE):           0.120ns
+
+  Minimum Data Path at Fast Process Corner: rst_sync to int_clk_33m_90
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y106.DQ     Tcko                  0.234   rst_sync
+                                                       rst_sync
+    SLICE_X32Y123.SR     net (fanout=930)      1.550   rst_sync
+    SLICE_X32Y123.CLK    Tremck      (-Th)    -0.085   int_clk_33m_90
+                                                       int_clk_33m_90
+    -------------------------------------------------  ---------------------------
+    Total                                      1.869ns (0.319ns logic, 1.550ns route)
+                                                       (17.1% logic, 82.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_dcm_v5_clkout2 = PERIOD TIMEGRP "dcm_v5_clkout2" TS_OSC / 0.266666667 PHASE
+        7.5 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 28.270ns (period - min period limit)
+  Period: 30.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: dcm_v5/clkout3_buf/I0
+  Logical resource: dcm_v5/clkout3_buf/I0
+  Location pin: BUFGMUX_X2Y1.I0
+  Clock network: dcm_v5/clkout2
+--------------------------------------------------------------------------------
+Slack: 28.361ns (period - min period limit)
+  Period: 30.000ns
+  Min period limit: 1.639ns (610.128MHz) (Tockper)
+  Physical resource: adc_clk/CLK0
+  Logical resource: ODDR2_AD9222_CLK/CK0
+  Location pin: OLOGIC_X8Y175.CLK0
+  Clock network: clk_33m_90
+--------------------------------------------------------------------------------
+Slack: 28.597ns (period - min period limit)
+  Period: 30.000ns
+  Min period limit: 1.403ns (712.758MHz) (Tockper)
+  Physical resource: adc_clk/CLK1
+  Logical resource: ODDR2_AD9222_CLK/CK1
+  Location pin: OLOGIC_X8Y175.CLK1
+  Clock network: clk_33m_90
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_adc_ioclk_inv = PERIOD TIMEGRP "adc_ioclk_inv" 
+TS_AD9222_DCO PHASE 2.5 ns         HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   0.814ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_adc_ioclk_inv = PERIOD TIMEGRP "adc_ioclk_inv" TS_AD9222_DCO PHASE 2.5 ns
+        HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 4.186ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.814ns (1228.501MHz) (Tickper)
+  Physical resource: adc_ddrout1<0>/CLK1
+  Logical resource: ADC_IF_GEN_TR[0].IDDR2_AD9222/CLK1
+  Location pin: ILOGIC_X18Y175.CLK1
+  Clock network: adc_ioclk_inv
+--------------------------------------------------------------------------------
+Slack: 4.186ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.814ns (1228.501MHz) (Tickper)
+  Physical resource: adc_ddrout1<1>/CLK1
+  Logical resource: ADC_IF_GEN_TR[1].IDDR2_AD9222/CLK1
+  Location pin: ILOGIC_X14Y175.CLK1
+  Clock network: adc_ioclk_inv
+--------------------------------------------------------------------------------
+Slack: 4.186ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.814ns (1228.501MHz) (Tickper)
+  Physical resource: adc_ddrout1<2>/CLK1
+  Logical resource: ADC_IF_GEN_TR[2].IDDR2_AD9222/CLK1
+  Location pin: ILOGIC_X16Y175.CLK1
+  Clock network: adc_ioclk_inv
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_adc_ioclk = PERIOD TIMEGRP "adc_ioclk" TS_AD9222_DCO HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   0.818ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_adc_ioclk = PERIOD TIMEGRP "adc_ioclk" TS_AD9222_DCO HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 4.182ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.818ns (1222.494MHz) (Tickper)
+  Physical resource: adc_ddrout1<0>/CLK0
+  Logical resource: ADC_IF_GEN_TR[0].IDDR2_AD9222/CLK0
+  Location pin: ILOGIC_X18Y175.CLK0
+  Clock network: adc_ioclk
+--------------------------------------------------------------------------------
+Slack: 4.182ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.818ns (1222.494MHz) (Tickper)
+  Physical resource: adc_ddrout1<1>/CLK0
+  Logical resource: ADC_IF_GEN_TR[1].IDDR2_AD9222/CLK0
+  Location pin: ILOGIC_X14Y175.CLK0
+  Clock network: adc_ioclk
+--------------------------------------------------------------------------------
+Slack: 4.182ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.818ns (1222.494MHz) (Tickper)
+  Physical resource: adc_ddrout1<2>/CLK0
+  Logical resource: ADC_IF_GEN_TR[2].IDDR2_AD9222/CLK0
+  Location pin: ILOGIC_X16Y175.CLK0
+  Clock network: adc_ioclk
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_adc_ioclk_inv2 = PERIOD TIMEGRP "adc_ioclk_inv2" 
+TS_AD9222_DCO PHASE 2.5 ns         HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   0.814ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_adc_ioclk_inv2 = PERIOD TIMEGRP "adc_ioclk_inv2" TS_AD9222_DCO PHASE 2.5 ns
+        HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 4.186ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.814ns (1228.501MHz) (Tickper)
+  Physical resource: adc_ddrout1<4>/CLK1
+  Logical resource: ADC_IF_GEN_TL[4].IDDR2_AD9222/CLK1
+  Location pin: ILOGIC_X11Y175.CLK1
+  Clock network: adc_ioclk_inv2
+--------------------------------------------------------------------------------
+Slack: 4.186ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.814ns (1228.501MHz) (Tickper)
+  Physical resource: adc_ddrout1<5>/CLK1
+  Logical resource: ADC_IF_GEN_TL[5].IDDR2_AD9222/CLK1
+  Location pin: ILOGIC_X10Y173.CLK1
+  Clock network: adc_ioclk_inv2
+--------------------------------------------------------------------------------
+Slack: 4.186ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.814ns (1228.501MHz) (Tickper)
+  Physical resource: adc_ddrout1<6>/CLK1
+  Logical resource: ADC_IF_GEN_TL[6].IDDR2_AD9222/CLK1
+  Location pin: ILOGIC_X9Y173.CLK1
+  Clock network: adc_ioclk_inv2
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -1551,43 +1664,6 @@ Slack: 3.962ns (period - min period limit)
 --------------------------------------------------------------------------------
 
 ================================================================================
-Timing constraint: TS_adc_ioclk = PERIOD TIMEGRP "adc_ioclk" TS_AD9222_DCO HIGH 
-50%;
-For more information, see Period Analysis in the Timing Closure User Guide (UG612).
-
- 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 component switching limit errors)
- Minimum period is   0.818ns.
---------------------------------------------------------------------------------
-
-Component Switching Limit Checks: TS_adc_ioclk = PERIOD TIMEGRP "adc_ioclk" TS_AD9222_DCO HIGH 50%;
---------------------------------------------------------------------------------
-Slack: 4.182ns (period - min period limit)
-  Period: 5.000ns
-  Min period limit: 0.818ns (1222.494MHz) (Tickper)
-  Physical resource: adc_ddrout1<0>/CLK0
-  Logical resource: ADC_IF_GEN_TR[0].IDDR2_AD9222/CLK0
-  Location pin: ILOGIC_X18Y175.CLK0
-  Clock network: adc_ioclk
---------------------------------------------------------------------------------
-Slack: 4.182ns (period - min period limit)
-  Period: 5.000ns
-  Min period limit: 0.818ns (1222.494MHz) (Tickper)
-  Physical resource: adc_ddrout1<1>/CLK0
-  Logical resource: ADC_IF_GEN_TR[1].IDDR2_AD9222/CLK0
-  Location pin: ILOGIC_X14Y175.CLK0
-  Clock network: adc_ioclk
---------------------------------------------------------------------------------
-Slack: 4.182ns (period - min period limit)
-  Period: 5.000ns
-  Min period limit: 0.818ns (1222.494MHz) (Tickper)
-  Physical resource: adc_ddrout1<2>/CLK0
-  Logical resource: ADC_IF_GEN_TR[2].IDDR2_AD9222/CLK0
-  Location pin: ILOGIC_X16Y175.CLK0
-  Clock network: adc_ioclk
---------------------------------------------------------------------------------
-
-================================================================================
 Timing constraint: TS_adc_ioclk2 = PERIOD TIMEGRP "adc_ioclk2" TS_AD9222_DCO 
 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
@@ -1625,79 +1701,41 @@ Slack: 4.182ns (period - min period limit)
 --------------------------------------------------------------------------------
 
 ================================================================================
-Timing constraint: TS_adc_ioclk_inv2 = PERIOD TIMEGRP "adc_ioclk_inv2" 
-TS_AD9222_DCO PHASE 2.5 ns         HIGH 50%;
+Timing constraint: TS_dcm_extclk_clkfx = PERIOD TIMEGRP "dcm_extclk_clkfx" 
+TS_BP_EXTCLK / 4 HIGH         50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
  0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 component switching limit errors)
- Minimum period is   0.814ns.
+ Minimum period is   1.730ns.
 --------------------------------------------------------------------------------
 
-Component Switching Limit Checks: TS_adc_ioclk_inv2 = PERIOD TIMEGRP "adc_ioclk_inv2" TS_AD9222_DCO PHASE 2.5 ns
-        HIGH 50%;
+Component Switching Limit Checks: TS_dcm_extclk_clkfx = PERIOD TIMEGRP "dcm_extclk_clkfx" TS_BP_EXTCLK / 4 HIGH
+        50%;
 --------------------------------------------------------------------------------
-Slack: 4.186ns (period - min period limit)
-  Period: 5.000ns
-  Min period limit: 0.814ns (1228.501MHz) (Tickper)
-  Physical resource: adc_ddrout1<4>/CLK1
-  Logical resource: ADC_IF_GEN_TL[4].IDDR2_AD9222/CLK1
-  Location pin: ILOGIC_X11Y175.CLK1
-  Clock network: adc_ioclk_inv2
+Slack: 23.270ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: dcm_extclk/clkout2_buf/I0
+  Logical resource: dcm_extclk/clkout2_buf/I0
+  Location pin: BUFGMUX_X3Y14.I0
+  Clock network: dcm_extclk/clkfx
 --------------------------------------------------------------------------------
-Slack: 4.186ns (period - min period limit)
-  Period: 5.000ns
-  Min period limit: 0.814ns (1228.501MHz) (Tickper)
-  Physical resource: adc_ddrout1<5>/CLK1
-  Logical resource: ADC_IF_GEN_TL[5].IDDR2_AD9222/CLK1
-  Location pin: ILOGIC_X10Y173.CLK1
-  Clock network: adc_ioclk_inv2
+Slack: 23.361ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 1.639ns (610.128MHz) (Tockper)
+  Physical resource: drs_tag_h/CLK0
+  Logical resource: ODDR2_DRS_TAG_H/CK0
+  Location pin: OLOGIC_X4Y173.CLK0
+  Clock network: clk_ext40m
 --------------------------------------------------------------------------------
-Slack: 4.186ns (period - min period limit)
-  Period: 5.000ns
-  Min period limit: 0.814ns (1228.501MHz) (Tickper)
-  Physical resource: adc_ddrout1<6>/CLK1
-  Logical resource: ADC_IF_GEN_TL[6].IDDR2_AD9222/CLK1
-  Location pin: ILOGIC_X9Y173.CLK1
-  Clock network: adc_ioclk_inv2
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: TS_adc_ioclk_inv = PERIOD TIMEGRP "adc_ioclk_inv" 
-TS_AD9222_DCO PHASE 2.5 ns         HIGH 50%;
-For more information, see Period Analysis in the Timing Closure User Guide (UG612).
-
- 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 component switching limit errors)
- Minimum period is   0.814ns.
---------------------------------------------------------------------------------
-
-Component Switching Limit Checks: TS_adc_ioclk_inv = PERIOD TIMEGRP "adc_ioclk_inv" TS_AD9222_DCO PHASE 2.5 ns
-        HIGH 50%;
---------------------------------------------------------------------------------
-Slack: 4.186ns (period - min period limit)
-  Period: 5.000ns
-  Min period limit: 0.814ns (1228.501MHz) (Tickper)
-  Physical resource: adc_ddrout1<0>/CLK1
-  Logical resource: ADC_IF_GEN_TR[0].IDDR2_AD9222/CLK1
-  Location pin: ILOGIC_X18Y175.CLK1
-  Clock network: adc_ioclk_inv
---------------------------------------------------------------------------------
-Slack: 4.186ns (period - min period limit)
-  Period: 5.000ns
-  Min period limit: 0.814ns (1228.501MHz) (Tickper)
-  Physical resource: adc_ddrout1<1>/CLK1
-  Logical resource: ADC_IF_GEN_TR[1].IDDR2_AD9222/CLK1
-  Location pin: ILOGIC_X14Y175.CLK1
-  Clock network: adc_ioclk_inv
---------------------------------------------------------------------------------
-Slack: 4.186ns (period - min period limit)
-  Period: 5.000ns
-  Min period limit: 0.814ns (1228.501MHz) (Tickper)
-  Physical resource: adc_ddrout1<2>/CLK1
-  Logical resource: ADC_IF_GEN_TR[2].IDDR2_AD9222/CLK1
-  Location pin: ILOGIC_X16Y175.CLK1
-  Clock network: adc_ioclk_inv
+Slack: 23.361ns (period - min period limit)
+  Period: 25.000ns
+  Min period limit: 1.639ns (610.128MHz) (Tockper)
+  Physical resource: drs_tag_l/CLK0
+  Logical resource: ODDR2_DRS_TAG_L/CK0
+  Location pin: OLOGIC_X2Y175.CLK0
+  Clock network: clk_ext40m
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -2194,44 +2232,6 @@ Slack: 99.570ns (period - (min high pulse limit / (high pulse / period)))
   Logical resource: drs_refclkTenM_c_0/SR
   Location pin: SLICE_X68Y101.SR
   Clock network: rst_refclk
---------------------------------------------------------------------------------
-
-================================================================================
-Timing constraint: TS_dcm_extclk_clkfx = PERIOD TIMEGRP "dcm_extclk_clkfx" 
-TS_BP_EXTCLK / 4 HIGH         50%;
-For more information, see Period Analysis in the Timing Closure User Guide (UG612).
-
- 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 component switching limit errors)
- Minimum period is   1.730ns.
---------------------------------------------------------------------------------
-
-Component Switching Limit Checks: TS_dcm_extclk_clkfx = PERIOD TIMEGRP "dcm_extclk_clkfx" TS_BP_EXTCLK / 4 HIGH
-        50%;
---------------------------------------------------------------------------------
-Slack: 23.270ns (period - min period limit)
-  Period: 25.000ns
-  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
-  Physical resource: dcm_extclk/clkout2_buf/I0
-  Logical resource: dcm_extclk/clkout2_buf/I0
-  Location pin: BUFGMUX_X3Y14.I0
-  Clock network: dcm_extclk/clkfx
---------------------------------------------------------------------------------
-Slack: 23.361ns (period - min period limit)
-  Period: 25.000ns
-  Min period limit: 1.639ns (610.128MHz) (Tockper)
-  Physical resource: drs_tag_h/CLK0
-  Logical resource: ODDR2_DRS_TAG_H/CK0
-  Location pin: OLOGIC_X4Y173.CLK0
-  Clock network: clk_ext40m
---------------------------------------------------------------------------------
-Slack: 23.361ns (period - min period limit)
-  Period: 25.000ns
-  Min period limit: 1.639ns (610.128MHz) (Tockper)
-  Physical resource: drs_tag_l/CLK0
-  Logical resource: ODDR2_DRS_TAG_L/CK0
-  Location pin: OLOGIC_X2Y175.CLK0
-  Clock network: clk_ext40m
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -10951,7 +10951,6 @@ Derived Constraints for TS_OSC
 |  _LDC                         |             |             |             |             |             |             |             |
 |  TS_TO_drs_dfifo_progfull_ir_7|     15.000ns|      5.188ns|          N/A|            0|            0|            4|            0|
 |  _LDC                         |             |             |             |             |             |             |             |
-| TS_dcm_v5_clkout2             |     30.000ns|     14.277ns|          N/A|            0|            0|            2|            0|
 | TS_dcm_v5_clkout0             |      7.500ns|      7.481ns|      5.623ns|            0|            0|       142487|           60|
 |  TS_TO_trig_offset_reg_14_LDC |      7.500ns|      3.921ns|          N/A|            0|            0|            4|            0|
 |  TS_TO_trig_offset_reg_11_LDC |      7.500ns|      4.574ns|          N/A|            0|            0|            4|            0|
@@ -10968,6 +10967,7 @@ Derived Constraints for TS_OSC
 |  TS_TO_trig_offset_reg_2_LDC  |      7.500ns|      5.532ns|          N/A|            0|            0|            4|            0|
 |  TS_TO_trig_offset_reg_1_LDC  |      7.500ns|      5.473ns|          N/A|            0|            0|            4|            0|
 |  TS_TO_trig_offset_reg_0_LDC  |      7.500ns|      5.309ns|          N/A|            0|            0|            4|            0|
+| TS_dcm_v5_clkout2             |     30.000ns|     14.277ns|          N/A|            0|            0|            2|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_AD9222_DCO
@@ -10977,11 +10977,11 @@ Derived Constraints for TS_AD9222_DCO
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |TS_AD9222_DCO                  |      5.000ns|      0.925ns|      4.839ns|            0|            0|            0|         1808|
-| TS_adc_divclk                 |      5.000ns|      4.839ns|          N/A|            0|            0|         1808|            0|
-| TS_adc_ioclk                  |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
-| TS_adc_ioclk2                 |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
-| TS_adc_ioclk_inv2             |      5.000ns|      0.814ns|          N/A|            0|            0|            0|            0|
 | TS_adc_ioclk_inv              |      5.000ns|      0.814ns|          N/A|            0|            0|            0|            0|
+| TS_adc_ioclk                  |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
+| TS_adc_ioclk_inv2             |      5.000ns|      0.814ns|          N/A|            0|            0|            0|            0|
+| TS_adc_divclk                 |      5.000ns|      4.839ns|          N/A|            0|            0|         1808|            0|
+| TS_adc_ioclk2                 |      5.000ns|      0.818ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 Derived Constraints for TS_BP_EXTCLK
@@ -10991,6 +10991,7 @@ Derived Constraints for TS_BP_EXTCLK
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |TS_BP_EXTCLK                   |    100.000ns|     32.000ns|      7.404ns|            0|            0|            0|        41298|
+| TS_dcm_extclk_clkfx           |     25.000ns|      1.730ns|          N/A|            0|            0|            0|            0|
 | TS_dcm_extclk_clk180          |    100.000ns|      7.404ns|      3.605ns|            0|            0|        41266|           32|
 |  TS_TO_drs_sampfreq_TenMreg_7_|    100.000ns|      3.183ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
@@ -11008,7 +11009,6 @@ Derived Constraints for TS_BP_EXTCLK
 |  LDC                          |             |             |             |             |             |             |             |
 |  TS_TO_drs_sampfreq_TenMreg_0_|    100.000ns|      3.148ns|          N/A|            0|            0|            4|            0|
 |  LDC                          |             |             |             |             |             |             |             |
-| TS_dcm_extclk_clkfx           |     25.000ns|      1.730ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -11088,14 +11088,14 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed SUN 11 MAR 20:3:14 2018 
+Analysis completed MON 12 MAR 12:39:24 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 650 MB
+Peak Memory Usage: 652 MB
 
 
 

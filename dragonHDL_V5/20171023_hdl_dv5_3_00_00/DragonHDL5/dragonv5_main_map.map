@@ -11,7 +11,7 @@ Target Device  : xc6slx100
 Target Package : fgg676
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : SUN 11 MAR 19:49:13 2018
+Mapped Date    : MON 12 MAR 12:10:25 2018
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:56 - Part 'xc6slx100' is not a WebPack part.
@@ -332,8 +332,6 @@ Derivative  |
         0|
 |  _LDC                         |             |             |             |             |             |             |   
          |
-| TS_dcm_v5_clkout2             |     30.000ns|      3.924ns|          N/A|            0|            0|            2|   
-        0|
 | TS_dcm_v5_clkout0             |      7.500ns|      3.124ns|      1.030ns|            8|            0|       142487|   
        60|
 |  TS_TO_trig_offset_reg_14_LDC |      7.500ns|      1.030ns|          N/A|            0|            0|            4|   
@@ -366,6 +364,8 @@ Derivative  |
         0|
 |  TS_TO_trig_offset_reg_0_LDC  |      7.500ns|      1.030ns|          N/A|            0|            0|            4|   
         0|
+| TS_dcm_v5_clkout2             |     30.000ns|      3.924ns|          N/A|            0|            0|            2|   
+        0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
 ----------+
 
@@ -382,15 +382,15 @@ Derivative  |
 ----------+
 |TS_AD9222_DCO                  |      5.000ns|      0.925ns|      1.730ns|            0|            0|            0|   
      1808|
-| TS_adc_divclk                 |      5.000ns|      1.730ns|          N/A|            0|            0|         1808|   
+| TS_adc_ioclk_inv              |      5.000ns|      0.814ns|          N/A|            0|            0|            0|   
         0|
 | TS_adc_ioclk                  |      5.000ns|      0.818ns|          N/A|            0|            0|            0|   
         0|
-| TS_adc_ioclk2                 |      5.000ns|      0.818ns|          N/A|            0|            0|            0|   
-        0|
 | TS_adc_ioclk_inv2             |      5.000ns|      0.814ns|          N/A|            0|            0|            0|   
         0|
-| TS_adc_ioclk_inv              |      5.000ns|      0.814ns|          N/A|            0|            0|            0|   
+| TS_adc_divclk                 |      5.000ns|      1.730ns|          N/A|            0|            0|         1808|   
+        0|
+| TS_adc_ioclk2                 |      5.000ns|      0.818ns|          N/A|            0|            0|            0|   
         0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
 ----------+
@@ -408,6 +408,8 @@ Derivative  |
 ----------+
 |TS_BP_EXTCLK                   |    100.000ns|     32.000ns|      6.920ns|            0|            0|            0|   
     41298|
+| TS_dcm_extclk_clkfx           |     25.000ns|      1.730ns|          N/A|            0|            0|            0|   
+        0|
 | TS_dcm_extclk_clk180          |    100.000ns|      2.402ns|      1.030ns|            0|            0|        41266|   
        32|
 |  TS_TO_drs_sampfreq_TenMreg_7_|    100.000ns|      1.030ns|          N/A|            0|            0|            4|   
@@ -442,8 +444,6 @@ Derivative  |
         0|
 |  LDC                          |             |             |             |             |             |             |   
          |
-| TS_dcm_extclk_clkfx           |     25.000ns|      1.730ns|          N/A|            0|            0|            0|   
-        0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
 ----------+
 
@@ -453,34 +453,34 @@ Derivative  |
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 50 secs 
-Total CPU  time at the beginning of Placer: 47 secs 
+Total REAL time at the beginning of Placer: 1 mins 31 secs 
+Total CPU  time at the beginning of Placer: 50 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:bb97d2e0) REAL time: 59 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:bb97d2e0) REAL time: 1 mins 46 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:bb97d2e0) REAL time: 1 mins 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:bb97d2e0) REAL time: 1 mins 48 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:bb97d2e0) REAL time: 1 mins 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:bb97d2e0) REAL time: 1 mins 48 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:fa3af2be) REAL time: 3 mins 27 secs 
+(Checksum:fa3af2be) REAL time: 4 mins 58 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:fa3af2be) REAL time: 3 mins 27 secs 
+Phase 5.36  Local Placement Optimization (Checksum:fa3af2be) REAL time: 4 mins 58 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:fa3af2be) REAL time: 3 mins 27 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:fa3af2be) REAL time: 4 mins 58 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:fa3af2be) REAL time: 3 mins 27 secs 
+Phase 7.3  Local Placement Optimization (Checksum:fa3af2be) REAL time: 5 mins 3 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:fa3af2be) REAL time: 3 mins 28 secs 
+Phase 8.5  Local Placement Optimization (Checksum:fa3af2be) REAL time: 5 mins 4 secs 
 
 Phase 9.8  Global Placement
 .............................
@@ -488,22 +488,22 @@ Phase 9.8  Global Placement
 ................................................................................................................
 ...................................................................................................................................
 ..............................................
-Phase 9.8  Global Placement (Checksum:673c90d2) REAL time: 6 mins 50 secs 
+Phase 9.8  Global Placement (Checksum:673c90d2) REAL time: 16 mins 19 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:673c90d2) REAL time: 6 mins 50 secs 
+Phase 10.5  Local Placement Optimization (Checksum:673c90d2) REAL time: 16 mins 22 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:ac180c3d) REAL time: 7 mins 33 secs 
+Phase 11.18  Placement Optimization (Checksum:ac180c3d) REAL time: 17 mins 12 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:ac180c3d) REAL time: 7 mins 34 secs 
+Phase 12.5  Local Placement Optimization (Checksum:ac180c3d) REAL time: 17 mins 13 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:11a6335e) REAL time: 7 mins 35 secs 
+Phase 13.34  Placement Validation (Checksum:11a6335e) REAL time: 17 mins 19 secs 
 
-Total REAL time to Placer completion: 8 mins 17 secs 
-Total CPU  time to Placer completion: 8 mins 9 secs 
+Total REAL time to Placer completion: 19 mins 7 secs 
+Total CPU  time to Placer completion: 8 mins 49 secs 
 Running post-placement packing...
 Writing output files...
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -874,8 +874,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                3.73
 
 Peak Memory Usage:  930 MB
-Total REAL time to MAP completion:  8 mins 38 secs 
-Total CPU time to MAP completion:   8 mins 24 secs 
+Total REAL time to MAP completion:  20 mins 30 secs 
+Total CPU time to MAP completion:   9 mins 6 secs 
 
 Mapping completed.
 See MAP report file "dragonv5_main_map.mrp" for details.

@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.50 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.49 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.50 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.51 secs
  
 --> Reading design: dragonv5_main.prj
 
@@ -4411,12 +4411,12 @@ dcm_v5/pll_base_inst/CLKOUT0|         |         |    2.472|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 100.00 secs
-Total CPU time to Xst completion: 100.56 secs
+Total REAL time to Xst completion: 116.00 secs
+Total CPU time to Xst completion: 115.24 secs
  
 --> 
 
-Total memory usage is 423824 kilobytes
+Total memory usage is 423780 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  336 (   0 filtered)
