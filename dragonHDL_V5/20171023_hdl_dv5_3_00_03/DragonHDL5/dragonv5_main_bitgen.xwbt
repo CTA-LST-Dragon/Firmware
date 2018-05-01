@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_03\DragonHDL5\dragonv5_main.ncd
+OUTFILE=C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_03\DragonHDL5\dragonv5_main.bit
+FAMILY=Spartan6
+PART=xc6slx100-3fgg676
+WORKINGDIR=C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_03\DragonHDL5
+LICENSE=ISE
+USER_INFO=174114377_174114378_210582442_362

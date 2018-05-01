@@ -1,0 +1,205 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc
+C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/Source/dr
+agonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd
+
+Reading NGO file
+"C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHD
+L5/dragonv5_main.ngc" ...
+Loading design module "../CoreGen/ADC_BUF_FIFO.ngc"...
+Loading design module "../SiTCP/SiTCP_XC6S_16K_BBT_V40.ngc"...
+Loading design module "../CoreGen/DRS_FIFO.ngc"...
+Loading design module "../CoreGen/FORMAT_FIFO.ngc"...
+Loading design module "../CoreGen/COUNTER_FIFO.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/Source/d
+ragonv5_main.ucf" ...
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/GMII/GMII_TXBUF/BANK0/Mram_RAM' of type RAMB16BWER has been
+   changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and timing
+   simulation for this primitive.  In order for functional simulation to be
+   correct, the value of SIM_DEVICE should be changed in this same manner in the
+   source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/GMII/GMII_TXBUF/BANK1/Mram_RAM' of type RAMB16BWER has been
+   changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and timing
+   simulation for this primitive.  In order for functional simulation to be
+   correct, the value of SIM_DEVICE should be changed in this same manner in the
+   source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM2' of type RAMB16BWER has been
+   changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and timing
+   simulation for this primitive.  In order for functional simulation to be
+   correct, the value of SIM_DEVICE should be changed in this same manner in the
+   source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/GMII/GMII_RXBUF/RX_BUF/Mram_RAM1' of type RAMB16BWER has been
+   changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and timing
+   simulation for this primitive.  In order for functional simulation to be
+   correct, the value of SIM_DEVICE should be changed in this same manner in the
+   source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/GMII/GMII_TXCNT/TX_FIFO/Mram_RAM' of type RAMB16BWER has been
+   changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and timing
+   simulation for this primitive.  In order for functional simulation to be
+   correct, the value of SIM_DEVICE should be changed in this same manner in the
+   source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/SiTCP/TCP/TCP_TXCNT/CMDBUF/Mram_RAM7' of type RAMB16BWER has
+   been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and
+   timing simulation for this primitive.  In order for functional simulation to
+   be correct, the value of SIM_DEVICE should be changed in this same manner in
+   the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/SiTCP/TCP/TCP_TXCNT/CMDBUF/Mram_RAM6' of type RAMB16BWER has
+   been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and
+   timing simulation for this primitive.  In order for functional simulation to
+   be correct, the value of SIM_DEVICE should be changed in this same manner in
+   the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/SiTCP/TCP/TCP_TXCNT/CMDBUF/Mram_RAM8' of type RAMB16BWER has
+   been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and
+   timing simulation for this primitive.  In order for functional simulation to
+   be correct, the value of SIM_DEVICE should be changed in this same manner in
+   the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/SiTCP/TCP/TCP_TXCNT/CMDBUF/Mram_RAM4' of type RAMB16BWER has
+   been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and
+   timing simulation for this primitive.  In order for functional simulation to
+   be correct, the value of SIM_DEVICE should be changed in this same manner in
+   the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/SiTCP/TCP/TCP_TXCNT/CMDBUF/Mram_RAM3' of type RAMB16BWER has
+   been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and
+   timing simulation for this primitive.  In order for functional simulation to
+   be correct, the value of SIM_DEVICE should be changed in this same manner in
+   the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/SiTCP/TCP/TCP_TXCNT/CMDBUF/Mram_RAM5' of type RAMB16BWER has
+   been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and
+   timing simulation for this primitive.  In order for functional simulation to
+   be correct, the value of SIM_DEVICE should be changed in this same manner in
+   the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/SiTCP/TCP/TCP_TXCNT/CMDBUF/Mram_RAM1' of type RAMB16BWER has
+   been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and
+   timing simulation for this primitive.  In order for functional simulation to
+   be correct, the value of SIM_DEVICE should be changed in this same manner in
+   the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/SiTCP/TCP/TCP_TXCNT/CMDBUF/Mram_RAM2' of type RAMB16BWER has
+   been changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and
+   timing simulation for this primitive.  In order for functional simulation to
+   be correct, the value of SIM_DEVICE should be changed in this same manner in
+   the source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/SiTCP/ECIF_RX/PCKT_BUF/Mram_RAM' of type RAMB16BWER has been
+   changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and timing
+   simulation for this primitive.  In order for functional simulation to be
+   correct, the value of SIM_DEVICE should be changed in this same manner in the
+   source netlist or constraint file.
+WARNING:NgdBuild - The value of SIM_DEVICE on instance
+   'SiTCP/SiTCP/SiTCP/UDP/UDP_LOC/CMDBUF/Mram_RAM' of type RAMB16BWER has been
+   changed from 'SPARTAN3ADSP' to 'SPARTAN6' to correct post-ngdbuild and timing
+   simulation for this primitive.  In order for functional simulation to be
+   correct, the value of SIM_DEVICE should be changed in this same manner in the
+   source netlist or constraint file.
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'OSC', used in period specification 'TS_OSC',
+   was traced into DCM_SP instance dcm_gmii/dcm_sp_inst. The following new TNM
+   groups and period specifications were generated at the DCM_SP output(s): 
+   CLK0: <TIMESPEC TS_dcm_gmii_clk0 = PERIOD "dcm_gmii_clk0" TS_OSC HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'OSC', used in period specification 'TS_OSC',
+   was traced into PLL_ADV instance PLL_ADV. The following new TNM groups and
+   period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_dcm_v5_clkout1 = PERIOD "dcm_v5_clkout1" TS_OSC /
+   0.533333333 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'OSC', used in period specification 'TS_OSC',
+   was traced into PLL_ADV instance PLL_ADV. The following new TNM groups and
+   period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_dcm_v5_clkout0 = PERIOD "dcm_v5_clkout0" TS_OSC /
+   1.066666667 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'OSC', used in period specification 'TS_OSC',
+   was traced into PLL_ADV instance PLL_ADV. The following new TNM groups and
+   period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_dcm_v5_clkout2 = PERIOD "dcm_v5_clkout2" TS_OSC /
+   0.266666667 PHASE 7.5 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'AD9222_DCO', used in period specification
+   'TS_AD9222_DCO', was traced into BUFIO2 instance BUFIO2_ADC_TR. The following
+   new TNM groups and period specifications were generated at the BUFIO2
+   output(s): 
+   DIVCLK: <TIMESPEC TS_adc_divclk = PERIOD "adc_divclk" TS_AD9222_DCO HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'AD9222_DCO', used in period specification
+   'TS_AD9222_DCO', was traced into BUFIO2 instance BUFIO2_ADC_TR. The following
+   new TNM groups and period specifications were generated at the BUFIO2
+   output(s): 
+   IOCLK: <TIMESPEC TS_adc_ioclk = PERIOD "adc_ioclk" TS_AD9222_DCO HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'AD9222_DCO', used in period specification
+   'TS_AD9222_DCO', was traced into BUFIO2 instance BUFIO2_ADC_INV_TR. The
+   following new TNM groups and period specifications were generated at the
+   BUFIO2 output(s): 
+   IOCLK: <TIMESPEC TS_adc_ioclk_inv = PERIOD "adc_ioclk_inv" TS_AD9222_DCO
+   PHASE 2.5 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'AD9222_DCO', used in period specification
+   'TS_AD9222_DCO', was traced into BUFIO2 instance BUFIO2_ADC_TL. The following
+   new TNM groups and period specifications were generated at the BUFIO2
+   output(s): 
+   IOCLK: <TIMESPEC TS_adc_ioclk2 = PERIOD "adc_ioclk2" TS_AD9222_DCO HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'AD9222_DCO', used in period specification
+   'TS_AD9222_DCO', was traced into BUFIO2 instance BUFIO2_ADC_INV_TL. The
+   following new TNM groups and period specifications were generated at the
+   BUFIO2 output(s): 
+   IOCLK: <TIMESPEC TS_adc_ioclk_inv2 = PERIOD "adc_ioclk_inv2" TS_AD9222_DCO
+   PHASE 2.5 ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'BP_EXTCLK', used in period specification
+   'TS_BP_EXTCLK', was traced into DCM_SP instance dcm_extclk/dcm_sp_inst. The
+   following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_dcm_extclk_clkfx = PERIOD "dcm_extclk_clkfx" TS_BP_EXTCLK
+   / 4 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'BP_EXTCLK', used in period specification
+   'TS_BP_EXTCLK', was traced into DCM_SP instance dcm_extclk/dcm_sp_inst. The
+   following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLK180: <TIMESPEC TS_dcm_extclk_clk180 = PERIOD "dcm_extclk_clk180"
+   TS_BP_EXTCLK PHASE 50 ns HIGH 50%>
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  15
+
+Total memory usage is 308656 kilobytes
+
+Writing NGD file "dragonv5_main.ngd" ...
+Total REAL time to NGDBUILD completion:  19 sec
+Total CPU time to NGDBUILD completion:   17 sec
+
+Writing NGDBUILD log file "dragonv5_main.bld"...

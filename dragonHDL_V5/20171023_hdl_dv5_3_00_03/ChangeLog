@@ -1,0 +1,132 @@
+ChangeLog
+
+dv5_3_00_00 (Seiya) 2018.04.26
+- Data format was change as of stopcell ID
+I added the flag for check of stopcell line-id corruption.
+
+dv5_3_00_00 (Seiya)
+- This version is used for checking the stopcell line ID corruption
+FPGA receives Write Shift Register value from DRS4.
+Even though it is not expected one, DRS can start data sampling. This is bug.
+So I checked if this corruption happen to change data format so that Write shift register value(8bit) can be read.
+ 
+
+dv5_3_00_01 (Seiya)
+- Concerning the data format, Flag data was removed
+Now flag data isn't used at all during the data analysis.
+
+dv5_3_00_00 (Seiya)
+- Data format was changed as of ADC value
+DAQ team asked me to change data format with channel by channel data sending.
+By the last firmware, FPGA sent the ADC value like this,
+[HG0 cell0][HG2_cell0][HG4_cell0][HG6_cell0][LG0 cell0][LG2_cell0][LG4_cell0][LG6_cell0]
+[HG0 cell1][HG2_cell1][HG4_cell1][HG6_cell1][LG0 cell1][LG2_cell1][LG4_cell1][LG6_cell1]
+...
+
+From this version, the data format is like the following one,
+[HG0 cell0][HG0 cell1][HG0 cell2][HG0 cell3]...[HG0 cell39][HG1 cell0][HG1 cell1]...
+
+
+dv5_2_00_00 (Seiya)
+- Big-endian to Little endian with right procedure
+
+dv5_1_0D_00 (Seiya)
+- Big-endian to Little-endian, BUT THIS IS COMPILED BY BAD PROCEDURE.
+In this version, endian was changed for EventBuilding software (big endian to little endian).
+But this firmware caused "0 problem" at Tenerife, ADC sometimes doesn't send DRS4 data but "0".
+Wrong procedure of compilation might cause this problem. 
+When I used the IPcore, I added the ".v" and ".ngc" file.
+It should be right that ".xco" file is added and regenerated all.
+
+dv5_1_0C_13
+- firmware version 0C_11 contained event corruption bug.
+It was caused due to 266MHz clock implementation.
+Now 266MHz clock was deleted and DRS4 timing calibration clock is only
+66.667MHz as before.
+
+
+dv5_1_0C_11
+- DRS4 timing calibration clock frequency changed
+It can be selected by bit3 of DRS_CLKOUT_ENABLE (register x1099).
+0: 66.667MHz(default), 1: 266.667MHz
+Clock signal is injected to 8th input of each DRS4 chip for timing calibration
+purpose. 
+
+- SCB test pulse injection mode select
+It can be selected by bit8 of SCB_TP_CLKSELECT (register x10CF).
+1: test pulse injection starts without necessary to start daq
+0: test pulse injection starts after starting daq (default)
+To control pulse inject position in DRS4 ring, you should select 0 and change
+the position by TRIGGER_FREQ_OFFSET because the timing is determined by when
+daq starts and when pulse injection starts.
+
+
+dv5_1_0C_02
+Bug fix for L0 ASIC/delay reset.
+Reset pulse width was too short and reset did not work. Changed pulse width to 63usec from 1usec.
+
+dv5_1_0C_00
+asynchronous counter for rate(L1/L0/IPR), which counts rising edge of the trigger signals.
+FIFO buffer busy threshold is changed
+	before) half of the buffer size
+	after) one event length + several bytes
+new registers
+SCB_TP_CLKSELECT x10CF
+	generate test pulse trigger from external 10MHz. 
+	trigger timing is synchronized in the camera by external pps.
+DRS_DWRITE_TO_READY x108E
+	busy lowering timing related to DRS4 buffer
+
+dv5_1_0B_0E
+Bug fix about busy handling
+	befor bug fix) accept trigger -> busy check -> read DRS (if busy, the charge will be lost)
+	after) busy check -> accept trigger -> read DRS
+new registers
+TRIGGER_ENABLE x101E
+BUSY_STATE x101F
+
+dv5_1_0B_0C
+seperate rate count window for L1R/IPR (RBCP reg x3E-3F)
+
+dv5_1_0B
+DRS stop channel reset enable/disable (RBCP reg x9C)
+FIRMWARE_SUBVER (reg x02)
+timing calibration problem fixed
+
+dv5_1_08
+BP FPGA Reboot via SlowControl (RBCP reg X69)
+
+dv5_1_0A
+ADC bit loss was fixed.
+asynchronous FIFO between 133MHz logic and 66MHz logic
+
+dv5_1_07
+for the cluster test
+DRS reference clock with external 10MHz (RBCP reg x9D and x9E)
+
+dv5_1_06
+for the cluster test
+asynchronous trigger
+data format header was changed
+
+dv5_1_05
+SlowControl register modified
+DRS_CASCADENUM: number of cascaded channels (1,2 or 4)
+
+dv5_1_04
+BP SPI modified
+SlowControl register modified
+FIRMWARE_VER
+SCB_TP_TRIG_WIDTH
+TRIGGER_FREQ_OFFSET
+
+dv5_1
+firmware version 1
+channel cascade
+
+dv5_0
+copied from 20140909hdl_dv4_v2_6
+board version 5
+firmware version 0
+
+

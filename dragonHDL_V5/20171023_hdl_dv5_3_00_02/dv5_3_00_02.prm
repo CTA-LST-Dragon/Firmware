@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_02//dv5_3_00_02 -s 8192 -u 0000 C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.bit -spi 
+
+PROM C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_02\dv5_3_00_02.prm map: TUE 17 APR 14:47:16 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          8192K
+PROM start    0000:0000
+PROM end      007f:ffff
+PROM checksum 4e71d42e
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0032:a093     Apr 17 03:00:22 2018 C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.bit

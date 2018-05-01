@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/dragonv5_main_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="dragonv5_main_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/dragonv5_main_tb/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/DRS_DENABLE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DRS_DENABLE</obj_property>
+      <obj_property name="ObjectShortName">DRS_DENABLE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/DRS_RESETn[0]" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">[0]</obj_property>
+      <obj_property name="ObjectShortName">DRS_RESETn[0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/rst_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_read</obj_property>
+      <obj_property name="ObjectShortName">rst_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/dreset_finish" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dreset_finish</obj_property>
+      <obj_property name="ObjectShortName">dreset_finish</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/dreset_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dreset_c[8:0]</obj_property>
+      <obj_property name="ObjectShortName">dreset_c[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/msec_66m" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">msec_66m</obj_property>
+      <obj_property name="ObjectShortName">msec_66m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/DRS_PLLLCK_CHECK" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DRS_PLLLCK_CHECK[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DRS_PLLLCK_CHECK[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/DRS_PLLLCK" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DRS_PLLLCK[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DRS_PLLLCK[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/dreset_pllc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dreset_pllc[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dreset_pllc[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

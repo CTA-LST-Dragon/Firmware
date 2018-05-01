@@ -1,0 +1,104 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/dragonv5_main_tb_isim_beh.exe -prj C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/dragonv5_main_tb_beh.prj work.dragonv5_main_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../CoreGen/DCM_V5.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../CoreGen/DCM_EXTCLK.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../CoreGen/DCM_GMII.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/BMEM_DP_OR.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../SiTCP/TIMER.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../SiTCP/SiTCP_XC6S_16K_BBT_V40.V" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../CoreGen/FORMAT_FIFO.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../CoreGen/DRS_FIFO.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../CoreGen/COUNTER_FIFO.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/TEST_BACKPLANE.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/SRAM.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/SPI_IF_drs.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/SCBV2.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/RBCP_REG_drs.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/MYTIMER.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/DRS_READ.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/DATA_FORMATTER.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/DAC_DRS.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/COUNTER_READ.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/ANALOG_TRIGGER.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/ANALOG_BACKPLANE.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/ADC_SPI.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../SiTCP/WRAP_SiTCP_GMII_XC6S_16K.V" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../CoreGen/ADC_BUF_FIFO.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/dragonv5_main.v" into library work
+Analyzing Verilog file "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/dragonv5_main_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/../Source/dragonv5_main.v" Line 561: Port CLK_VALID is not connected to this instance
+Completed static elaboration
+Compiling module IBUFG
+Compiling module PLL_ADV(BANDWIDTH="OPTIMIZED",CL...
+Compiling module PLL_BASE(CLKFBOUT_MULT=16,CLKIN_...
+Compiling module BUFG
+Compiling module DCM_V5
+Compiling module dcm_sp_clock_divide_by_2
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_clock_lost
+Compiling module DCM_SP(CLKIN_PERIOD=8.0)
+Compiling module DCM_GMII
+Compiling module IBUFGDS(DIFF_TERM="TRUE",IOSTAND...
+Compiling module DCM_EXTCLK
+Compiling module BUFIO2_default
+Compiling module BUFIO2(I_INVERT="TRUE")
+Compiling module MYTIMER
+Compiling module OBUFDS(IOSTANDARD="LVDS_25")
+Compiling module SCBV2
+Compiling module IBUFDS(DIFF_TERM="TRUE",IOSTANDA...
+Compiling module ANALOG_TRIGGER_ASICMEZZ
+Compiling module ANALOG_BACKPLANE
+Compiling module TEST_BACKPLANE
+Compiling module DAC_DRS
+Compiling module ODDR2_default
+Compiling module SRAM
+Compiling module ADC_SPI
+Compiling module BUFGMUX
+Compiling module TIMER(TIM_PERIOD=8'b10000011)
+Compiling module SiTCP_XC6S_16K_BBT_V40
+Compiling module WRAP_SiTCP_GMII_XC6S_16K(TIM_PER...
+Compiling module IDDR2(DDR_ALIGNMENT="C0")
+Compiling module fifo_generator_v9_3_sync_stage(C...
+Compiling module fifo_generator_v9_3_bhv_ver_as(C...
+Compiling module FIFO_GENERATOR_V9_3_CONV_VER(C_C...
+Compiling module FIFO_GENERATOR_V9_3(C_DATA_COUNT...
+Compiling module ADC_BUF_FIFO
+Compiling module fifo_generator_v9_3_sync_stage(C...
+Compiling module fifo_generator_v9_3_sync_stage_c...
+Compiling module fifo_generator_v9_3_bhv_ver_as(C...
+Compiling module FIFO_GENERATOR_V9_3_CONV_VER(C_C...
+Compiling module FIFO_GENERATOR_V9_3(C_DATA_COUNT...
+Compiling module DRS_FIFO
+Compiling module DRS_READ
+Compiling module fifo_generator_v9_3_sync_stage(C...
+Compiling module fifo_generator_v9_3_sync_stage(C...
+Compiling module fifo_generator_v9_3_bhv_ver_as(C...
+Compiling module FIFO_GENERATOR_V9_3_CONV_VER(C_C...
+Compiling module FIFO_GENERATOR_V9_3(C_DATA_COUNT...
+Compiling module COUNTER_FIFO
+Compiling module COUNTER_READ
+Compiling module fifo_generator_v9_3_sync_stage(C...
+Compiling module fifo_generator_v9_3_bhv_ver_as(C...
+Compiling module FIFO_GENERATOR_V9_3_CONV_VER(C_C...
+Compiling module FIFO_GENERATOR_V9_3(C_DATA_COUNT...
+Compiling module FORMAT_FIFO
+Compiling module DATA_FORMATTER
+Compiling module BMEM_DP_OR
+Compiling module SPI_IF_drs
+Compiling module RBCP_REG_drs
+Compiling module dragonv5_main
+Compiling module dragonv5_main_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 18 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 指定されたパスが見つかりません。, "isim\dragonv5_main_tb_isim_beh.exe.sim\libPortability.dll".
+Compiled 73 Verilog Units
+Built simulation executable C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/dragonv5_main_tb_isim_beh.exe
+Fuse Memory Usage: 53640 KB
+Fuse CPU Usage: 2780 ms

@@ -1,0 +1,2 @@
+verilog work ../../DCM_EXTCLK.v
+verilog work ../example_design/DCM_EXTCLK_exdes.v

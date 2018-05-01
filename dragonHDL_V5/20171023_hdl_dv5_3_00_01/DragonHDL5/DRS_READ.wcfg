@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/dragonv5_main_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="dragonv5_main_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="64" />
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /RST" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_stoppos_flagA" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_stoppos_flagA</obj_property>
+      <obj_property name="ObjectShortName">drs_stoppos_flagA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_stoppos_flagB" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_stoppos_flagB</obj_property>
+      <obj_property name="ObjectShortName">drs_stoppos_flagB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_stopch_corr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_stopch_corr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">drs_stopch_corr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DRS_CASCADENUM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DRS_CASCADENUM[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DRS_CASCADENUM[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DRS_READDEPTH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DRS_READDEPTH[12:0]</obj_property>
+      <obj_property name="ObjectShortName">DRS_READDEPTH[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /INT_CLK_33M_90_TGL" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INT_CLK_33M_90_TGL</obj_property>
+      <obj_property name="ObjectShortName">INT_CLK_33M_90_TGL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DRS_STATE_COM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DRS_STATE_COM[3:0]</obj_property>
+      <obj_property name="ObjectShortName">DRS_STATE_COM[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">drs_state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /rDRS_SRCLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rDRS_SRCLK</obj_property>
+      <obj_property name="ObjectShortName">rDRS_SRCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /rDRS_A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rDRS_A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rDRS_A[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_rdchannel_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_rdchannel_c[3:0]</obj_property>
+      <obj_property name="ObjectShortName">drs_rdchannel_c[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_rdaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_rdaddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">drs_rdaddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DRS_STOPCH" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DRS_STOPCH[1:0]</obj_property>
+      <obj_property name="ObjectShortName">DRS_STOPCH[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DRS_CALREAD" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DRS_CALREAD</obj_property>
+      <obj_property name="ObjectShortName">DRS_CALREAD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_samp_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_samp_c[12:0]</obj_property>
+      <obj_property name="ObjectShortName">drs_samp_c[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_stopcell" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_stopcell[9:0]</obj_property>
+      <obj_property name="ObjectShortName">drs_stopcell[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DRS_SROUT" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DRS_SROUT</obj_property>
+      <obj_property name="ObjectShortName">DRS_SROUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_stopch_corr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_stopch_corr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">drs_stopch_corr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_c[13:0]</obj_property>
+      <obj_property name="ObjectShortName">drs_c[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DRS_RSRLOAD" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DRS_RSRLOAD</obj_property>
+      <obj_property name="ObjectShortName">DRS_RSRLOAD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /dummy_rsrload" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dummy_rsrload</obj_property>
+      <obj_property name="ObjectShortName">dummy_rsrload</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /cascade_c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cascade_c[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cascade_c[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /cascade_tag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cascade_tag</obj_property>
+      <obj_property name="ObjectShortName">cascade_tag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_samp_end" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_samp_end</obj_property>
+      <obj_property name="ObjectShortName">drs_samp_end</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DRS_READ_DONE_OUT" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DRS_READ_DONE_OUT</obj_property>
+      <obj_property name="ObjectShortName">DRS_READ_DONE_OUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /dummy_srclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dummy_srclk</obj_property>
+      <obj_property name="ObjectShortName">dummy_srclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_sampfirst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_sampfirst</obj_property>
+      <obj_property name="ObjectShortName">drs_sampfirst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_sampfirst_ir" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_sampfirst_ir</obj_property>
+      <obj_property name="ObjectShortName">drs_sampfirst_ir</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_sampstart" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_sampstart</obj_property>
+      <obj_property name="ObjectShortName">drs_sampstart</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_sampstart_ir" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_sampstart_ir</obj_property>
+      <obj_property name="ObjectShortName">drs_sampstart_ir</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_sampfirst_buf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_sampfirst_buf[31:0]</obj_property>
+      <obj_property name="ObjectShortName">drs_sampfirst_buf[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_sampstart_buf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_sampstart_buf[31:0]</obj_property>
+      <obj_property name="ObjectShortName">drs_sampstart_buf[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_sampend_buf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_sampend_buf[31:0]</obj_property>
+      <obj_property name="ObjectShortName">drs_sampend_buf[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /drs_sampend_ir" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">drs_sampend_ir</obj_property>
+      <obj_property name="ObjectShortName">drs_sampend_ir</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /cascade_tag_buf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cascade_tag_buf[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cascade_tag_buf[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /cascade_tag_ir" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cascade_tag_ir</obj_property>
+      <obj_property name="ObjectShortName">cascade_tag_ir</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /dfifo_wr_en_cell" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dfifo_wr_en_cell</obj_property>
+      <obj_property name="ObjectShortName">dfifo_wr_en_cell</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /dfifo_wr_en_adc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dfifo_wr_en_adc</obj_property>
+      <obj_property name="ObjectShortName">dfifo_wr_en_adc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /dfifo_wr_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dfifo_wr_clk</obj_property>
+      <obj_property name="ObjectShortName">dfifo_wr_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /dfifo_wr_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dfifo_wr_en</obj_property>
+      <obj_property name="ObjectShortName">dfifo_wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /dfifo_din" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dfifo_din[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dfifo_din[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /adc_outbuf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_outbuf[11:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_outbuf[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /adc_valid_int" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_valid_int</obj_property>
+      <obj_property name="ObjectShortName">adc_valid_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /ADC_OUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ADC_OUT[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ADC_OUT[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /ADC_OUT_VALID" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ADC_OUT_VALID</obj_property>
+      <obj_property name="ObjectShortName">ADC_OUT_VALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DFIFO_RD_CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DFIFO_RD_CLK</obj_property>
+      <obj_property name="ObjectShortName">DFIFO_RD_CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DFIFO_RD_EN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DFIFO_RD_EN</obj_property>
+      <obj_property name="ObjectShortName">DFIFO_RD_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DFIFO_DOUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DFIFO_DOUT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DFIFO_DOUT[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DFIFO_EMPTY" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DFIFO_EMPTY</obj_property>
+      <obj_property name="ObjectShortName">DFIFO_EMPTY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DFIFO_VALID" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DFIFO_VALID</obj_property>
+      <obj_property name="ObjectShortName">DFIFO_VALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /DFIFO_PROGFULLOUT" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DFIFO_PROGFULLOUT</obj_property>
+      <obj_property name="ObjectShortName">DFIFO_PROGFULLOUT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /adc_out_int" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_out_int[11:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_out_int[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /dfifo_progfull" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dfifo_progfull</obj_property>
+      <obj_property name="ObjectShortName">dfifo_progfull</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /dfifo_pflthresh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dfifo_pflthresh[12:0]</obj_property>
+      <obj_property name="ObjectShortName">dfifo_pflthresh[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /adc_valid_ir" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_valid_ir</obj_property>
+      <obj_property name="ObjectShortName">adc_valid_ir</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /adc_valid_ir2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_valid_ir2</obj_property>
+      <obj_property name="ObjectShortName">adc_valid_ir2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /adc_valid_ir3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_valid_ir3</obj_property>
+      <obj_property name="ObjectShortName">adc_valid_ir3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /adc_valid_ir4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_valid_ir4</obj_property>
+      <obj_property name="ObjectShortName">adc_valid_ir4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /adc_out_ir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_out_ir[11:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_out_ir[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /adc_out_ir2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_out_ir2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_out_ir2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /adc_out_ir3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_out_ir3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_out_ir3[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dragonv5_main_tb/uut/\DRS_READ_GEN[0].drs_read_i /adc_out_ir4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_out_ir4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_out_ir4[11:0]</obj_property>
+   </wvobject>
+</wave_config>
