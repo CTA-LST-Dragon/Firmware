@@ -1,5 +1,43 @@
 ChangeLog
 
+dv5_3_00_00 (Seiya) 2018.04.26
+- Data format was change as of stopcell ID
+I added the flag for check of stopcell line-id corruption.
+
+dv5_3_00_00 (Seiya)
+- This version is used for checking the stopcell line ID corruption
+FPGA receives Write Shift Register value from DRS4.
+Even though it is not expected one, DRS can start data sampling. This is bug.
+So I checked if this corruption happen to change data format so that Write shift register value(8bit) can be read.
+ 
+
+dv5_3_00_01 (Seiya)
+- Concerning the data format, Flag data was removed
+Now flag data isn't used at all during the data analysis.
+
+dv5_3_00_00 (Seiya)
+- Data format was changed as of ADC value
+DAQ team asked me to change data format with channel by channel data sending.
+By the last firmware, FPGA sent the ADC value like this,
+[HG0 cell0][HG2_cell0][HG4_cell0][HG6_cell0][LG0 cell0][LG2_cell0][LG4_cell0][LG6_cell0]
+[HG0 cell1][HG2_cell1][HG4_cell1][HG6_cell1][LG0 cell1][LG2_cell1][LG4_cell1][LG6_cell1]
+...
+
+From this version, the data format is like the following one,
+[HG0 cell0][HG0 cell1][HG0 cell2][HG0 cell3]...[HG0 cell39][HG1 cell0][HG1 cell1]...
+
+
+dv5_2_00_00 (Seiya)
+- Big-endian to Little endian with right procedure
+
+dv5_1_0D_00 (Seiya)
+- Big-endian to Little-endian, BUT THIS IS COMPILED BY BAD PROCEDURE.
+In this version, endian was changed for EventBuilding software (big endian to little endian).
+But this firmware caused "0 problem" at Tenerife, ADC sometimes doesn't send DRS4 data but "0".
+Wrong procedure of compilation might cause this problem. 
+When I used the IPcore, I added the ".v" and ".ngc" file.
+It should be right that ".xco" file is added and regenerated all.
+
 dv5_1_0C_13
 - firmware version 0C_11 contained event corruption bug.
 It was caused due to 266MHz clock implementation.
