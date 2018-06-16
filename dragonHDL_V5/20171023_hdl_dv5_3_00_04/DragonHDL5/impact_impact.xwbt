@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_00\DragonHDL5\impact.xsl
+OUTFILE=C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_00\DragonHDL5\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Users\CTA_PC\Desktop\Firmware\dragonHDL_V5\20171023_hdl_dv5_3_00_00\DragonHDL5
+LICENSE=iMPACT
+USER_INFO=iMPACT

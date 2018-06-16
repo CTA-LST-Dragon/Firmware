@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main_tb_isim_beh.exe" -prj "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main_tb_beh.prj" "work.dragonv5_main_tb" "work.glbl" 

@@ -1,8 +1,8 @@
 Storage Target: SPI Flash Single FPGA
 64M
 FF
-dv5_3_00_03
-C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_03
+dv5_3_00_04
+C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04
 
 MCS
 No

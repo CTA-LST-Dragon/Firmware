@@ -1,0 +1,28 @@
+Command line:
+   dragonv5_main_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49941
+
+Sat Jun 16 11:06:03 2018
+
+
+ Elaboration Time: 0.6875 sec
+
+ Current Memory Usage: 727.003 Meg
+
+ Total Signals          : 8684
+ Total Nets             : 33537
+ Total Signal Drivers   : 2679
+ Total Blocks           : 396
+ Total Primitive Blocks : 311
+ Total Processes        : 3916
+ Total Traceable Variables  : 8855
+ Total Scalar Nets and Variables : 1641129
+
+ Total Simulation Time: 2.39063 sec
+
+ Current Memory Usage: 569.709 Meg
+
+Sat Jun 16 15:40:44 2018
+

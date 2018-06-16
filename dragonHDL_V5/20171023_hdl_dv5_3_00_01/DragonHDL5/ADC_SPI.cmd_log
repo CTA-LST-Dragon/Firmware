@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/Source/ADC_SPI.v -lang verilog -prj DragonHDL5 -o ADC_SPI.spl -module ADC_SPI -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 ADC_SPI.spl C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/ADC_SPI.sym 
+vhdtdtfi -lang verilog -prj DragonHDL5 -o C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/ADC_SPI.tfi -lib work C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/Source//ADC_SPI.v -module ADC_SPI -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

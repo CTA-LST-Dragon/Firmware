@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/../Source/dragonv5_main_tb.v" Line 199: Port <arg fmt="%s" index="1">BP_JTAG_TCK</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/../Source/dragonv5_main.v" Line 575: Port <arg fmt="%s" index="1">CLK_VALID</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="Simulator" num="0" delta="unknown" >Unable to copy libPortabilityNOSH.dll to the simulation executable directory: <arg fmt="%s" index="1">boost::filesystem::copy_file: ﾎwﾒ￨ﾂﾳﾂ￪ﾂﾽﾃpﾃXﾂﾪﾌﾩﾂￂﾂﾩﾂ￨ﾂￜﾂﾹﾂ￱ﾁB, &quot;isim\dragonv5_main_tb_isim_beh.exe.sim\libPortability.dll&quot;</arg>.
+</msg>
+
+</messages>
+

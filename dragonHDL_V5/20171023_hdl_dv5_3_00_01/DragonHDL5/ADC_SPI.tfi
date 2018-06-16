@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+ADC_SPI instance_name (
+    .AD9222_CSBn(AD9222_CSBn), 
+    .AD9222_SCLK(AD9222_SCLK), 
+    .AD9222_SDIO(AD9222_SDIO), 
+    .AD9222_SDIO_DIR(AD9222_SDIO_DIR), 
+    .clk(clk), 
+    .rst(rst), 
+    .adcspi_en(adcspi_en), 
+    .ADC_SPI_DATA(ADC_SPI_DATA), 
+    .ADC_SPI_ADDR(ADC_SPI_ADDR), 
+    .command_dacset(command_dacset), 
+    .adcspi_finish(adcspi_finish)
+    );
+
+

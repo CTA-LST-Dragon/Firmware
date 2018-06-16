@@ -1,0 +1,438 @@
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/20171023_hdl_dv5_1_0D_00/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_00/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_01/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_02/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_03/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_03/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_03/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 
+xst -intstyle ise -ifn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.xst" -ofn "C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/DragonHDL5/dragonv5_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../SiTCP -sd ../CoreGen -sd ../Source -nt timestamp -uc C:/Users/CTA_PC/Desktop/Firmware/dragonHDL_V5/20171023_hdl_dv5_3_00_04/Source/dragonv5_main.ucf -p xc6slx100-fgg676-3 dragonv5_main.ngc dragonv5_main.ngd  
+map -intstyle ise -p xc6slx100-fgg676-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dragonv5_main_map.ncd dragonv5_main.ngd dragonv5_main.pcf 
+par -w -intstyle ise -ol high -mt off dragonv5_main_map.ncd dragonv5_main.ncd dragonv5_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml dragonv5_main.twx dragonv5_main.ncd -o dragonv5_main.twr dragonv5_main.pcf 
+bitgen -intstyle ise -f dragonv5_main.ut dragonv5_main.ncd 

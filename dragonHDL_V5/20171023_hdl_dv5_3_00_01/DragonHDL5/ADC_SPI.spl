@@ -1,0 +1,17 @@
+[Inputs]
+clk
+rst
+command_dacset
+=ADC_SPI_DATA[7:0]=
+=ADC_SPI_ADDR[12:0]=
+[Outputs]
+AD9222_CSBn
+AD9222_SCLK
+AD9222_SDIO_DIR
+adcspi_en
+adcspi_finish
+[BiDir]
+AD9222_SDIO
+[ATTRIBUTES]
+VeriModel ADC_SPI
+
